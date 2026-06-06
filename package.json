@@ -1,0 +1,13 @@
+{
+  "name": "spatial-omics-research-digest",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-digest.mjs",
+    "check": "node --check scripts/generate-digest.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

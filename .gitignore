@@ -1,0 +1,5 @@
+.digest-issue-body.md
+.env
+node_modules/
+outputs/
+work/

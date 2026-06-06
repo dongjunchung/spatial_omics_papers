@@ -1,0 +1,81 @@
+name: Daily spatial omics digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run at both UTC offsets used by America/New_York. The timezone gate below
+    # ensures only the 8:00 AM invocation proceeds.
+    - cron: "0 12 * * *"
+    - cron: "0 13 * * *"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: daily-spatial-omics-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check New York time
+        id: time
+        shell: bash
+        run: |
+          hour="$(TZ=America/New_York date +%H)"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || "$hour" == "08" ]]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Check out repository
+        if: steps.time.outputs.run == 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        if: steps.time.outputs.run == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate digest
+        if: steps.time.outputs.run == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.5' }}
+          DIGEST_MAX_PAPERS: ${{ vars.DIGEST_MAX_PAPERS || '5' }}
+        run: node scripts/generate-digest.mjs
+
+      - name: Commit archive
+        if: steps.time.outputs.run == 'true'
+        id: commit
+        shell: bash
+        run: |
+          if git diff --quiet && [[ -z "$(git status --porcelain)" ]]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md digests images data
+          git commit -m "Add spatial omics digest for $(TZ=America/New_York date +%F)"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Open notification issue
+        if: steps.time.outputs.run == 'true' && steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          title="Spatial omics digest - $(TZ=America/New_York date +%F)"
+          gh issue create \
+            --title "$title" \
+            --body-file .digest-issue-body.md \
+            --label "research-digest" \
+          || gh issue create --title "$title" --body-file .digest-issue-body.md
