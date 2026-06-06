@@ -7,7 +7,10 @@ const MODEL = process.env.OPENAI_MODEL || "gpt-5.5";
 const MAX_PAPERS = clamp(Number(process.env.DIGEST_MAX_PAPERS || 5), 1, 8);
 const TZ = "America/New_York";
 
-const today = dateInTimeZone(new Date(), TZ);
+const today = process.env.DIGEST_DATE || dateInTimeZone(new Date(), TZ);
+if (!/^\d{4}-\d{2}-\d{2}$/.test(today)) {
+  throw new Error(`Invalid DIGEST_DATE: ${today}`);
+}
 const digestDir = path.join(ROOT, "digests");
 const imageDir = path.join(ROOT, "images", today);
 const dataDir = path.join(ROOT, "data");
@@ -175,7 +178,7 @@ const paperSections = [];
 for (let i = 0; i < uniquePapers.length; i += 1) {
   const paper = uniquePapers[i];
   validatePaper(paper);
-  const slug = slugify(paper.title).slice(0, 70) || `paper-${i + 1}`;
+  const slug = slugify(paper.title).slice(0, 70).replace(/-+$/g, "") || `paper-${i + 1}`;
   const imageName = `${String(i + 1).padStart(2, "0")}-${slug}.svg`;
   const imagePath = path.join(imageDir, imageName);
   await fs.writeFile(imagePath, renderTechnicalFigure(paper, i), "utf8");

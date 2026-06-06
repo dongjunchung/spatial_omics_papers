@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Mosaic integration of spatial multi-omics with SpaMosaic technical summary</title>
+  <desc id="desc">A five-stage diagram showing inputs, preprocessing, model, objectives, and outputs.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#718096"/>
+    </marker>
+    <style>
+      .title { font: 700 40px Arial, sans-serif; fill: #17202a; }
+      .subtitle { font: 500 21px Arial, sans-serif; fill: #52616b; }
+      .box-title { font: 700 24px Arial, sans-serif; fill: white; }
+      .item { font: 500 20px Arial, sans-serif; fill: #243442; }
+      .note { font: 500 18px Arial, sans-serif; fill: #425466; }
+      .arrow { stroke: #718096; stroke-width: 5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="50" y="62" class="title">Mosaic integration of spatial multi-omics with SpaMosaic</text>
+  <text x="1550" y="62" text-anchor="end" class="subtitle">peer-reviewed | 2026-04-24</text>
+  
+      <rect x="34" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#16324f" stroke-width="4"/>
+      <rect x="34" y="168" width="276" height="64" rx="20" fill="#16324f"/>
+      <rect x="34" y="210" width="276" height="22" fill="#16324f"/>
+      <text x="172" y="210" text-anchor="middle" class="box-title">Inputs</text>
+      
+        <circle cx="62" cy="253" r="6" fill="#16324f"/>
+        <text x="80" y="258" class="item">Sections with partially</text><text x="80" y="285" class="item">overlapping modalities</text>
+        <circle cx="62" cy="327" r="6" fill="#16324f"/>
+        <text x="80" y="332" class="item">RNA, protein and epigenomic</text><text x="80" y="359" class="item">features</text>
+        <circle cx="62" cy="401" r="6" fill="#16324f"/>
+        <text x="80" y="406" class="item">Spatial coordinates</text>
+        <circle cx="62" cy="459" r="6" fill="#16324f"/>
+        <text x="80" y="464" class="item">Cross-section shared</text><text x="80" y="491" class="item">measurements</text>
+      <path d="M 315 418 H 335" class="arrow"/>
+      <rect x="342" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#2e86ab" stroke-width="4"/>
+      <rect x="342" y="168" width="276" height="64" rx="20" fill="#2e86ab"/>
+      <rect x="342" y="210" width="276" height="22" fill="#2e86ab"/>
+      <text x="480" y="210" text-anchor="middle" class="box-title">Preprocessing</text>
+      
+        <circle cx="370" cy="253" r="6" fill="#2e86ab"/>
+        <text x="388" y="258" class="item">Modality-wise dimension</text><text x="388" y="285" class="item">reduction</text>
+        <circle cx="370" cy="327" r="6" fill="#2e86ab"/>
+        <text x="388" y="332" class="item">Within-modality batch</text><text x="388" y="359" class="item">correction</text>
+        <circle cx="370" cy="401" r="6" fill="#2e86ab"/>
+        <text x="388" y="406" class="item">Spatial-neighbor graph</text>
+        <circle cx="370" cy="459" r="6" fill="#2e86ab"/>
+        <text x="388" y="464" class="item">Cross-section</text><text x="388" y="491" class="item">mutual-nearest-neighbor graph</text>
+      <path d="M 623 418 H 643" class="arrow"/>
+      <rect x="650" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#a23b72" stroke-width="4"/>
+      <rect x="650" y="168" width="276" height="64" rx="20" fill="#a23b72"/>
+      <rect x="650" y="210" width="276" height="22" fill="#a23b72"/>
+      <text x="788" y="210" text-anchor="middle" class="box-title">Model / inference</text>
+      
+        <circle cx="678" cy="253" r="6" fill="#a23b72"/>
+        <text x="696" y="258" class="item">Modality-specific weighted</text><text x="696" y="285" class="item">light GCNs</text>
+        <circle cx="678" cy="327" r="6" fill="#a23b72"/>
+        <text x="696" y="332" class="item">Spatial and expression graph</text><text x="696" y="359" class="item">encoding</text>
+        <circle cx="678" cy="401" r="6" fill="#a23b72"/>
+        <text x="696" y="406" class="item">Positive pairs from matched</text><text x="696" y="433" class="item">spots</text>
+        <circle cx="678" cy="475" r="6" fill="#a23b72"/>
+        <text x="696" y="480" class="item">Cross-modal contrastive</text><text x="696" y="507" class="item">alignment</text>
+        <circle cx="678" cy="549" r="6" fill="#a23b72"/>
+        <text x="696" y="554" class="item">Modality-agnostic latent</text><text x="696" y="581" class="item">embedding</text>
+      <path d="M 931 418 H 951" class="arrow"/>
+      <rect x="958" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#f18f01" stroke-width="4"/>
+      <rect x="958" y="168" width="276" height="64" rx="20" fill="#f18f01"/>
+      <rect x="958" y="210" width="276" height="22" fill="#f18f01"/>
+      <text x="1096" y="210" text-anchor="middle" class="box-title">Objectives</text>
+      
+        <circle cx="986" cy="253" r="6" fill="#f18f01"/>
+        <text x="1004" y="258" class="item">Align paired modalities</text>
+        <circle cx="986" cy="311" r="6" fill="#f18f01"/>
+        <text x="1004" y="316" class="item">Preserve spatial structure</text>
+        <circle cx="986" cy="369" r="6" fill="#f18f01"/>
+        <text x="1004" y="374" class="item">Reduce section and technology</text><text x="1004" y="401" class="item">effects</text>
+        <circle cx="986" cy="443" r="6" fill="#f18f01"/>
+        <text x="1004" y="448" class="item">Transfer information across</text><text x="1004" y="475" class="item">incomplete panels</text>
+      <path d="M 1239 418 H 1259" class="arrow"/>
+      <rect x="1266" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#16324f" stroke-width="4"/>
+      <rect x="1266" y="168" width="276" height="64" rx="20" fill="#16324f"/>
+      <rect x="1266" y="210" width="276" height="22" fill="#16324f"/>
+      <text x="1404" y="210" text-anchor="middle" class="box-title">Outputs</text>
+      
+        <circle cx="1294" cy="253" r="6" fill="#16324f"/>
+        <text x="1312" y="258" class="item">Consensus spatial domains</text>
+        <circle cx="1294" cy="311" r="6" fill="#16324f"/>
+        <text x="1312" y="316" class="item">Integrated multi-section</text><text x="1312" y="343" class="item">atlas</text>
+        <circle cx="1294" cy="385" r="6" fill="#16324f"/>
+        <text x="1312" y="390" class="item">Missing-modality imputation</text>
+        <circle cx="1294" cy="443" r="6" fill="#16324f"/>
+        <text x="1312" y="448" class="item">Cross-modality regulatory</text><text x="1312" y="475" class="item">associations</text>
+      
+  <rect x="34" y="728" width="1512" height="122" rx="18" fill="#edf2f7"/>
+  <text x="62" y="774" class="note">Scope note: The diagram summarizes the published framework and documentation; it does not reproduce the authors&apos; figures or report</text><text x="62" y="804" class="note">benchmark values.</text>
+</svg>

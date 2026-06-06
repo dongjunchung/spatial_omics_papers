@@ -4,17 +4,17 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 5, 2026 digest](digests/2026-06-05.md)
+[Read the June 6, 2026 digest](digests/2026-06-06.md)
 
-- [Accurate, scalable and cross-platform cell identification for high-resolution spatial transcriptomics](https://www.nature.com/articles/s41588-026-02610-1) - peer-reviewed, 2026-05-20
-- [BaySC: Uncovering Tissue Architecture in Spatial Multi-Omics via Probabilistic Spatial Clustering](https://arxiv.org/abs/2605.15291) - preprint, 2026-05-14
-- [A Multimodal Foundation Model of Spatial Transcriptomics and Histology for Biological Discovery and Clinical Prediction](https://arxiv.org/abs/2604.03630) - preprint, 2026-04-04
+- [N-Orbit: towards a universal model and metric for comparing tissue microenvironments](https://www.nature.com/articles/s41467-026-73561-8) - peer-reviewed, 2026-05-22
+- [Decoding spatial transcriptomics across multicellular and subcellular resolutions](https://www.nature.com/articles/s41467-026-72872-0) - peer-reviewed, 2026-05-18
+- [Mosaic integration of spatial multi-omics with SpaMosaic](https://www.nature.com/articles/s41588-026-02573-3) - peer-reviewed, 2026-04-24
 
 ## Emerging themes
 
-- Probabilistic outputs are becoming first-class products rather than secondary diagnostics.
-- Multimodal models increasingly treat histology, molecular profiles and spatial topology as coequal signals.
-- Cross-platform transfer is emerging as a central test for spatial-omics foundation and segmentation models.
+- Cross-platform analysis is shifting from ad hoc harmonization toward explicit shared representations.
+- Spatial structure is increasingly encoded as reusable geometry: graph edges, motif vectors and neighborhood distances.
+- Missing-modality prediction and resolution conversion are becoming core atlas-building tasks rather than optional post-processing.
 
 ## Archive
 

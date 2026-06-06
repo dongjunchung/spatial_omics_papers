@@ -16,5 +16,23 @@
     "url": "https://arxiv.org/abs/2604.03630",
     "release_date": "2026-04-04",
     "reported_at": "2026-06-05"
+  },
+  {
+    "title": "N-Orbit: towards a universal model and metric for comparing tissue microenvironments",
+    "url": "https://www.nature.com/articles/s41467-026-73561-8",
+    "release_date": "2026-05-22",
+    "reported_at": "2026-06-06"
+  },
+  {
+    "title": "Decoding spatial transcriptomics across multicellular and subcellular resolutions",
+    "url": "https://www.nature.com/articles/s41467-026-72872-0",
+    "release_date": "2026-05-18",
+    "reported_at": "2026-06-06"
+  },
+  {
+    "title": "Mosaic integration of spatial multi-omics with SpaMosaic",
+    "url": "https://www.nature.com/articles/s41588-026-02573-3",
+    "release_date": "2026-04-24",
+    "reported_at": "2026-06-06"
   }
 ]
