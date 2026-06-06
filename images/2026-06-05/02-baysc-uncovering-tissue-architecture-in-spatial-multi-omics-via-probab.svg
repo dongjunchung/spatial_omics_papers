@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">BaySC: Uncovering Tissue Architecture in Spatial Multi-Omics via Probabilistic Spatial Clustering technical summary</title>
+  <desc id="desc">A five-stage diagram showing inputs, preprocessing, model, objectives, and outputs.</desc>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#718096"/>
+    </marker>
+    <style>
+      .title { font: 700 40px Arial, sans-serif; fill: #17202a; }
+      .subtitle { font: 500 21px Arial, sans-serif; fill: #52616b; }
+      .box-title { font: 700 24px Arial, sans-serif; fill: white; }
+      .item { font: 500 20px Arial, sans-serif; fill: #243442; }
+      .note { font: 500 18px Arial, sans-serif; fill: #425466; }
+      .arrow { stroke: #718096; stroke-width: 5; fill: none; marker-end: url(#arrowhead); }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="50" y="62" class="title">BaySC: Uncovering Tissue Architecture in Spatial Multi-Omics</text><text x="50" y="107" class="title">via Probabilistic Spatial Clustering</text>
+  <text x="1550" y="62" text-anchor="end" class="subtitle">preprint | 2026-05-14</text>
+  
+      <rect x="34" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#3d405b" stroke-width="4"/>
+      <rect x="34" y="168" width="276" height="64" rx="20" fill="#3d405b"/>
+      <rect x="34" y="210" width="276" height="22" fill="#3d405b"/>
+      <text x="172" y="210" text-anchor="middle" class="box-title">Inputs</text>
+      
+        <circle cx="62" cy="253" r="6" fill="#3d405b"/>
+        <text x="80" y="258" class="item">Expression or multi-omic</text><text x="80" y="285" class="item">matrices</text>
+        <circle cx="62" cy="327" r="6" fill="#3d405b"/>
+        <text x="80" y="332" class="item">Spatial coordinates</text>
+        <circle cx="62" cy="385" r="6" fill="#3d405b"/>
+        <text x="80" y="390" class="item">Cell or spot neighborhood</text><text x="80" y="417" class="item">graph</text>
+      <path d="M 315 418 H 335" class="arrow"/>
+      <rect x="342" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#5f6caf" stroke-width="4"/>
+      <rect x="342" y="168" width="276" height="64" rx="20" fill="#5f6caf"/>
+      <rect x="342" y="210" width="276" height="22" fill="#5f6caf"/>
+      <text x="480" y="210" text-anchor="middle" class="box-title">Preprocessing</text>
+      
+        <circle cx="370" cy="253" r="6" fill="#5f6caf"/>
+        <text x="388" y="258" class="item">Modality-specific likelihood</text><text x="388" y="285" class="item">terms</text>
+        <circle cx="370" cy="327" r="6" fill="#5f6caf"/>
+        <text x="388" y="332" class="item">Spatial adjacency</text><text x="388" y="359" class="item">construction</text>
+        <circle cx="370" cy="401" r="6" fill="#5f6caf"/>
+        <text x="388" y="406" class="item">Feature-level quality control</text>
+      <path d="M 623 418 H 643" class="arrow"/>
+      <rect x="650" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#9c6ade" stroke-width="4"/>
+      <rect x="650" y="168" width="276" height="64" rx="20" fill="#9c6ade"/>
+      <rect x="650" y="210" width="276" height="22" fill="#9c6ade"/>
+      <text x="788" y="210" text-anchor="middle" class="box-title">Model / inference</text>
+      
+        <circle cx="678" cy="253" r="6" fill="#9c6ade"/>
+        <text x="696" y="258" class="item">Mixture of Finite Mixtures</text><text x="696" y="285" class="item">prior</text>
+        <circle cx="678" cy="327" r="6" fill="#9c6ade"/>
+        <text x="696" y="332" class="item">Latent domain assignment z_i</text>
+        <circle cx="678" cy="385" r="6" fill="#9c6ade"/>
+        <text x="696" y="390" class="item">MRF spatial-coherence prior</text>
+        <circle cx="678" cy="443" r="6" fill="#9c6ade"/>
+        <text x="696" y="448" class="item">Weighted modality fusion</text>
+        <circle cx="678" cy="501" r="6" fill="#9c6ade"/>
+        <text x="696" y="506" class="item">Gibbs posterior sampling</text>
+      <path d="M 931 418 H 951" class="arrow"/>
+      <rect x="958" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#f2cc8f" stroke-width="4"/>
+      <rect x="958" y="168" width="276" height="64" rx="20" fill="#f2cc8f"/>
+      <rect x="958" y="210" width="276" height="22" fill="#f2cc8f"/>
+      <text x="1096" y="210" text-anchor="middle" class="box-title">Objectives</text>
+      
+        <circle cx="986" cy="253" r="6" fill="#f2cc8f"/>
+        <text x="1004" y="258" class="item">Posterior proportional to</text><text x="1004" y="285" class="item">likelihood times spatial</text><text x="1004" y="312" class="item">prior</text>
+        <circle cx="986" cy="354" r="6" fill="#f2cc8f"/>
+        <text x="1004" y="359" class="item">Infer domain count from data</text>
+        <circle cx="986" cy="412" r="6" fill="#f2cc8f"/>
+        <text x="1004" y="417" class="item">Preserve local topology</text><text x="1004" y="444" class="item">without smoothing features</text>
+      <path d="M 1239 418 H 1259" class="arrow"/>
+      <rect x="1266" y="168" width="276" height="520" rx="22" fill="#ffffff" stroke="#3d405b" stroke-width="4"/>
+      <rect x="1266" y="168" width="276" height="64" rx="20" fill="#3d405b"/>
+      <rect x="1266" y="210" width="276" height="22" fill="#3d405b"/>
+      <text x="1404" y="210" text-anchor="middle" class="box-title">Outputs</text>
+      
+        <circle cx="1294" cy="253" r="6" fill="#3d405b"/>
+        <text x="1312" y="258" class="item">MAP tissue-domain map</text>
+        <circle cx="1294" cy="311" r="6" fill="#3d405b"/>
+        <text x="1312" y="316" class="item">Posterior membership</text><text x="1312" y="343" class="item">probabilities</text>
+        <circle cx="1294" cy="385" r="6" fill="#3d405b"/>
+        <text x="1312" y="390" class="item">Boundary uncertainty</text>
+        <circle cx="1294" cy="443" r="6" fill="#3d405b"/>
+        <text x="1312" y="448" class="item">Interpretable modality</text><text x="1312" y="475" class="item">weights</text>
+      
+  <rect x="34" y="728" width="1512" height="122" rx="18" fill="#edf2f7"/>
+  <text x="62" y="774" class="note">Scope note: BaySC is a preprint. The diagram summarizes mechanisms stated in the abstract and does not imply independent</text><text x="62" y="804" class="note">validation of reported performance.</text>
+</svg>
