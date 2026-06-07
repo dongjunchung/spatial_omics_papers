@@ -39,7 +39,7 @@ const schema = {
   required: ["headline", "papers", "themes"],
   properties: {
     headline: { type: "string" },
-    papers: {
+  papers: {
       type: "array",
       minItems: 1,
       maxItems: MAX_PAPERS,
@@ -48,6 +48,8 @@ const schema = {
         additionalProperties: false,
         required: [
           "title",
+          "selection_lane",
+          "inclusion_reason",
           "url",
           "release_date",
           "status",
@@ -62,6 +64,11 @@ const schema = {
         ],
         properties: {
           title: { type: "string" },
+          selection_lane: {
+            type: "string",
+            enum: ["New or updated", "Important to revisit"],
+          },
+          inclusion_reason: { type: "string" },
           url: { type: "string" },
           release_date: { type: "string" },
           status: { type: "string", enum: ["peer-reviewed", "preprint"] },
@@ -106,10 +113,16 @@ const prompt = `
 You are preparing a rigorous daily research brief for a statistical genomics researcher.
 Today is ${today} in America/New_York.
 
-Find ${MAX_PAPERS} or fewer important spatial-omics data-modeling papers newly released,
-published, or substantively updated in roughly the last 14 days. Search the web and
-prioritize primary sources: journal article pages, bioRxiv/medRxiv, arXiv, conference
-proceedings, or official repositories linked from the paper.
+Find ${MAX_PAPERS} or fewer important spatial-omics data-modeling papers using two
+complementary selection lanes:
+1. "New or updated": newly released, published, or substantively updated work.
+2. "Important to revisit": older work that is foundational, influential, technically
+   distinctive, newly relevant to current trends, underappreciated, or previously missed.
+
+Search the web and prioritize primary sources: journal article pages, bioRxiv/medRxiv,
+arXiv, conference proceedings, or official repositories linked from the paper. There is
+no publication-date cutoff for the second lane. Prefer a useful mix of lanes when strong
+candidates exist, but return fewer papers rather than padding the digest.
 
 Scope:
 - spatial transcriptomics and broader spatial omics
@@ -120,6 +133,8 @@ Scope:
 Selection rules:
 - Include only papers whose title, date, status, and primary URL you verified.
 - Prefer methodological novelty and likely field impact over application-only studies.
+- Set selection_lane for every paper. For older papers, inclusion_reason must explain
+  specifically why the paper merits attention now; for new work, state what is timely.
 - Do not invent architecture components, loss functions, results, or claims.
 - For evidence_note, briefly state what primary page supports the summary.
 - The figure fields must be technically detailed but strictly grounded in verified content.
@@ -259,11 +274,13 @@ function renderPaper(paper, imageName, index) {
   const relImage = `../images/${today}/${imageName}`;
   return `## ${index}. [${escapeMarkdown(paper.title)}](${paper.url})
 
-**${paper.status === "peer-reviewed" ? "Peer reviewed" : "Preprint"} | ${escapeMarkdown(paper.venue)} | ${escapeMarkdown(paper.release_date)}**
+**${escapeMarkdown(paper.selection_lane)} | ${paper.status === "peer-reviewed" ? "Peer reviewed" : "Preprint"} | ${escapeMarkdown(paper.venue)} | ${escapeMarkdown(paper.release_date)}**
 
 ![Technical summary of ${escapeAlt(paper.title)}](${relImage})
 
 ${escapeMarkdown(paper.summary)}
+
+**Why included now:** ${escapeMarkdown(paper.inclusion_reason)}
 
 **Technical contribution:** ${escapeMarkdown(paper.technical_contribution)}
 
