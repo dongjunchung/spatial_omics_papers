@@ -4,19 +4,19 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 7, 2026 digest](digests/2026-06-07.md)
+[Read the June 8, 2026 digest](digests/2026-06-08.md)
 
-- [ISON: Integrated Spatial Omics Network for reconstructing gene-regulatory landscapes](https://www.nature.com/articles/s41467-026-74298-0) - peer-reviewed unedited manuscript, 2026-06-04
-- [Cell2location maps fine-grained cell types in spatial transcriptomics](https://www.nature.com/articles/s41587-021-01139-4) - important to revisit, 2022-01-13
-- [Deep learning and alignment of spatially resolved single-cell transcriptomes with Tangram](https://www.nature.com/articles/s41592-021-01264-7) - important to revisit, 2021-10-28
-- [Squidpy: a scalable framework for spatial omics analysis](https://www.nature.com/articles/s41592-021-01358-2) - important to revisit, 2022-01-31
+- [CCCvelo: dynamic communication and cell-state transitions](https://www.nature.com/articles/s43588-025-00934-2) - important to revisit, 2026-01-05
+- [Integrating gene expression, spatial location and histology to identify spatial domains and spatially variable genes by graph convolutional network](https://www.nature.com/articles/s41592-021-01255-8) - important to revisit, 2021-10-28
+- [DestVI identifies continuums of cell types](https://www.nature.com/articles/s41587-022-01272-8) - important to revisit, 2022-04-21
+- [Inference of cell-cell communications in spatially resolved transcriptomics datasets](https://www.nature.com/articles/s41592-025-02721-3) - important to revisit, 2025-06-06
 
 ## Emerging themes
 
-- Regulatory-state reconstruction is extending spatial RNA toward spatial epigenomic inference.
-- Reference mapping and alignment assumptions remain central as architectures become larger.
-- Uncertainty-aware deconvolution remains a baseline for rare-cell and niche analyses.
-- General-purpose spatial graph and image infrastructure matters for reproducible evaluation.
+- Dynamic communication is merging with trajectory inference.
+- Continuous cell states should accompany abundance estimates in deconvolution.
+- Spatial graph construction remains a biological modeling assumption.
+- Pairwise communication scores are expanding into relay and state-dependent networks.
 
 ## Archive
 

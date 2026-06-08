@@ -58,5 +58,29 @@
     "url": "https://www.nature.com/articles/s41592-021-01358-2",
     "release_date": "2022-01-31",
     "reported_at": "2026-06-07"
+  },
+  {
+    "title": "Decoding cell state transitions driven by dynamic cell-cell communication in spatial transcriptomics",
+    "url": "https://www.nature.com/articles/s43588-025-00934-2",
+    "release_date": "2026-01-05",
+    "reported_at": "2026-06-08"
+  },
+  {
+    "title": "Integrating gene expression, spatial location and histology to identify spatial domains and spatially variable genes by graph convolutional network",
+    "url": "https://www.nature.com/articles/s41592-021-01255-8",
+    "release_date": "2021-10-28",
+    "reported_at": "2026-06-08"
+  },
+  {
+    "title": "DestVI identifies continuums of cell types in spatial transcriptomics data",
+    "url": "https://www.nature.com/articles/s41587-022-01272-8",
+    "release_date": "2022-04-21",
+    "reported_at": "2026-06-08"
+  },
+  {
+    "title": "Inference of cell-cell communications in spatially resolved transcriptomics datasets",
+    "url": "https://www.nature.com/articles/s41592-025-02721-3",
+    "release_date": "2025-06-06",
+    "reported_at": "2026-06-08"
   }
 ]
