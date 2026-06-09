@@ -82,5 +82,29 @@
     "url": "https://www.nature.com/articles/s41592-025-02721-3",
     "release_date": "2025-06-06",
     "reported_at": "2026-06-08"
+  },
+  {
+    "title": "SpCAST: Decoding spatial transcriptomics at single-cell resolution with fast and interpretable analysis",
+    "url": "https://arxiv.org/abs/2605.26904",
+    "release_date": "2026-05-26",
+    "reported_at": "2026-06-09"
+  },
+  {
+    "title": "Spatial Transcriptomics as Images for Large-Scale Pretraining",
+    "url": "https://arxiv.org/abs/2603.13432",
+    "release_date": "2026-03-13",
+    "reported_at": "2026-06-09"
+  },
+  {
+    "title": "Reconstructing single-cell resolution from spatial transcriptomics with CellRefiner",
+    "url": "https://www.nature.com/articles/s41467-026-70090-2",
+    "release_date": "2026-02-27",
+    "reported_at": "2026-06-09"
+  },
+  {
+    "title": "Interpretable, flexible and spatially aware integration of multiple spatial transcriptomics datasets from diverse sources",
+    "url": "https://www.nature.com/articles/s41588-026-02579-x",
+    "release_date": "2026-04-27",
+    "reported_at": "2026-06-09"
   }
 ]

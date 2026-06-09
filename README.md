@@ -4,19 +4,19 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 8, 2026 digest](digests/2026-06-08.md)
+[Read the June 9, 2026 digest](digests/2026-06-09.md)
 
-- [CCCvelo: dynamic communication and cell-state transitions](https://www.nature.com/articles/s43588-025-00934-2) - important to revisit, 2026-01-05
-- [Integrating gene expression, spatial location and histology to identify spatial domains and spatially variable genes by graph convolutional network](https://www.nature.com/articles/s41592-021-01255-8) - important to revisit, 2021-10-28
-- [DestVI identifies continuums of cell types](https://www.nature.com/articles/s41587-022-01272-8) - important to revisit, 2022-04-21
-- [Inference of cell-cell communications in spatially resolved transcriptomics datasets](https://www.nature.com/articles/s41592-025-02721-3) - important to revisit, 2025-06-06
+- [SpCAST: fast and interpretable reference-guided spatial analysis](https://arxiv.org/abs/2605.26904) - important to revisit, 2026-05-26
+- [Spatial Transcriptomics as Images for Large-Scale Pretraining](https://arxiv.org/abs/2603.13432) - important to revisit, 2026-03-13
+- [CellRefiner: physical single-cell spatial reconstruction](https://www.nature.com/articles/s41467-026-70090-2) - important to revisit, 2026-02-27
+- [INSPIRE: interpretable integration of diverse spatial datasets](https://www.nature.com/articles/s41588-026-02579-x) - important to revisit, 2026-04-27
 
 ## Emerging themes
 
-- Dynamic communication is merging with trajectory inference.
-- Continuous cell states should accompany abundance estimates in deconvolution.
-- Spatial graph construction remains a biological modeling assumption.
-- Pairwise communication scores are expanding into relay and state-dependent networks.
+- Dataset construction is becoming central to spatial foundation models.
+- Interpretability is moving toward prediction-specific gene attribution.
+- Physical constraints deserve explicit evaluation in super-resolution.
+- Integration must preserve context-specific spatial biology.
 
 ## Archive
 
