@@ -106,5 +106,29 @@
     "url": "https://www.nature.com/articles/s41588-026-02579-x",
     "release_date": "2026-04-27",
     "reported_at": "2026-06-09"
+  },
+  {
+    "title": "Cross-Modal Knowledge Distillation from Spatial Transcriptomics to Histology",
+    "url": "https://arxiv.org/abs/2604.09076",
+    "release_date": "2026-04-10",
+    "reported_at": "2026-06-10"
+  },
+  {
+    "title": "HEIST: A Graph Foundation Model for Spatial Transcriptomics and Proteomics Data",
+    "url": "https://arxiv.org/abs/2506.11152",
+    "release_date": "2025-06-11",
+    "reported_at": "2026-06-10"
+  },
+  {
+    "title": "A joint model of unpaired data from scRNA-seq and spatial transcriptomics for imputing missing gene expression measurements",
+    "url": "https://arxiv.org/abs/1905.02269",
+    "release_date": "2019-05-06",
+    "reported_at": "2026-06-10"
+  },
+  {
+    "title": "SemanticST: A Scalable Framework for Spatial Transcriptomics Analysis via Multi-Semantic Representation Learning",
+    "url": "https://arxiv.org/abs/2506.11491",
+    "release_date": "2025-06-13",
+    "reported_at": "2026-06-10"
   }
 ]
