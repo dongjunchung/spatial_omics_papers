@@ -130,5 +130,23 @@
     "url": "https://arxiv.org/abs/2506.11491",
     "release_date": "2025-06-13",
     "reported_at": "2026-06-10"
+  },
+  {
+    "title": "SAGE-FM: A lightweight and interpretable foundation model for spatial transcriptomics",
+    "url": "https://arxiv.org/abs/2601.15652",
+    "release_date": "2026-01-21",
+    "reported_at": "2026-06-11"
+  },
+  {
+    "title": "SToFM: A Multi-scale Foundation Model for Spatial Transcriptomics",
+    "url": "https://arxiv.org/abs/2507.10737",
+    "release_date": "2025-07-15",
+    "reported_at": "2026-06-11"
+  },
+  {
+    "title": "ST-Align: a multimodal foundation model for image-gene alignment in spatial transcriptomics",
+    "url": "https://arxiv.org/abs/2411.16800",
+    "release_date": "2024-11-25",
+    "reported_at": "2026-06-11"
   }
 ]

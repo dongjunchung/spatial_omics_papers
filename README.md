@@ -4,19 +4,18 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 10, 2026 digest](digests/2026-06-10.md)
+[Read the June 11, 2026 digest](digests/2026-06-11.md)
 
-- [Cross-Modal Knowledge Distillation from Spatial Transcriptomics to Histology](https://arxiv.org/abs/2604.09076) - important to revisit, 2026-04-10
-- [HEIST: A Graph Foundation Model for Spatial Transcriptomics and Proteomics Data](https://arxiv.org/abs/2506.11152) - important to revisit, 2025-06-11
-- [gimVI: joint modeling of unpaired scRNA-seq and spatial transcriptomics](https://arxiv.org/abs/1905.02269) - important to revisit, 2019-05-06
-- [SemanticST: multi-semantic spatial representation learning](https://arxiv.org/abs/2506.11491) - important to revisit, 2025-06-13
+- [SAGE-FM: lightweight and interpretable spatial foundation modeling](https://arxiv.org/abs/2601.15652) - important to revisit, 2026-01-21
+- [SToFM: multiscale equivariant spatial foundation modeling](https://arxiv.org/abs/2507.10737) - important to revisit, 2025-07-15
+- [ST-Align: multiscale image-gene alignment](https://arxiv.org/abs/2411.16800) - important to revisit, 2024-11-25
 
 ## Emerging themes
 
-- Distillation may bridge molecular assays and routine histology.
-- Hierarchical models are connecting gene regulation with tissue context.
-- Probabilistic integration remains a strong uncertainty-aware baseline.
-- Spatial graph construction is a model component, not just preprocessing.
+- Parameter efficiency may matter as much as model size.
+- Equivariance is a principled inductive bias for tissue geometry.
+- Spot-, niche- and tissue-level alignment should be evaluated separately.
+- Perturbation responses provide a stronger interpretability test than attention alone.
 
 ## Archive
 
