@@ -4,18 +4,18 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 11, 2026 digest](digests/2026-06-11.md)
+[Read the June 12, 2026 digest](digests/2026-06-12.md)
 
-- [SAGE-FM: lightweight and interpretable spatial foundation modeling](https://arxiv.org/abs/2601.15652) - important to revisit, 2026-01-21
-- [SToFM: multiscale equivariant spatial foundation modeling](https://arxiv.org/abs/2507.10737) - important to revisit, 2025-07-15
-- [ST-Align: multiscale image-gene alignment](https://arxiv.org/abs/2411.16800) - important to revisit, 2024-11-25
+- [Integrated Bayesian non-parametric cross-sample SVG modeling](https://arxiv.org/abs/2504.09654) - important to revisit, 2025-04-13
+- [PersiST: topology-based spatial-feature scoring](https://arxiv.org/abs/2505.04360) - important to revisit, 2025-05-07
+- [stIHC: iterative spatial co-expression modules](https://arxiv.org/abs/2502.09574) - important to revisit, 2025-02-13
 
 ## Emerging themes
 
-- Parameter efficiency may matter as much as model size.
-- Equivariance is a principled inductive bias for tissue geometry.
-- Spot-, niche- and tissue-level alignment should be evaluated separately.
-- Perturbation responses provide a stronger interpretability test than attention alone.
+- Multi-sample SVG models should separate shared and specific effects.
+- Topology can complement covariance-based spatial tests.
+- Module discovery needs sensitivity to rare spatial programs.
+- Selection uncertainty should propagate into pathway interpretation.
 
 ## Archive
 

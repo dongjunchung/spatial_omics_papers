@@ -148,5 +148,23 @@
     "url": "https://arxiv.org/abs/2411.16800",
     "release_date": "2024-11-25",
     "reported_at": "2026-06-11"
+  },
+  {
+    "title": "Integrated Bayesian non-parametric spatial modeling for cross-sample identification of spatially variable genes",
+    "url": "https://arxiv.org/abs/2504.09654",
+    "release_date": "2025-04-13",
+    "reported_at": "2026-06-12"
+  },
+  {
+    "title": "PersiST: Robust Identification of Spatially Variable Features in Spatial Omics Datasets via Topological Data Analysis",
+    "url": "https://arxiv.org/abs/2505.04360",
+    "release_date": "2025-05-07",
+    "reported_at": "2026-06-12"
+  },
+  {
+    "title": "Spatial Transcriptomics Iterative Hierarchical Clustering (stIHC): A Novel Method for Identifying Spatial Gene Co-Expression Modules",
+    "url": "https://arxiv.org/abs/2502.09574",
+    "release_date": "2025-02-13",
+    "reported_at": "2026-06-12"
   }
 ]
