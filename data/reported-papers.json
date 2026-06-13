@@ -166,5 +166,23 @@
     "url": "https://arxiv.org/abs/2502.09574",
     "release_date": "2025-02-13",
     "reported_at": "2026-06-12"
+  },
+  {
+    "title": "SPARK-X: non-parametric modeling enables scalable and robust detection of spatial expression patterns for large spatial transcriptomic studies",
+    "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02404-0",
+    "release_date": "2021-06-21",
+    "reported_at": "2026-06-13"
+  },
+  {
+    "title": "Spatial transcriptomics at subspot resolution with BayesSpace",
+    "url": "https://www.nature.com/articles/s41587-021-00935-2",
+    "release_date": "2021-06-03",
+    "reported_at": "2026-06-13"
+  },
+  {
+    "title": "Screening cell-cell communication in spatial transcriptomics via collective optimal transport",
+    "url": "https://www.nature.com/articles/s41592-022-01728-4",
+    "release_date": "2023-01-23",
+    "reported_at": "2026-06-13"
   }
 ]
