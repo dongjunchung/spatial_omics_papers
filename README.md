@@ -4,18 +4,18 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 13, 2026 digest](digests/2026-06-13.md)
+[Read the June 14, 2026 digest](digests/2026-06-14.md)
 
-- [SPARK-X: scalable nonparametric spatial-feature testing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02404-0) - important to revisit, 2021-06-21
-- [BayesSpace: Bayesian domains and subspot inference](https://www.nature.com/articles/s41587-021-00935-2) - important to revisit, 2021-06-03
-- [COMMOT: collective optimal transport for spatial communication](https://www.nature.com/articles/s41592-022-01728-4) - important to revisit, 2023-01-23
+- [RCTD: robust reference-based cell-mixture decomposition](https://www.nature.com/articles/s41587-021-00830-w) - important to revisit, 2021-02-18
+- [MISTy: explainable multiview spatial relationships](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02663-5) - important to revisit, 2022-04-14
+- [GraphST: graph contrastive clustering, integration, and deconvolution](https://www.nature.com/articles/s41467-023-36796-3) - important to revisit, 2023-03-01
 
 ## Emerging themes
 
-- Scaling laws are part of statistical design for modern spatial assays.
-- Spatial priors require uncertainty and sensitivity checks.
-- Communication inference is shifting toward globally constrained molecular allocation.
-- Uncertainty should propagate across features, domains, and signaling.
+- Reference mapping should explicitly model cross-platform shifts.
+- Spatial scales are easier to audit when represented as separate views.
+- Contrastive objectives encode assumptions through context and pair definitions.
+- Composition and within-cell-type expression are distinct inferential targets.
 
 ## Archive
 

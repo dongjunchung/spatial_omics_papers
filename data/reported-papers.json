@@ -184,5 +184,23 @@
     "url": "https://www.nature.com/articles/s41592-022-01728-4",
     "release_date": "2023-01-23",
     "reported_at": "2026-06-13"
+  },
+  {
+    "title": "Robust decomposition of cell type mixtures in spatial transcriptomics",
+    "url": "https://www.nature.com/articles/s41587-021-00830-w",
+    "release_date": "2021-02-18",
+    "reported_at": "2026-06-14"
+  },
+  {
+    "title": "Explainable multiview framework for dissecting spatial relationships from highly multiplexed data",
+    "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02663-5",
+    "release_date": "2022-04-14",
+    "reported_at": "2026-06-14"
+  },
+  {
+    "title": "Spatially informed clustering, integration, and deconvolution of spatial transcriptomics with GraphST",
+    "url": "https://www.nature.com/articles/s41467-023-36796-3",
+    "release_date": "2023-03-01",
+    "reported_at": "2026-06-14"
   }
 ]
