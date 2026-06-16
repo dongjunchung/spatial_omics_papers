@@ -220,5 +220,23 @@
     "url": "https://www.nature.com/articles/s41592-022-01687-w",
     "release_date": "2022-12-31",
     "reported_at": "2026-06-15"
+  },
+  {
+    "title": "Gene expression cartography",
+    "url": "https://www.nature.com/articles/s41586-019-1773-3",
+    "release_date": "2019-11-20",
+    "reported_at": "2026-06-16"
+  },
+  {
+    "title": "Spatially informed cell-type deconvolution for spatial transcriptomics",
+    "url": "https://www.nature.com/articles/s41587-022-01273-7",
+    "release_date": "2022-05-02",
+    "reported_at": "2026-06-16"
+  },
+  {
+    "title": "Identification of spatial expression trends in single-cell gene expression data",
+    "url": "https://www.nature.com/articles/nmeth.4634",
+    "release_date": "2018-03-19",
+    "reported_at": "2026-06-16"
   }
 ]

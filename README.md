@@ -4,18 +4,18 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 15, 2026 digest](digests/2026-06-15.md)
+[Read the June 16, 2026 digest](digests/2026-06-16.md)
 
-- [SpatialDE: Gaussian-process spatial variability testing](https://www.nature.com/articles/nmeth.4636) - important to revisit, 2018-03-19
-- [MEFISTO: smooth multimodal factors over space and time](https://www.nature.com/articles/s41592-021-01343-9) - important to revisit, 2022-01-13
-- [Nonnegative spatial factorization: interpretable tissue programs](https://www.nature.com/articles/s41592-022-01687-w) - important to revisit, 2022-12-31
+- [Gene expression cartography / novoSpaRc](https://www.nature.com/articles/s41586-019-1773-3) - important to revisit, 2019-11-20
+- [CARD: spatially informed cell-type deconvolution](https://www.nature.com/articles/s41587-022-01273-7) - important to revisit, 2022-05-02
+- [trendsceek: marked-point-process spatial trend testing](https://www.nature.com/articles/nmeth.4634) - important to revisit, 2018-03-19
 
 ## Emerging themes
 
-- Gaussian-process assumptions still shape many spatial models.
-- Feature tests, factor models, and program decompositions answer different questions.
-- Interpretability often comes from constraints such as nonnegativity and smoothness.
-- Smooth priors can blur discontinuities, boundaries, and rare programs.
+- Spatial reconstruction and deconvolution solve different inverse problems.
+- The spatial prior determines which tissue patterns are easy to see.
+- Reference-free options trade biological anchoring for flexibility.
+- Classical spatial statistics remain useful diagnostics for modern models.
 
 ## Archive
 
