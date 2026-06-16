@@ -4,18 +4,18 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 14, 2026 digest](digests/2026-06-14.md)
+[Read the June 15, 2026 digest](digests/2026-06-15.md)
 
-- [RCTD: robust reference-based cell-mixture decomposition](https://www.nature.com/articles/s41587-021-00830-w) - important to revisit, 2021-02-18
-- [MISTy: explainable multiview spatial relationships](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02663-5) - important to revisit, 2022-04-14
-- [GraphST: graph contrastive clustering, integration, and deconvolution](https://www.nature.com/articles/s41467-023-36796-3) - important to revisit, 2023-03-01
+- [SpatialDE: Gaussian-process spatial variability testing](https://www.nature.com/articles/nmeth.4636) - important to revisit, 2018-03-19
+- [MEFISTO: smooth multimodal factors over space and time](https://www.nature.com/articles/s41592-021-01343-9) - important to revisit, 2022-01-13
+- [Nonnegative spatial factorization: interpretable tissue programs](https://www.nature.com/articles/s41592-022-01687-w) - important to revisit, 2022-12-31
 
 ## Emerging themes
 
-- Reference mapping should explicitly model cross-platform shifts.
-- Spatial scales are easier to audit when represented as separate views.
-- Contrastive objectives encode assumptions through context and pair definitions.
-- Composition and within-cell-type expression are distinct inferential targets.
+- Gaussian-process assumptions still shape many spatial models.
+- Feature tests, factor models, and program decompositions answer different questions.
+- Interpretability often comes from constraints such as nonnegativity and smoothness.
+- Smooth priors can blur discontinuities, boundaries, and rare programs.
 
 ## Archive
 

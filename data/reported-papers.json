@@ -202,5 +202,23 @@
     "url": "https://www.nature.com/articles/s41467-023-36796-3",
     "release_date": "2023-03-01",
     "reported_at": "2026-06-14"
+  },
+  {
+    "title": "SpatialDE: identification of spatially variable genes",
+    "url": "https://www.nature.com/articles/nmeth.4636",
+    "release_date": "2018-03-19",
+    "reported_at": "2026-06-15"
+  },
+  {
+    "title": "Identifying temporal and spatial patterns of variation from multimodal data using MEFISTO",
+    "url": "https://www.nature.com/articles/s41592-021-01343-9",
+    "release_date": "2022-01-13",
+    "reported_at": "2026-06-15"
+  },
+  {
+    "title": "Nonnegative spatial factorization applied to spatial genomics",
+    "url": "https://www.nature.com/articles/s41592-022-01687-w",
+    "release_date": "2022-12-31",
+    "reported_at": "2026-06-15"
   }
 ]
