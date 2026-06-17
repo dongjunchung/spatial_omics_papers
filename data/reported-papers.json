@@ -238,5 +238,23 @@
     "url": "https://www.nature.com/articles/nmeth.4634",
     "release_date": "2018-03-19",
     "reported_at": "2026-06-16"
+  },
+  {
+    "title": "Giotto: a toolbox for integrative analysis and visualization of spatial expression data",
+    "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2",
+    "release_date": "2021-03-08",
+    "reported_at": "2026-06-17"
+  },
+  {
+    "title": "SPOTlight: seeded NMF regression to deconvolute spatial transcriptomics spots with single-cell transcriptomes",
+    "url": "https://doi.org/10.1093/nar/gkab043",
+    "release_date": "2021-02-05",
+    "reported_at": "2026-06-17"
+  },
+  {
+    "title": "Benchmarking spatial and single-cell transcriptomics integration methods for transcript distribution prediction and cell type deconvolution",
+    "url": "https://www.nature.com/articles/s41592-022-01480-9",
+    "release_date": "2022-05-16",
+    "reported_at": "2026-06-17"
   }
 ]

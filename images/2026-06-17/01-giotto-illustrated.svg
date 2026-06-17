@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#fbfaf7"/>
+  <style>
+    .h{font:700 28px Arial,sans-serif;fill:#12335b}.t{font:600 17px Arial,sans-serif;fill:#12335b}.s{font:14px Arial,sans-serif;fill:#31445c}
+    .box{fill:#fff;stroke:#2b6f8a;stroke-width:2;rx:16}.thin{stroke:#9fb4c6;stroke-width:2;fill:none}.arrow{stroke:#2b6f8a;stroke-width:4;fill:none;marker-end:url(#a)}
+  </style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b6f8a"/></marker></defs>
+  <text x="70" y="55" class="h">Spatial inputs</text>
+  <text x="560" y="55" class="h">Giotto modular analysis graph</text>
+  <text x="1060" y="55" class="h">Biological outputs</text>
+  <rect x="55" y="90" width="330" height="570" class="box"/>
+  <path d="M110 150 C145 105 240 115 285 160 C340 215 300 330 230 360 C160 395 85 340 80 260 C75 210 80 175 110 150Z" fill="#eef4f0" stroke="#8aa0a0" stroke-width="2"/>
+  <g fill="#0f8b8d" opacity=".75">
+    <circle cx="130" cy="180" r="8"/><circle cx="165" cy="160" r="8"/><circle cx="205" cy="165" r="8"/><circle cx="250" cy="190" r="8"/><circle cx="120" cy="235" r="8"/><circle cx="170" cy="230" r="8"/><circle cx="215" cy="245" r="8"/><circle cx="260" cy="265" r="8"/><circle cx="150" cy="305" r="8"/><circle cx="210" cy="315" r="8"/>
+  </g>
+  <g fill="#ee6c4d" opacity=".75"><circle cx="285" cy="205" r="8"/><circle cx="300" cy="245" r="8"/><circle cx="275" cy="310" r="8"/></g>
+  <text x="88" y="410" class="t">Coordinates + images</text>
+  <rect x="90" y="438" width="245" height="45" fill="#e7eef7" stroke="#789"/>
+  <rect x="105" y="500" width="80" height="80" fill="#f3d0c8" stroke="#b67"/><rect x="195" y="500" width="120" height="80" fill="#d9e6f2" stroke="#789"/>
+  <text x="97" y="615" class="s">spots, cells, histology, polygons</text>
+  <path d="M385 375 L500 375" class="arrow"/>
+  <rect x="505" y="90" width="420" height="570" class="box"/>
+  <g transform="translate(550 130)">
+    <rect width="140" height="60" class="box"/><text x="25" y="37" class="t">QC + norm</text>
+    <rect x="220" width="140" height="60" class="box"/><text x="248" y="37" class="t">Embedding</text>
+    <rect y="105" width="140" height="60" class="box"/><text x="15" y="142" class="t">Neighbor graph</text>
+    <rect x="220" y="105" width="140" height="60" class="box"/><text x="252" y="142" class="t">Domains</text>
+    <rect y="210" width="140" height="60" class="box"/><text x="20" y="247" class="t">Spatial genes</text>
+    <rect x="220" y="210" width="140" height="60" class="box"/><text x="250" y="247" class="t">Interactions</text>
+    <rect y="315" width="140" height="60" class="box"/><text x="23" y="352" class="t">Enrichment</text>
+    <rect x="220" y="315" width="140" height="60" class="box"/><text x="233" y="352" class="t">2D/3D views</text>
+    <path d="M140 30 L220 30 M70 60 L70 105 M290 60 L290 105 M140 135 L220 135 M70 165 L70 210 M290 165 L290 210 M140 240 L220 240 M70 270 L70 315 M290 270 L290 315" class="arrow"/>
+    <g stroke="#607d9b" stroke-width="2"><line x1="80" y1="455" x2="135" y2="425"/><line x1="80" y1="455" x2="155" y2="470"/><line x1="135" y1="425" x2="155" y2="470"/><line x1="155" y1="470" x2="230" y2="450"/><line x1="135" y1="425" x2="230" y2="450"/></g>
+    <g fill="#6f5fc9"><circle cx="80" cy="455" r="8"/><circle cx="135" cy="425" r="8"/><circle cx="155" cy="470" r="8"/><circle cx="230" cy="450" r="8"/></g>
+    <text x="95" y="510" class="s">expression + spatial graph object</text>
+  </g>
+  <path d="M925 375 L1030 375" class="arrow"/>
+  <rect x="1035" y="90" width="310" height="570" class="box"/>
+  <g transform="translate(1075 130)">
+    <path d="M25 20 C75 -5 145 10 175 60 C205 120 160 185 95 190 C35 195 0 145 5 85 C8 55 10 35 25 20Z" fill="#eef4f7" stroke="#789"/>
+    <g fill="#0f8b8d"><circle cx="45" cy="55" r="7"/><circle cx="72" cy="70" r="7"/><circle cx="100" cy="72" r="7"/><circle cx="128" cy="95" r="7"/></g>
+    <g fill="#ee6c4d"><circle cx="55" cy="135" r="7"/><circle cx="95" cy="135" r="7"/><circle cx="135" cy="145" r="7"/></g>
+    <text x="0" y="230" class="t">Domains + cell maps</text>
+    <rect y="260" width="230" height="65" fill="#eef" stroke="#789"/><path d="M20 305 C65 250 105 325 145 270 S205 320 225 280" class="thin"/><text x="0" y="355" class="t">Spatial genes</text>
+    <g stroke="#7b5fc9" stroke-width="3" fill="none"><path d="M30 420 C80 370 125 440 170 390"/><path d="M35 470 C90 430 120 490 190 450"/></g>
+    <g fill="#7b5fc9"><circle cx="30" cy="420" r="6"/><circle cx="170" cy="390" r="6"/><circle cx="35" cy="470" r="6"/><circle cx="190" cy="450" r="6"/></g>
+    <text x="0" y="525" class="t">Interactions + enrichment</text>
+  </g>
+</svg>

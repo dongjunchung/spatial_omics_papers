@@ -4,18 +4,18 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 16, 2026 digest](digests/2026-06-16.md)
+[Read the June 17, 2026 digest](digests/2026-06-17.md)
 
-- [Gene expression cartography / novoSpaRc](https://www.nature.com/articles/s41586-019-1773-3) - important to revisit, 2019-11-20
-- [CARD: spatially informed cell-type deconvolution](https://www.nature.com/articles/s41587-022-01273-7) - important to revisit, 2022-05-02
-- [trendsceek: marked-point-process spatial trend testing](https://www.nature.com/articles/nmeth.4634) - important to revisit, 2018-03-19
+- [Giotto: integrative spatial analysis and visualization](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2) - important to revisit, 2021-03-08
+- [SPOTlight: seeded NMF regression deconvolution](https://doi.org/10.1093/nar/gkab043) - important to revisit, 2021-02-05
+- [Benchmarking spatial and single-cell integration methods](https://www.nature.com/articles/s41592-022-01480-9) - important to revisit, 2022-05-16
 
 ## Emerging themes
 
-- Spatial reconstruction and deconvolution solve different inverse problems.
-- The spatial prior determines which tissue patterns are easy to see.
-- Reference-free options trade biological anchoring for flexibility.
-- Classical spatial statistics remain useful diagnostics for modern models.
+- Infrastructure choices shape reproducibility across spatial workflows.
+- Deconvolution assumptions should be reported explicitly.
+- Benchmarks should separate transcript prediction, mapping, and composition.
+- Method choice depends strongly on modality and reference quality.
 
 ## Archive
 

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#fbfaf7"/>
+  <style>.h{font:700 28px Arial;fill:#12335b}.t{font:600 17px Arial;fill:#12335b}.s{font:14px Arial;fill:#31445c}.box{fill:#fff;stroke:#2b6f8a;stroke-width:2;rx:16}.arrow{stroke:#2b6f8a;stroke-width:4;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b6f8a"/></marker></defs>
+  <text x="75" y="55" class="h">scRNA-seq reference</text><text x="545" y="55" class="h">Seeded NMF + NNLS regression</text><text x="1050" y="55" class="h">Measured-spot outputs</text>
+  <rect x="50" y="90" width="355" height="585" class="box"/>
+  <g transform="translate(85 130)">
+    <g fill="#16a085"><circle cx="40" cy="30" r="10"/><circle cx="70" cy="45" r="10"/><circle cx="50" cy="70" r="10"/></g><text x="110" y="55" class="t">T cell</text>
+    <g fill="#7b5fc9"><circle cx="42" cy="145" r="10"/><circle cx="78" cy="135" r="10"/><circle cx="60" cy="170" r="10"/></g><text x="110" y="155" class="t">B cell</text>
+    <g fill="#ee6c4d"><circle cx="45" cy="255" r="10"/><circle cx="82" cy="240" r="10"/><circle cx="65" cy="275" r="10"/></g><text x="110" y="258" class="t">Myeloid</text>
+    <g fill="#f2a541"><circle cx="48" cy="365" r="10"/><circle cx="75" cy="390" r="10"/><circle cx="90" cy="350" r="10"/></g><text x="110" y="372" class="t">Stromal</text>
+    <text x="0" y="480" class="t">Marker genes</text>
+    <g stroke="#789" fill="none"><rect x="0" y="500" width="250" height="80"/></g>
+    <g fill="#16a085"><rect x="15" y="545" width="12" height="25"/><rect x="35" y="520" width="12" height="50"/></g>
+    <g fill="#7b5fc9"><rect x="75" y="535" width="12" height="35"/><rect x="95" y="510" width="12" height="60"/></g>
+    <g fill="#ee6c4d"><rect x="135" y="528" width="12" height="42"/><rect x="155" y="518" width="12" height="52"/></g>
+    <g fill="#f2a541"><rect x="195" y="540" width="12" height="30"/><rect x="215" y="500" width="12" height="70"/></g>
+  </g>
+  <path d="M405 382 L500 382" class="arrow"/>
+  <rect x="505" y="90" width="420" height="585" class="box"/>
+  <g transform="translate(545 125)">
+    <text x="0" y="20" class="t">Seeded NMF</text>
+    <rect x="0" y="45" width="95" height="130" fill="#e9eef7" stroke="#789"/><text x="15" y="205" class="s">markers</text>
+    <rect x="135" y="45" width="115" height="130" fill="#eff7f3" stroke="#789"/><text x="148" y="205" class="s">topic profiles</text>
+    <rect x="290" y="45" width="70" height="130" fill="#f7efe7" stroke="#789"/><text x="288" y="205" class="s">loadings</text>
+    <text x="108" y="115" class="h">~</text><text x="260" y="115" class="h">x</text>
+    <g fill="#16a085"><rect x="15" y="70" width="14" height="75"/><rect x="40" y="95" width="14" height="50"/></g>
+    <g fill="#7b5fc9"><rect x="65" y="80" width="14" height="65"/></g>
+    <g fill="#ee6c4d"><rect x="155" y="88" width="16" height="65"/><rect x="180" y="110" width="16" height="43"/></g>
+    <g fill="#f2a541"><rect x="210" y="70" width="16" height="83"/></g>
+    <path d="M55 245 L320 245" class="arrow"/><text x="82" y="235" class="t">Topic to cell type</text>
+    <text x="0" y="310" class="t">NNLS regression on each measured spot</text>
+    <rect x="0" y="335" width="360" height="82" fill="#f4f6fa" stroke="#789"/>
+    <text x="20" y="383" class="s">spot counts ~= topic profiles x nonnegative mixture + residual</text>
+    <g transform="translate(0 455)">
+      <rect width="80" height="65" fill="#e9eef7" stroke="#789"/><rect x="125" width="80" height="65" fill="#eff7f3" stroke="#789"/><rect x="250" width="80" height="65" fill="#f8eeee" stroke="#789"/>
+      <text x="5" y="92" class="s">observed spot</text><text x="120" y="92" class="s">fit mixture</text><text x="253" y="92" class="s">residual</text>
+    </g>
+  </g>
+  <path d="M925 382 L1020 382" class="arrow"/>
+  <rect x="1025" y="90" width="325" height="585" class="box"/>
+  <g transform="translate(1060 130)">
+    <text x="0" y="0" class="t">Spot mixtures</text>
+    <g transform="translate(0 25)">
+      <circle cx="40" cy="40" r="25" fill="#fff" stroke="#789"/><path d="M40 40 L40 15 A25 25 0 0 1 63 50 Z" fill="#16a085"/><path d="M40 40 L63 50 A25 25 0 0 1 25 62 Z" fill="#7b5fc9"/><path d="M40 40 L25 62 A25 25 0 0 1 40 15 Z" fill="#ee6c4d"/>
+      <circle cx="120" cy="40" r="25" fill="#fff" stroke="#789"/><path d="M120 40 L120 15 A25 25 0 0 1 145 40 Z" fill="#f2a541"/><path d="M120 40 L145 40 A25 25 0 0 1 103 58 Z" fill="#16a085"/><path d="M120 40 L103 58 A25 25 0 0 1 120 15 Z" fill="#7b5fc9"/>
+    </g>
+    <text x="0" y="140" class="t">Cell-type proportion maps</text>
+    <g transform="translate(0 170)">
+      <path d="M20 15 C80 -15 150 5 180 60 C205 110 165 175 90 178 C30 180 -10 120 5 60 C8 40 10 28 20 15Z" fill="#eef4f7" stroke="#789"/>
+      <g fill="#16a085"><circle cx="45" cy="55" r="8"/><circle cx="75" cy="70" r="8"/><circle cx="105" cy="85" r="8"/></g>
+      <g fill="#7b5fc9"><circle cx="120" cy="125" r="8"/><circle cx="150" cy="115" r="8"/><circle cx="85" cy="135" r="8"/></g>
+    </g>
+    <text x="0" y="390" class="t">Residual signal</text>
+    <rect x="0" y="420" width="230" height="90" fill="#f8eeee" stroke="#789"/>
+    <g fill="#999"><circle cx="35" cy="455" r="5"/><circle cx="65" cy="475" r="5"/><circle cx="100" cy="445" r="5"/><circle cx="150" cy="480" r="5"/><circle cx="195" cy="455" r="5"/></g>
+  </g>
+</svg>
