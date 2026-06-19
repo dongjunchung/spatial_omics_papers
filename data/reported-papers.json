@@ -274,5 +274,23 @@
     "url": "https://www.nature.com/articles/s41467-026-72284-0",
     "release_date": "2026-04-29",
     "reported_at": "2026-06-19"
+  },
+  {
+    "title": "Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays",
+    "url": "https://doi.org/10.1016/j.cell.2022.04.003",
+    "release_date": "2022-05",
+    "reported_at": "2026-06-19-resource"
+  },
+  {
+    "title": "A spatially resolved atlas of the human lung characterizes a gland-associated immune niche",
+    "url": "https://www.nature.com/articles/s41588-022-01243-4",
+    "release_date": "2022-12-21",
+    "reported_at": "2026-06-19-resource"
+  },
+  {
+    "title": "Spatially resolved mapping of cells associated with human complex traits",
+    "url": "https://www.nature.com/articles/s41586-025-08757-x",
+    "release_date": "2025-03-19",
+    "reported_at": "2026-06-19-resource"
   }
 ]

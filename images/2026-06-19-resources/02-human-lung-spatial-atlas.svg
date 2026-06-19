@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#fbfaf7"/>
+  <style>.h{font:700 28px Arial;fill:#12335b}.t{font:600 17px Arial;fill:#12335b}.s{font:14px Arial;fill:#31445c}.box{fill:#fff;stroke:#2b6f8a;stroke-width:2;rx:16}.arrow{stroke:#2b6f8a;stroke-width:4;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b6f8a"/></marker></defs>
+  <text x="90" y="55" class="h">Human lung tissue atlas</text><text x="545" y="55" class="h">Spatial cell neighborhoods</text><text x="1035" y="55" class="h">Modeling and validation uses</text>
+  <rect x="55" y="95" width="350" height="560" class="box"/>
+  <g transform="translate(95 130)">
+    <text x="0" y="0" class="t">Lung compartments</text>
+    <path d="M60 50 C120 5 220 55 230 150 C240 245 160 310 85 285 C20 260 15 120 60 50Z" fill="#eef4f7" stroke="#789"/>
+    <path d="M145 95 C120 135 105 185 85 245" stroke="#2b6f8a" stroke-width="8" fill="none"/>
+    <g fill="#0f8b8d"><circle cx="75" cy="110" r="8"/><circle cx="110" cy="145" r="8"/><circle cx="140" cy="190" r="8"/></g>
+    <g fill="#ee6c4d"><circle cx="170" cy="115" r="8"/><circle cx="195" cy="160" r="8"/></g>
+    <text x="0" y="350" class="t">Spatial transcriptomics</text>
+    <rect x="0" y="380" width="245" height="90" fill="#e7eef7" stroke="#789"/>
+    <text x="0" y="520" class="s">healthy human lung reference sections</text>
+  </g>
+  <path d="M405 375 L500 375" class="arrow"/>
+  <rect x="505" y="95" width="420" height="560" class="box"/>
+  <g transform="translate(545 135)">
+    <rect x="0" y="0" width="360" height="80" fill="#eef4f7" stroke="#789"/><text x="25" y="48" class="t">Cell types mapped to tissue</text>
+    <rect x="0" y="120" width="170" height="90" fill="#f7f1e7" stroke="#789"/><text x="25" y="172" class="t">Gland niche</text>
+    <rect x="205" y="120" width="155" height="90" fill="#eef7f0" stroke="#789"/><text x="222" y="172" class="t">Immune cells</text>
+    <g stroke="#607d9b" stroke-width="2"><line x1="80" y1="310" x2="150" y2="275"/><line x1="150" y1="275" x2="245" y2="310"/><line x1="80" y1="310" x2="245" y2="310"/><line x1="245" y1="310" x2="305" y2="265"/></g>
+    <g fill="#7b5fc9"><circle cx="80" cy="310" r="9"/><circle cx="150" cy="275" r="9"/><circle cx="245" cy="310" r="9"/><circle cx="305" cy="265" r="9"/></g>
+    <text x="72" y="370" class="t">Neighborhood graph</text>
+    <rect x="0" y="420" width="360" height="70" fill="#f4eef7" stroke="#789"/><text x="32" y="464" class="t">Gland-associated immune niche</text>
+  </g>
+  <path d="M925 375 L1020 375" class="arrow"/>
+  <rect x="1025" y="95" width="325" height="560" class="box"/>
+  <g transform="translate(1060 135)">
+    <text x="0" y="0" class="t">Resource uses</text>
+    <rect x="0" y="40" width="235" height="72" fill="#eef4f7" stroke="#789"/><text x="20" y="84" class="t">Cell-type annotation</text>
+    <rect x="0" y="145" width="235" height="72" fill="#f7f1e7" stroke="#789"/><text x="20" y="189" class="t">Neighborhood benchmarks</text>
+    <rect x="0" y="250" width="235" height="72" fill="#eef7f0" stroke="#789"/><text x="20" y="294" class="t">Disease comparison</text>
+    <rect x="0" y="355" width="235" height="72" fill="#f4eef7" stroke="#789"/><text x="20" y="399" class="t">Ligand-receptor priors</text>
+  </g>
+</svg>

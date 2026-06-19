@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#fbfaf7"/>
+  <style>.h{font:700 28px Arial;fill:#12335b}.t{font:600 17px Arial;fill:#12335b}.s{font:14px Arial;fill:#31445c}.box{fill:#fff;stroke:#2b6f8a;stroke-width:2;rx:16}.arrow{stroke:#2b6f8a;stroke-width:4;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b6f8a"/></marker></defs>
+  <text x="65" y="55" class="h">Spatial cell atlas + trait genetics</text><text x="525" y="55" class="h">Trait-to-cell spatial mapping</text><text x="1040" y="55" class="h">Reusable inference layer</text>
+  <rect x="55" y="95" width="350" height="560" class="box"/>
+  <g transform="translate(90 130)">
+    <text x="0" y="0" class="t">Tissue cell maps</text>
+    <path d="M30 45 C95 5 200 30 230 110 C260 190 205 285 120 285 C45 285 5 225 12 145 C15 95 18 65 30 45Z" fill="#eef4f7" stroke="#789"/>
+    <g fill="#0f8b8d"><circle cx="70" cy="100" r="8"/><circle cx="110" cy="120" r="8"/><circle cx="145" cy="150" r="8"/></g>
+    <g fill="#ee6c4d"><circle cx="175" cy="105" r="8"/><circle cx="200" cy="190" r="8"/></g>
+    <text x="0" y="350" class="t">GWAS trait signals</text>
+    <rect x="0" y="380" width="250" height="80" fill="#fff" stroke="#789"/>
+    <path d="M20 440 C55 410 75 430 100 390 S155 455 220 405" stroke="#7b5fc9" stroke-width="4" fill="none"/>
+    <text x="0" y="510" class="s">variants, genes, traits, spatial cells</text>
+  </g>
+  <path d="M405 375 L500 375" class="arrow"/>
+  <rect x="505" y="95" width="420" height="560" class="box"/>
+  <g transform="translate(545 135)">
+    <rect x="0" y="0" width="360" height="82" fill="#eef4f7" stroke="#789"/><text x="20" y="49" class="t">Map trait-associated genes to cells</text>
+    <rect x="0" y="125" width="170" height="85" fill="#f7f1e7" stroke="#789"/><text x="22" y="176" class="t">Spatial enrichment</text>
+    <rect x="205" y="125" width="155" height="85" fill="#eef7f0" stroke="#789"/><text x="225" y="176" class="t">Cell contexts</text>
+    <path d="M180 210 L180 270" class="arrow"/>
+    <rect x="0" y="275" width="360" height="95" fill="#fff" stroke="#789"/><text x="34" y="330" class="t">Prioritize trait-relevant neighborhoods</text>
+    <rect x="0" y="415" width="360" height="75" fill="#f4eef7" stroke="#789"/><text x="30" y="462" class="t">Cross-tissue comparison</text>
+  </g>
+  <path d="M925 375 L1020 375" class="arrow"/>
+  <rect x="1025" y="95" width="325" height="560" class="box"/>
+  <g transform="translate(1060 135)">
+    <text x="0" y="0" class="t">For modelers</text>
+    <rect x="0" y="40" width="235" height="70" fill="#eef4f7" stroke="#789"/><text x="20" y="83" class="t">Trait-informed labels</text>
+    <rect x="0" y="145" width="235" height="70" fill="#f7f1e7" stroke="#789"/><text x="20" y="188" class="t">Cell-prior validation</text>
+    <rect x="0" y="250" width="235" height="70" fill="#eef7f0" stroke="#789"/><text x="20" y="293" class="t">Feature selection</text>
+    <rect x="0" y="355" width="235" height="70" fill="#f4eef7" stroke="#789"/><text x="20" y="398" class="t">Disease hypothesis maps</text>
+  </g>
+</svg>
