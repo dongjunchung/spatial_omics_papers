@@ -42,7 +42,7 @@ the time-of-day gate.
 After it completes, verify:
 
 - A dated file exists under `digests/`.
-- Technical SVG summaries exist under `images/YYYY-MM-DD/`.
+- Technical SVG summaries exist under `images/YYYY-MM-DD/` for method digests, or resource tables appear in the digest for atlas/data-resource posts.
 - `README.md` links to the latest digest.
 - A new issue summarizes the report.
 

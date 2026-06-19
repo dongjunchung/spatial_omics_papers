@@ -21,7 +21,7 @@ Also see the [June 19, 2026 methods digest](digests/2026-06-19.md).
 
 ## Archive
 
-Browse the [dated digests](digests/) and their [technical visual summaries](images/).
+Browse the [dated digests](digests/), including technical visual summaries for method papers and resource tables for atlas/data-resource posts.
 
 ## Automation
 

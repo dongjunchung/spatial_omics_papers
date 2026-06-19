@@ -2,7 +2,7 @@
 
 **June 19, 2026 supplemental post**
 
-This supplemental post expands the daily scope from method papers to important spatial-omics data resources. The focus is on atlases and reusable datasets that can support modeling, benchmarking, validation, pretraining or biological hypothesis generation.
+This supplemental post expands the daily scope from method papers to important spatial-omics data resources. The focus is on atlases and reusable datasets that can support modeling, benchmarking, validation, pretraining or biological hypothesis generation. For data-resource items, the compact summary is a resource table rather than a schematic figure.
 
 ## Important to revisit
 
@@ -10,11 +10,17 @@ This supplemental post expands the daily scope from method papers to important s
 
 **Data resource / atlas | Peer reviewed | Cell | 2022-05**
 
-![Illustrated summary of the MOSTA Stereo-seq organogenesis atlas](../images/2026-06-19-resources/01-mosta-stereoseq-atlas.svg)
-
-*Serial embryo sections profiled with high-resolution Stereo-seq create a spatiotemporal atlas for organogenesis, tissue domains and developmental gene programs.*
-
 This resource, often referred to as MOSTA, provides high-resolution spatial transcriptomic maps across mouse organogenesis using DNA nanoball-patterned array technology.
+
+**Resource table**
+
+| Field | Details |
+| --- | --- |
+| Biological scope | Mouse organogenesis across developmental stages and serial embryo sections. |
+| Spatial assay | Stereo-seq / DNA nanoball-patterned arrays with transcriptome-wide spatial coordinates. |
+| Primary data objects | Spatial gene-expression matrices, tissue coordinates, developmental-stage labels and organ/tissue annotations described by the paper. |
+| Modeling uses | Spatial domain detection, spatiotemporal alignment, developmental trajectory inference, spatially variable gene testing and generative tissue modeling. |
+| Reuse checks | Account for sectioning, registration, developmental-stage effects and platform-specific capture biases before cross-stage or cross-atlas transfer. |
 
 **Why included now:** Developmental spatial atlases are useful testbeds for models that claim to recover domains, trajectories, tissue boundaries or cross-stage alignment. MOSTA is especially useful because it combines spatial resolution, broad anatomical coverage and developmental time.
 
@@ -30,11 +36,17 @@ This resource, often referred to as MOSTA, provides high-resolution spatial tran
 
 **Data resource / atlas | Peer reviewed | Nature Genetics | 2022-12-21**
 
-![Illustrated summary of the human lung spatial atlas](../images/2026-06-19-resources/02-human-lung-spatial-atlas.svg)
-
-*Spatial transcriptomics maps human lung cell types and tissue neighborhoods, identifying a gland-associated immune niche that can serve as a reference context for disease modeling.*
-
 This atlas maps human lung cell states and tissue neighborhoods with spatial resolution, emphasizing gland-associated immune organization.
+
+**Resource table**
+
+| Field | Details |
+| --- | --- |
+| Biological scope | Human lung tissue, with attention to spatial cell states, anatomical compartments and gland-associated immune organization. |
+| Spatial assay | Spatial transcriptomics reported in the primary Nature Genetics study. |
+| Primary data objects | Spatial cell-state and neighborhood information connected to tissue anatomy and molecular profiles. |
+| Modeling uses | Cell-type annotation, neighborhood benchmarking, reference mapping, ligand-receptor prior construction and healthy-versus-disease tissue-context comparisons. |
+| Reuse checks | Confirm donor, sampling, anatomical-region and disease-state compatibility before transferring labels or neighborhoods to a target dataset. |
 
 **Why included now:** Lung spatial references are increasingly important for interpreting inflammatory, fibrotic and infectious disease datasets. A curated healthy or reference atlas gives modelers something concrete to compare against when evaluating disease-associated neighborhoods.
 
@@ -50,11 +62,17 @@ This atlas maps human lung cell states and tissue neighborhoods with spatial res
 
 **Data resource / atlas | Peer reviewed | Nature | 2025-03-19**
 
-![Illustrated summary of spatial trait-associated cell mapping](../images/2026-06-19-resources/03-trait-spatial-mapping-atlas.svg)
-
-*Spatial cell maps are connected to human complex-trait genetics, creating trait-informed tissue contexts for prioritizing cell states and neighborhoods.*
-
 This resource connects spatially resolved cellular maps with human complex-trait associations.
+
+**Resource table**
+
+| Field | Details |
+| --- | --- |
+| Biological scope | Spatially resolved human cell maps connected to complex-trait associations. |
+| Spatial assay | Spatial cell mapping as reported in the primary Nature study. |
+| Primary data objects | Trait-associated cell-state and spatial-context mappings derived from spatial tissue data and human genetics. |
+| Modeling uses | Trait-informed representation evaluation, feature prioritization, spatial neighborhood ranking and cross-tissue disease hypothesis generation. |
+| Reuse checks | Treat trait-to-cell links as association evidence; genetic mapping, cell annotation and spatial context each add uncertainty. |
 
 **Why included now:** Spatial models increasingly need biologically meaningful supervision beyond cell type labels. Trait-linked spatial cell maps can help evaluate whether learned representations preserve disease- or trait-relevant tissue contexts.
 
@@ -75,4 +93,4 @@ This resource connects spatially resolved cellular maps with human complex-trait
 
 ---
 
-_Figures are original conceptual SVG summaries generated for this supplemental digest from verified primary-source descriptions. They are not reproduced publication figures and do not depict reported quantitative results._
+_Resource tables are original compact summaries generated for this supplemental digest from verified primary-source descriptions. They are not reproduced publication tables and do not add quantitative claims beyond the cited sources._
