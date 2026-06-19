@@ -256,5 +256,23 @@
     "url": "https://www.nature.com/articles/s41592-022-01480-9",
     "release_date": "2022-05-16",
     "reported_at": "2026-06-17"
+  },
+  {
+    "title": "Combining spatial transcriptomics with tissue morphology",
+    "url": "https://www.nature.com/articles/s41467-025-58989-8",
+    "release_date": "2025-05-13",
+    "reported_at": "2026-06-19"
+  },
+  {
+    "title": "SONAR enables cell type deconvolution with spatially weighted Poisson-Gamma model for spatial transcriptomics",
+    "url": "https://www.nature.com/articles/s41467-023-40458-9",
+    "release_date": "2023-08-07",
+    "reported_at": "2026-06-19"
+  },
+  {
+    "title": "Spatial-aware detection of copy number alterations from spatial transcriptomics using SpaCNA",
+    "url": "https://www.nature.com/articles/s41467-026-72284-0",
+    "release_date": "2026-04-29",
+    "reported_at": "2026-06-19"
   }
 ]

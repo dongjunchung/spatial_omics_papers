@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#fbfaf7"/>
+  <style>.h{font:700 28px Arial;fill:#12335b}.t{font:600 17px Arial;fill:#12335b}.s{font:14px Arial;fill:#31445c}.box{fill:#fff;stroke:#2b6f8a;stroke-width:2;rx:16}.arrow{stroke:#2b6f8a;stroke-width:4;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b6f8a"/></marker></defs>
+  <text x="70" y="55" class="h">Spatial transcriptomics + morphology</text>
+  <text x="540" y="55" class="h">stLearn modeling layer</text>
+  <text x="1045" y="55" class="h">Integrated tissue readouts</text>
+  <rect x="55" y="95" width="350" height="560" class="box"/>
+  <path d="M105 155 C160 100 270 130 310 205 C355 290 300 420 195 440 C110 458 70 390 75 285 C78 220 80 180 105 155Z" fill="#f3ebe7" stroke="#b99"/>
+  <g fill="#0f8b8d"><circle cx="140" cy="210" r="9"/><circle cx="185" cy="235" r="9"/><circle cx="230" cy="260" r="9"/><circle cx="155" cy="330" r="9"/></g>
+  <g fill="#ee6c4d"><circle cx="260" cy="205" r="9"/><circle cx="290" cy="280" r="9"/><circle cx="245" cy="360" r="9"/></g>
+  <text x="95" y="500" class="t">Gene counts</text><rect x="95" y="525" width="115" height="75" fill="#dfe8f6" stroke="#789"/>
+  <text x="235" y="500" class="t">H&amp;E image</text><rect x="235" y="525" width="115" height="75" fill="#f4d7ce" stroke="#b99"/>
+  <path d="M405 375 L500 375" class="arrow"/>
+  <rect x="505" y="95" width="420" height="560" class="box"/>
+  <g transform="translate(545 135)">
+    <rect x="0" y="0" width="145" height="70" fill="#eef4f7" stroke="#789"/><text x="18" y="43" class="t">Morphology</text>
+    <rect x="215" y="0" width="145" height="70" fill="#f4eef7" stroke="#789"/><text x="246" y="43" class="t">Expression</text>
+    <path d="M145 35 L215 35" class="arrow"/>
+    <rect x="0" y="125" width="360" height="80" fill="#fff" stroke="#789"/><text x="25" y="173" class="t">SME normalization: spatial + morphology + expression</text>
+    <path d="M180 205 L180 265" class="arrow"/>
+    <rect x="0" y="270" width="165" height="80" fill="#eef7f0" stroke="#789"/><text x="25" y="318" class="t">Trajectory</text>
+    <rect x="195" y="270" width="165" height="80" fill="#f7f1e7" stroke="#789"/><text x="218" y="318" class="t">CCC analysis</text>
+    <path d="M180 350 L180 410" class="arrow"/>
+    <g stroke="#607d9b" stroke-width="2"><line x1="75" y1="455" x2="140" y2="430"/><line x1="140" y1="430" x2="225" y2="460"/><line x1="75" y1="455" x2="225" y2="460"/><line x1="225" y1="460" x2="290" y2="425"/></g>
+    <g fill="#7b5fc9"><circle cx="75" cy="455" r="8"/><circle cx="140" cy="430" r="8"/><circle cx="225" cy="460" r="8"/><circle cx="290" cy="425" r="8"/></g>
+    <text x="58" y="510" class="s">spatial graph over tissue coordinates</text>
+  </g>
+  <path d="M925 375 L1020 375" class="arrow"/>
+  <rect x="1025" y="95" width="325" height="560" class="box"/>
+  <g transform="translate(1060 140)">
+    <text x="0" y="0" class="t">Domains</text><path d="M25 25 C80 -10 160 10 185 80 C205 140 160 205 90 205 C35 205 5 160 10 95 C12 60 15 40 25 25Z" fill="#eef4f7" stroke="#789"/>
+    <g fill="#0f8b8d"><circle cx="50" cy="75" r="7"/><circle cx="80" cy="95" r="7"/><circle cx="110" cy="110" r="7"/></g><g fill="#ee6c4d"><circle cx="135" cy="145" r="7"/><circle cx="160" cy="120" r="7"/></g>
+    <text x="0" y="260" class="t">Pseudo-time path</text><path d="M20 300 C75 240 135 330 205 275" stroke="#7b5fc9" stroke-width="5" fill="none"/>
+    <text x="0" y="390" class="t">Morphology-aware interactions</text><g stroke="#ee6c4d" stroke-width="3" fill="none"><path d="M35 435 C90 395 135 465 205 420"/></g>
+    <g fill="#ee6c4d"><circle cx="35" cy="435" r="8"/><circle cx="205" cy="420" r="8"/></g>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#fbfaf7"/>
+  <style>.h{font:700 28px Arial;fill:#12335b}.t{font:600 17px Arial;fill:#12335b}.s{font:14px Arial;fill:#31445c}.box{fill:#fff;stroke:#2b6f8a;stroke-width:2;rx:16}.arrow{stroke:#2b6f8a;stroke-width:4;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b6f8a"/></marker></defs>
+  <text x="80" y="55" class="h">Spatial expression by genome bins</text><text x="535" y="55" class="h">SpaCNA spatial-aware inference</text><text x="1045" y="55" class="h">Tumor genome architecture</text>
+  <rect x="55" y="95" width="350" height="560" class="box"/>
+  <g transform="translate(90 135)">
+    <path d="M25 25 C90 -15 190 15 225 95 C260 175 210 280 120 290 C45 300 5 245 10 150 C14 85 15 48 25 25Z" fill="#eef4f7" stroke="#789"/>
+    <g fill="#0f8b8d"><circle cx="55" cy="80" r="7"/><circle cx="90" cy="105" r="7"/><circle cx="120" cy="135" r="7"/></g>
+    <g fill="#ee6c4d"><circle cx="155" cy="185" r="7"/><circle cx="190" cy="215" r="7"/><circle cx="125" cy="230" r="7"/></g>
+    <text x="0" y="340" class="t">Gene expression matrix</text><rect x="0" y="365" width="250" height="95" fill="#e7eef7" stroke="#789"/>
+    <g fill="#fff"><rect x="50" y="365" width="18" height="95"/><rect x="145" y="365" width="18" height="95"/></g>
+    <text x="0" y="510" class="s">aggregate genes into chromosomal bins</text>
+  </g>
+  <path d="M405 375 L500 375" class="arrow"/>
+  <rect x="505" y="95" width="420" height="560" class="box"/>
+  <g transform="translate(545 135)">
+    <rect x="0" y="0" width="360" height="82" fill="#eef4f7" stroke="#789"/><text x="22" y="48" class="t">Normalize expression depth</text>
+    <rect x="0" y="120" width="360" height="90" fill="#f7f1e7" stroke="#789"/><text x="22" y="172" class="t">Infer copy-number states per spot</text>
+    <path d="M180 210 L180 265" class="arrow"/>
+    <rect x="0" y="270" width="360" height="90" fill="#eef7f0" stroke="#789"/><text x="22" y="323" class="t">Spatial smoothing over neighboring spots</text>
+    <rect x="0" y="400" width="170" height="85" fill="#fff" stroke="#789"/><text x="18" y="450" class="t">Segment clones</text>
+    <rect x="205" y="400" width="155" height="85" fill="#fff" stroke="#789"/><text x="225" y="450" class="t">CNA burden</text>
+  </g>
+  <path d="M925 375 L1020 375" class="arrow"/>
+  <rect x="1025" y="95" width="325" height="560" class="box"/>
+  <g transform="translate(1060 135)">
+    <text x="0" y="0" class="t">Copy-number heatmap</text>
+    <rect x="0" y="30" width="235" height="120" fill="#fff" stroke="#789"/>
+    <g fill="#ee6c4d"><rect x="15" y="50" width="200" height="18"/><rect x="15" y="88" width="150" height="18"/></g>
+    <g fill="#0f8b8d"><rect x="15" y="125" width="80" height="18"/></g>
+    <text x="0" y="210" class="t">Spatial tumor clones</text>
+    <path d="M20 240 C80 210 175 230 195 300 C215 365 160 420 90 410 C25 400 0 350 8 300Z" fill="#eef4f7" stroke="#789"/>
+    <g fill="#ee6c4d"><circle cx="55" cy="295" r="8"/><circle cx="90" cy="310" r="8"/><circle cx="120" cy="330" r="8"/></g>
+    <g fill="#7b5fc9"><circle cx="140" cy="270" r="8"/><circle cx="165" cy="300" r="8"/><circle cx="150" cy="355" r="8"/></g>
+    <text x="0" y="470" class="t">Subclonal architecture</text><path d="M25 525 L95 485 L165 525" stroke="#12335b" stroke-width="4" fill="none"/><circle cx="25" cy="525" r="9" fill="#0f8b8d"/><circle cx="95" cy="485" r="9" fill="#ee6c4d"/><circle cx="165" cy="525" r="9" fill="#7b5fc9"/>
+  </g>
+</svg>
