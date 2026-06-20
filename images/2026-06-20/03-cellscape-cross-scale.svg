@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">CellScape cross-scale spatial and genomic modeling</title>
+  <desc id="desc">A schematic showing CellScape combining tissue-space cellular interactions with genomic relationships to learn representations for domains and cell types.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfaf8}.panel{fill:#fff;stroke:#2f2f2f;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#202124}.t{font:18px Arial,sans-serif;fill:#202124}.s{font:15px Arial,sans-serif;fill:#4d5156}.arrow{stroke:#202124;stroke-width:3;fill:none;marker-end:url(#a)}.cell{fill:#e0f2fe;stroke:#0369a1;stroke-width:2}.gene{fill:#fce7f3;stroke:#be185d;stroke-width:2}.lat{fill:#ecfccb;stroke:#4d7c0f;stroke-width:2}.out{fill:#ffedd5;stroke:#c2410c;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#202124"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="315" height="560" rx="22"/>
+  <rect class="panel" x="445" y="55" width="310" height="560" rx="22"/>
+  <rect class="panel" x="840" y="55" width="315" height="560" rx="22"/>
+  <text class="h" x="80" y="105">Two interaction scales</text>
+  <text class="h" x="485" y="105">CellScape encoder</text>
+  <text class="h" x="875" y="105">Spatial biology tasks</text>
+  <g>
+    <circle class="cell" cx="115" cy="175" r="24"/><circle class="cell" cx="185" cy="155" r="24"/><circle class="cell" cx="250" cy="205" r="24"/><circle class="cell" cx="145" cy="250" r="24"/><circle class="cell" cx="235" cy="290" r="24"/>
+    <path d="M115 175 L185 155 L250 205 L235 290 L145 250 L115 175 M185 155 L145 250 M250 205 L145 250" stroke="#0369a1" stroke-width="3" fill="none"/>
+    <text class="t" x="85" y="340">tissue-space graph</text>
+    <text class="s" x="85" y="370">cellular neighborhoods</text>
+    <rect class="gene" x="85" y="430" width="215" height="85" rx="16"/>
+    <path d="M115 490 C145 455 165 455 195 490 S245 525 275 490" stroke="#be185d" stroke-width="4" fill="none"/>
+    <text class="t" x="115" y="465">genomic relations</text>
+  </g>
+  <path class="arrow" d="M365 335 L440 335"/>
+  <g>
+    <rect class="lat" x="495" y="155" width="210" height="90" rx="16"/>
+    <text class="t" x="535" y="190">spatial signal</text>
+    <text class="s" x="535" y="218">extrinsic context</text>
+    <rect class="gene" x="495" y="290" width="210" height="90" rx="16"/>
+    <text class="t" x="535" y="325">genomic signal</text>
+    <text class="s" x="535" y="353">intrinsic identity</text>
+    <path class="arrow" d="M600 248 L600 285"/>
+    <rect class="out" x="495" y="430" width="210" height="95" rx="16"/>
+    <text class="t" x="530" y="468">joint embedding</text>
+    <text class="s" x="530" y="496">cross-scale representation</text>
+    <path class="arrow" d="M600 383 L600 425"/>
+  </g>
+  <path class="arrow" d="M760 335 L835 335"/>
+  <g>
+    <rect class="out" x="890" y="145" width="210" height="85" rx="16"/>
+    <text class="t" x="925" y="180">domain map</text>
+    <text class="s" x="925" y="207">tissue regions</text>
+    <rect class="cell" x="890" y="285" width="210" height="85" rx="16"/>
+    <text class="t" x="925" y="320">cell types</text>
+    <text class="s" x="925" y="347">state structure</text>
+    <rect class="lat" x="890" y="425" width="210" height="85" rx="16"/>
+    <text class="t" x="925" y="460">pattern discovery</text>
+    <text class="s" x="925" y="487">biological programs</text>
+  </g>
+  <text class="s" x="70" y="585">Digest interpretation: the important question is whether one embedding can preserve both neighborhood anatomy and expression-defined cell-state geometry.</text>
+</svg>

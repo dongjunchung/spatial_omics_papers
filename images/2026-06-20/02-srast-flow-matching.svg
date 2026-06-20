@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">SRast physically constrained flow matching</title>
+  <desc id="desc">A schematic showing low-resolution spatial transcriptomics converted into semantic features and simplex allocation ratios through flow matching with local mass conservation.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbff}.panel{fill:#fff;stroke:#1d3557;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#1d3557}.t{font:18px Arial,sans-serif;fill:#1d3557}.s{font:15px Arial,sans-serif;fill:#40556b}.arrow{stroke:#1d3557;stroke-width:3;fill:none;marker-end:url(#a)}.lr{fill:#dbeafe;stroke:#2563eb;stroke-width:2}.sem{fill:#fef3c7;stroke:#b45309;stroke-width:2}.flow{fill:#ede9fe;stroke:#7c3aed;stroke-width:2}.hr{fill:#dcfce7;stroke:#15803d;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#1d3557"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="250" height="560" rx="22"/>
+  <rect class="panel" x="335" y="55" width="250" height="560" rx="22"/>
+  <rect class="panel" x="625" y="55" width="250" height="560" rx="22"/>
+  <rect class="panel" x="915" y="55" width="240" height="560" rx="22"/>
+  <text class="h" x="75" y="105">LR ST input</text>
+  <text class="h" x="365" y="105">Semantic align</text>
+  <text class="h" x="655" y="105">Flow on simplex</text>
+  <text class="h" x="945" y="105">SR output</text>
+  <g>
+    <rect class="lr" x="78" y="155" width="64" height="64"/><rect class="lr" x="150" y="155" width="64" height="64"/><rect class="lr" x="78" y="227" width="64" height="64"/><rect class="lr" x="150" y="227" width="64" height="64"/>
+    <text class="t" x="80" y="335">coarse spots</text><text class="s" x="80" y="365">counts + coordinates</text>
+    <text class="s" x="80" y="445">measured total per spot</text>
+    <text class="t" x="95" y="490">x_i,g</text>
+  </g>
+  <path class="arrow" d="M300 335 L330 335"/>
+  <g>
+    <circle class="sem" cx="415" cy="185" r="34"/><circle class="sem" cx="505" cy="185" r="34"/><circle class="sem" cx="460" cy="270" r="34"/>
+    <path d="M415 185 L505 185 L460 270 Z" stroke="#b45309" stroke-width="3" fill="none"/>
+    <text class="t" x="375" y="350">dual topology</text>
+    <text class="s" x="375" y="380">spatial neighbors</text>
+    <text class="s" x="375" y="405">+ gene similarity</text>
+    <text class="s" x="375" y="470">LatentNorm reduces</text>
+    <text class="s" x="375" y="495">cross-sample shift</text>
+  </g>
+  <path class="arrow" d="M590 335 L620 335"/>
+  <g>
+    <path class="flow" d="M695 160 C805 180 825 260 735 300 C675 330 680 410 815 450" fill="none" stroke-width="9"/>
+    <circle cx="690" cy="160" r="13" fill="#7c3aed"/><circle cx="817" cy="450" r="13" fill="#7c3aed"/>
+    <polygon points="725,355 770,280 815,355" class="flow"/>
+    <text class="t" x="665" y="505">predict ratios r_i,g</text>
+    <text class="s" x="665" y="535">simplex allocation</text>
+  </g>
+  <path class="arrow" d="M880 335 L910 335"/>
+  <g>
+    <rect class="hr" x="955" y="150" width="38" height="38"/><rect class="hr" x="999" y="150" width="38" height="38"/><rect class="hr" x="1043" y="150" width="38" height="38"/>
+    <rect class="hr" x="955" y="194" width="38" height="38"/><rect class="hr" x="999" y="194" width="38" height="38"/><rect class="hr" x="1043" y="194" width="38" height="38"/>
+    <rect class="hr" x="955" y="238" width="38" height="38"/><rect class="hr" x="999" y="238" width="38" height="38"/><rect class="hr" x="1043" y="238" width="38" height="38"/>
+    <text class="t" x="955" y="340">subspot map</text>
+    <text class="s" x="955" y="370">sharper structure</text>
+    <text class="t" x="955" y="455">sum subspots</text>
+    <text class="t" x="955" y="485">= observed spot</text>
+  </g>
+  <text class="s" x="70" y="585">Digest interpretation: conservation is a falsifiable constraint for super-resolution outputs, not just a visual preference.</text>
+</svg>

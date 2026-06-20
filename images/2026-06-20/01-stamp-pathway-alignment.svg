@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">STAMP pathway-guided spatial transcriptomics alignment</title>
+  <desc id="desc">A schematic showing paired histology patches and spatial transcriptomics converted into pathway targets for parameter-efficient pathology model alignment.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#263238;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#17232c}.t{font:18px Arial,sans-serif;fill:#263238}.s{font:15px Arial,sans-serif;fill:#465a64}.arrow{stroke:#263238;stroke-width:3;fill:none;marker-end:url(#a)}.chip{fill:#eef7ff;stroke:#4a90e2;stroke-width:2}.path{fill:#fff3d9;stroke:#c77d00;stroke-width:2}.green{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}.pink{fill:#fdebed;stroke:#b95068;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#263238"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="300" height="560" rx="24"/>
+  <rect class="panel" x="450" y="55" width="300" height="560" rx="24"/>
+  <rect class="panel" x="855" y="55" width="300" height="560" rx="24"/>
+  <text class="h" x="80" y="105">HumanST-1k pairs</text>
+  <text class="h" x="495" y="105">STAMP alignment</text>
+  <text class="h" x="900" y="105">Molecular profiling</text>
+  <rect class="pink" x="80" y="150" width="120" height="105" rx="14"/>
+  <circle cx="113" cy="186" r="18" fill="#f7c1c9"/><circle cx="160" cy="220" r="24" fill="#e8a4b0"/><path d="M95 238 C130 202 170 178 195 166" stroke="#9b4055" stroke-width="4" fill="none"/>
+  <text class="t" x="220" y="190">H&amp;E patch</text>
+  <text class="s" x="220" y="218">local morphology</text>
+  <rect class="chip" x="80" y="310" width="120" height="115" rx="14"/>
+  <g fill="#4a90e2"><circle cx="108" cy="345" r="7"/><circle cx="137" cy="374" r="7"/><circle cx="170" cy="338" r="7"/><circle cx="153" cy="407" r="7"/><circle cx="105" cy="397" r="7"/></g>
+  <text class="t" x="220" y="355">ST profile</text>
+  <text class="s" x="220" y="383">paired spatial spot</text>
+  <text class="s" x="80" y="485">1.8M image-transcriptome</text>
+  <text class="s" x="80" y="512">pairs reported by authors</text>
+  <path class="arrow" d="M350 335 C390 335 405 335 445 335"/>
+  <rect class="path" x="485" y="150" width="225" height="105" rx="16"/>
+  <text class="t" x="515" y="190">Pathway targets</text>
+  <text class="s" x="515" y="220">gene noise compressed</text>
+  <rect class="green" x="485" y="300" width="225" height="120" rx="16"/>
+  <text class="t" x="515" y="342">Parameter-efficient</text>
+  <text class="t" x="515" y="370">fine-tuning</text>
+  <text class="s" x="515" y="400">adapt PFM embeddings</text>
+  <path class="arrow" d="M598 255 L598 295"/>
+  <path class="arrow" d="M755 335 C795 335 810 335 850 335"/>
+  <rect class="chip" x="900" y="150" width="205" height="82" rx="15"/>
+  <text class="t" x="930" y="184">molecular status</text>
+  <text class="s" x="930" y="210">from WSI features</text>
+  <rect class="path" x="900" y="285" width="205" height="82" rx="15"/>
+  <text class="t" x="930" y="319">pathway activity</text>
+  <text class="s" x="930" y="345">structured outputs</text>
+  <rect class="green" x="900" y="420" width="205" height="82" rx="15"/>
+  <text class="t" x="930" y="454">gene-image retrieval</text>
+  <text class="s" x="930" y="480">cross-modal search</text>
+  <text class="s" x="70" y="585">Digest interpretation: pathway alignment is the modeling mechanism; clinical readiness requires external validation.</text>
+</svg>

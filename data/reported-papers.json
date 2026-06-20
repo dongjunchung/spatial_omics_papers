@@ -292,5 +292,29 @@
     "url": "https://www.nature.com/articles/s41586-025-08757-x",
     "release_date": "2025-03-19",
     "reported_at": "2026-06-19-resource"
+  },
+  {
+    "title": "Spatial Transcriptomics-Guided Alignment Enhances Molecular Profiling in Pathology Foundation Model",
+    "url": "https://arxiv.org/abs/2606.03644",
+    "release_date": "2026-05-29",
+    "reported_at": "2026-06-20"
+  },
+  {
+    "title": "Towards Universal Spatial Transcriptomics Super-Resolution: A Generalist Physically Consistent Flow Matching Framework",
+    "url": "https://arxiv.org/abs/2602.10644",
+    "release_date": "2026-02-11",
+    "reported_at": "2026-06-20"
+  },
+  {
+    "title": "Uncovering spatial tissue domains and cell types in spatial omics through cross-scale profiling of cellular and genomic interactions",
+    "url": "https://arxiv.org/abs/2602.12651",
+    "release_date": "2026-02-13",
+    "reported_at": "2026-06-20"
+  },
+  {
+    "title": "HuBMAP Data Portal: A Resource for Multi-Modal Spatial and Single-Cell Data of Healthy Human Tissues",
+    "url": "https://arxiv.org/abs/2511.05708",
+    "release_date": "2025-11-07",
+    "reported_at": "2026-06-20"
   }
 ]

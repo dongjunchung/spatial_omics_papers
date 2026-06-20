@@ -4,20 +4,21 @@ An automated daily archive of cutting-edge spatial-omics data-modeling research.
 
 ## Latest digest
 
-[Read the June 19, 2026 resource supplement](digests/2026-06-19-resources.md)
+[Read the June 20, 2026 digest](digests/2026-06-20.md)
 
-- [MOSTA / Stereo-seq mouse organogenesis atlas](https://doi.org/10.1016/j.cell.2022.04.003) - data resource / atlas, 2022-05
-- [Human lung spatial atlas](https://www.nature.com/articles/s41588-022-01243-4) - data resource / atlas, 2022-12-21
-- [Spatial mapping of complex-trait-associated cells](https://www.nature.com/articles/s41586-025-08757-x) - data resource / atlas, 2025-03-19
+- [STAMP / HumanST-1k pathology model alignment](https://arxiv.org/abs/2606.03644) - preprint, 2026-05-29
+- [SRast physically consistent ST super-resolution](https://arxiv.org/abs/2602.10644) - preprint, 2026-02-11
+- [CellScape cross-scale spatial and genomic modeling](https://arxiv.org/abs/2602.12651) - preprint, 2026-02-13
+- [HuBMAP Data Portal](https://arxiv.org/abs/2511.05708) - data resource / portal, 2025-11-07
 
-Also see the [June 19, 2026 methods digest](digests/2026-06-19.md).
+Also see the [June 19, 2026 resource supplement](digests/2026-06-19-resources.md).
 
 ## Emerging themes
 
-- Atlas resources should be evaluated by metadata and raw-data reusability.
-- Large spatial atlases can benchmark robustness better than small demos.
-- Trait-linked spatial references may supervise future foundation models.
-- Atlas transfer needs platform, donor, region, and disease-state checks.
+- ST-guided pathology models are moving toward structured molecular targets.
+- Super-resolution methods need conservation checks, not only sharp outputs.
+- Cross-scale graph definitions are becoming central to representation learning.
+- Data portals are infrastructure for atlas-scale model evaluation.
 
 ## Archive
 
