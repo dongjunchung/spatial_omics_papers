@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">SEAL spatial transcriptomics guided pathology foundation models</title>
+  <desc id="desc">A schematic showing paired histology regions and spatial expression spots used to fine-tune pathology foundation model embeddings for molecular and clinical downstream tasks.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f9fbff}.panel{fill:#fff;stroke:#1f2a44;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#1f2a44}.t{font:18px Arial,sans-serif;fill:#1f2a44}.s{font:15px Arial,sans-serif;fill:#536174}.arrow{stroke:#1f2a44;stroke-width:3;fill:none;marker-end:url(#a)}.img{fill:#fdecef;stroke:#c44e67;stroke-width:2}.rna{fill:#e6f1ff;stroke:#3977c2;stroke-width:2}.model{fill:#fff3d7;stroke:#b7791f;stroke-width:2}.out{fill:#e8f6ec;stroke:#2f855a;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#1f2a44"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="300" height="560" rx="24"/>
+  <rect class="panel" x="450" y="55" width="300" height="560" rx="24"/>
+  <rect class="panel" x="855" y="55" width="300" height="560" rx="24"/>
+  <text class="h" x="85" y="105">Localized pairs</text>
+  <text class="h" x="490" y="105">SEAL adaptation</text>
+  <text class="h" x="895" y="105">Cross-modal uses</text>
+  <rect class="img" x="85" y="150" width="120" height="100" rx="14"/>
+  <circle cx="120" cy="185" r="18" fill="#f7bdc8"/><circle cx="165" cy="218" r="23" fill="#e9a0b1"/><path d="M95 232 C130 200 165 180 200 165" stroke="#9b4055" stroke-width="4" fill="none"/>
+  <text class="t" x="225" y="190">tissue region</text><text class="s" x="225" y="218">H&amp;E patch</text>
+  <rect class="rna" x="85" y="315" width="120" height="105" rx="14"/>
+  <g fill="#3977c2"><circle cx="115" cy="348" r="7"/><circle cx="145" cy="380" r="7"/><circle cx="178" cy="345" r="7"/><circle cx="160" cy="405" r="7"/></g>
+  <text class="t" x="225" y="355">ST spot</text><text class="s" x="225" y="383">local expression</text>
+  <text class="s" x="85" y="500">700k+ paired examples</text><text class="s" x="85" y="525">14 organs reported</text>
+  <path class="arrow" d="M350 335 L445 335"/>
+  <rect class="model" x="500" y="150" width="200" height="95" rx="16"/><text class="t" x="535" y="190">base PFM</text><text class="s" x="535" y="218">vision encoder</text>
+  <rect class="rna" x="500" y="295" width="200" height="95" rx="16"/><text class="t" x="535" y="335">ST supervision</text><text class="s" x="535" y="363">localized molecular signal</text>
+  <rect class="model" x="500" y="440" width="200" height="95" rx="16"/><text class="t" x="535" y="480">aligned encoder</text><text class="s" x="535" y="508">parameter-efficient</text>
+  <path class="arrow" d="M600 248 L600 290"/><path class="arrow" d="M600 392 L600 435"/>
+  <path class="arrow" d="M755 335 L850 335"/>
+  <rect class="out" x="910" y="135" width="200" height="70" rx="14"/><text class="t" x="945" y="178">pathway activity</text>
+  <rect class="out" x="910" y="245" width="200" height="70" rx="14"/><text class="t" x="945" y="288">molecular status</text>
+  <rect class="out" x="910" y="355" width="200" height="70" rx="14"/><text class="t" x="945" y="398">treatment response</text>
+  <rect class="out" x="910" y="465" width="200" height="70" rx="14"/><text class="t" x="945" y="508">gene-image retrieval</text>
+  <text class="s" x="70" y="640">Digest interpretation: ST-guided fine-tuning tests whether molecular supervision improves pathology embeddings beyond morphology alone.</text>
+</svg>

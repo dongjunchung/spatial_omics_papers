@@ -316,5 +316,35 @@
     "url": "https://arxiv.org/abs/2511.05708",
     "release_date": "2025-11-07",
     "reported_at": "2026-06-20"
+  },
+  {
+    "title": "The Challenge of Cell Segmentation in Spatially Resolved Transcriptomics",
+    "url": "https://arxiv.org/abs/2606.09675",
+    "release_date": "2026-06-08",
+    "reported_at": "2026-06-22"
+  },
+  {
+    "title": "Towards Spatial Transcriptomics-driven Pathology Foundation Models",
+    "url": "https://arxiv.org/abs/2602.14177",
+    "release_date": "2026-02-15",
+    "reported_at": "2026-06-22"
+  },
+  {
+    "title": "Deciphering spatial domains from spatially resolved transcriptomics with an adaptive graph attention auto-encoder",
+    "url": "https://www.nature.com/articles/s41467-022-29439-6",
+    "release_date": "2022-04-01",
+    "reported_at": "2026-06-22"
+  },
+  {
+    "title": "FEAST: Fully Connected Expressive Attention for Spatial Transcriptomics",
+    "url": "https://arxiv.org/abs/2603.25247",
+    "release_date": "2026-03-26",
+    "reported_at": "2026-06-22"
+  },
+  {
+    "title": "SpatialData: an open and universal data framework for spatial omics",
+    "url": "https://www.nature.com/articles/s41592-024-02212-x",
+    "release_date": "2024-03-20",
+    "reported_at": "2026-06-22"
   }
 ]

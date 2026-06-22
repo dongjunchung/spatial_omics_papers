@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">STAGATE adaptive graph attention for spatial domains</title>
+  <desc id="desc">A schematic showing expression and coordinates forming a spatial neighbor graph, adaptive attention on edges, latent embeddings and domain outputs.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfaf7}.panel{fill:#fff;stroke:#263238;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#263238}.t{font:18px Arial,sans-serif;fill:#263238}.s{font:15px Arial,sans-serif;fill:#52616b}.arrow{stroke:#263238;stroke-width:3;fill:none;marker-end:url(#a)}.spot{fill:#dbeafe;stroke:#2563eb;stroke-width:2}.att{fill:#fff3cd;stroke:#b7791f;stroke-width:2}.lat{fill:#f3e8ff;stroke:#7e22ce;stroke-width:2}.out{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#263238"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="250" height="560" rx="22"/><rect class="panel" x="335" y="55" width="250" height="560" rx="22"/><rect class="panel" x="625" y="55" width="250" height="560" rx="22"/><rect class="panel" x="915" y="55" width="240" height="560" rx="22"/>
+  <text class="h" x="75" y="105">ST input</text><text class="h" x="365" y="105">Spatial graph</text><text class="h" x="655" y="105">Attention AE</text><text class="h" x="945" y="105">Outputs</text>
+  <g>
+    <circle class="spot" cx="110" cy="180" r="20"/><circle class="spot" cx="180" cy="165" r="20"/><circle class="spot" cx="235" cy="225" r="20"/><circle class="spot" cx="130" cy="280" r="20"/><circle class="spot" cx="220" cy="320" r="20"/>
+    <text class="t" x="85" y="395">expression matrix</text><text class="s" x="85" y="425">+ spot coordinates</text><text class="s" x="85" y="485">optional pre-clustering</text>
+  </g>
+  <path class="arrow" d="M300 335 L330 335"/>
+  <g>
+    <circle class="spot" cx="410" cy="175" r="18"/><circle class="spot" cx="505" cy="165" r="18"/><circle class="spot" cx="480" cy="260" r="18"/><circle class="spot" cx="405" cy="315" r="18"/><circle class="spot" cx="520" cy="350" r="18"/>
+    <path d="M410 175 L505 165 L480 260 L405 315 L520 350 M410 175 L480 260 M505 165 L405 315" stroke="#2563eb" stroke-width="3" fill="none"/>
+    <text class="t" x="375" y="440">neighbor graph</text><text class="s" x="375" y="470">local tissue adjacency</text>
+  </g>
+  <path class="arrow" d="M590 335 L620 335"/>
+  <g>
+    <rect class="att" x="675" y="145" width="155" height="80" rx="16"/><text class="t" x="705" y="180">edge weights</text><text class="s" x="705" y="207">learned attention</text>
+    <rect class="lat" x="675" y="290" width="155" height="80" rx="16"/><text class="t" x="705" y="325">latent space</text><text class="s" x="705" y="352">denoised embedding</text>
+    <path class="arrow" d="M752 228 L752 285"/>
+    <text class="s" x="665" y="455">boundary similarity is learned, not fixed</text>
+  </g>
+  <path class="arrow" d="M880 335 L910 335"/>
+  <g>
+    <rect class="out" x="960" y="140" width="150" height="70" rx="14"/><text class="t" x="990" y="183">domains</text>
+    <rect class="out" x="960" y="255" width="150" height="70" rx="14"/><text class="t" x="990" y="298">denoising</text>
+    <rect class="out" x="960" y="370" width="150" height="70" rx="14"/><text class="t" x="990" y="413">trajectory</text>
+    <rect class="out" x="960" y="485" width="150" height="70" rx="14"/><text class="t" x="990" y="528">3D sections</text>
+  </g>
+  <text class="s" x="70" y="640">Digest interpretation: STAGATE remains a reference point for adaptive local graph construction in spatial-domain models.</text>
+</svg>

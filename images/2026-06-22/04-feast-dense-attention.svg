@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">FEAST fully connected expressive attention for spatial transcriptomics</title>
+  <desc id="desc">A schematic showing histology image regions, off-grid sampling, fully connected positive and negative attention, and spatial gene expression prediction.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbff}.panel{fill:#fff;stroke:#18324a;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#18324a}.t{font:18px Arial,sans-serif;fill:#18324a}.s{font:15px Arial,sans-serif;fill:#4d6174}.arrow{stroke:#18324a;stroke-width:3;fill:none;marker-end:url(#a)}.img{fill:#fdebed;stroke:#b95068;stroke-width:2}.node{fill:#dbeafe;stroke:#2563eb;stroke-width:2}.pos{stroke:#2e7d32;stroke-width:4}.neg{stroke:#c2410c;stroke-width:4;stroke-dasharray:8 7}.out{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}.att{fill:#fff7df;stroke:#c47a00;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#18324a"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="300" height="560" rx="24"/><rect class="panel" x="450" y="55" width="300" height="560" rx="24"/><rect class="panel" x="855" y="55" width="300" height="560" rx="24"/>
+  <text class="h" x="85" y="105">Image context</text><text class="h" x="490" y="105">Dense attention</text><text class="h" x="895" y="105">Expression output</text>
+  <rect class="img" x="85" y="150" width="210" height="190" rx="16"/>
+  <circle cx="135" cy="210" r="22" fill="#f6b8c5"/><circle cx="210" cy="250" r="28" fill="#e99cad"/><path d="M105 300 C155 250 215 215 285 185" stroke="#9b4055" stroke-width="5" fill="none"/>
+  <g><circle class="node" cx="118" cy="170" r="12"/><circle class="node" cx="240" cy="175" r="12"/><circle class="node" cx="165" cy="280" r="12"/><circle class="node" cx="285" cy="310" r="12"/></g>
+  <text class="t" x="85" y="420">spot-centered patches</text><text class="s" x="85" y="450">+ off-grid samples between spots</text>
+  <path class="arrow" d="M350 335 L445 335"/>
+  <g>
+    <circle class="node" cx="540" cy="185" r="18"/><circle class="node" cx="660" cy="175" r="18"/><circle class="node" cx="590" cy="290" r="18"/><circle class="node" cx="695" cy="345" r="18"/><circle class="node" cx="515" cy="390" r="18"/>
+    <line class="pos" x1="540" y1="185" x2="660" y2="175"/><line class="pos" x1="540" y1="185" x2="590" y2="290"/><line class="pos" x1="590" y1="290" x2="695" y2="345"/>
+    <line class="neg" x1="660" y1="175" x2="515" y2="390"/><line class="neg" x1="540" y1="185" x2="695" y2="345"/><line class="neg" x1="590" y1="290" x2="515" y2="390"/>
+    <rect class="att" x="505" y="470" width="200" height="65" rx="14"/><text class="t" x="535" y="512">positive + negative</text>
+  </g>
+  <path class="arrow" d="M755 335 L850 335"/>
+  <g>
+    <rect class="out" x="910" y="145" width="205" height="105" rx="16"/><text class="t" x="945" y="188">predicted genes</text><text class="s" x="945" y="218">spatial expression map</text>
+    <rect class="out" x="910" y="310" width="205" height="105" rx="16"/><text class="t" x="945" y="353">attention maps</text><text class="s" x="945" y="383">interpretable interactions</text>
+    <rect class="out" x="910" y="475" width="205" height="65" rx="16"/><text class="t" x="945" y="516">context beyond local graph</text>
+  </g>
+  <text class="s" x="70" y="640">Digest interpretation: FEAST asks whether dense, signed tissue-region attention can outperform hand-built sparse neighborhood graphs.</text>
+</svg>
