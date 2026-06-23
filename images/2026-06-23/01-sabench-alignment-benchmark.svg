@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Spatial transcriptomics alignment benchmarking</title>
+  <desc id="desc">A schematic showing multiple spatial slices and platforms evaluated by alignment methods with accuracy, efficiency, robustness and downstream biological effects.</desc>
+  <defs>
+    <style>
+      .bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#263238;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#17232c}.t{font:18px Arial,sans-serif;fill:#263238}.s{font:15px Arial,sans-serif;fill:#52616b}.arrow{stroke:#263238;stroke-width:3;fill:none;marker-end:url(#a)}.slice{fill:#e8f4ff;stroke:#3977c2;stroke-width:2}.meth{fill:#fff3d7;stroke:#b7791f;stroke-width:2}.score{fill:#e8f6ec;stroke:#2f855a;stroke-width:2}.warn{fill:#fdebed;stroke:#b95068;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#263238"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="300" height="560" rx="24"/>
+  <rect class="panel" x="450" y="55" width="300" height="560" rx="24"/>
+  <rect class="panel" x="855" y="55" width="300" height="560" rx="24"/>
+  <text class="h" x="80" y="105">Alignment tasks</text>
+  <text class="h" x="500" y="105">Method suite</text>
+  <text class="h" x="895" y="105">Benchmark readout</text>
+  <g>
+    <path class="slice" d="M95 170 C155 145 240 155 285 205 C230 235 155 240 95 215 Z"/>
+    <path class="slice" d="M105 265 C170 235 245 255 295 305 C235 338 155 335 105 310 Z"/>
+    <path class="slice" d="M88 365 C150 340 238 360 285 405 C230 440 150 435 88 410 Z"/>
+    <g fill="#3977c2"><circle cx="145" cy="195" r="6"/><circle cx="225" cy="205" r="6"/><circle cx="165" cy="290" r="6"/><circle cx="250" cy="310" r="6"/><circle cx="135" cy="395" r="6"/><circle cx="230" cy="410" r="6"/></g>
+    <text class="t" x="90" y="500">2D slices</text><text class="s" x="90" y="530">coordinates + genes</text>
+  </g>
+  <path class="arrow" d="M350 335 L445 335"/>
+  <g>
+    <rect class="meth" x="500" y="145" width="200" height="75" rx="14"/><text class="t" x="545" y="190">rigid / affine</text>
+    <rect class="meth" x="500" y="265" width="200" height="75" rx="14"/><text class="t" x="540" y="310">nonlinear maps</text>
+    <rect class="meth" x="500" y="385" width="200" height="75" rx="14"/><text class="t" x="535" y="430">multi-slice tools</text>
+    <text class="s" x="500" y="530">295 tasks across technologies</text>
+  </g>
+  <path class="arrow" d="M755 335 L850 335"/>
+  <g>
+    <rect class="score" x="910" y="120" width="200" height="60" rx="14"/><text class="t" x="950" y="158">accuracy</text>
+    <rect class="score" x="910" y="210" width="200" height="60" rx="14"/><text class="t" x="950" y="248">efficiency</text>
+    <rect class="score" x="910" y="300" width="200" height="60" rx="14"/><text class="t" x="950" y="338">usability</text>
+    <rect class="warn" x="910" y="390" width="200" height="60" rx="14"/><text class="t" x="950" y="428">robustness</text>
+    <rect class="score" x="910" y="480" width="200" height="60" rx="14"/><text class="t" x="945" y="518">downstream effect</text>
+  </g>
+  <text class="s" x="70" y="640">Digest interpretation: alignment should be benchmarked as a modeling step that can alter downstream spatial biology.</text>
+</svg>

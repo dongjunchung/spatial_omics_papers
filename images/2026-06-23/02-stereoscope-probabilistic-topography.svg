@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Stereoscope probabilistic cell type topography</title>
+  <desc id="desc">A schematic showing annotated single-cell RNA-seq and spatial transcriptomics counts joined by a negative-binomial mixture model to infer cell-type proportions in tissue.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fbff}.panel{fill:#fff;stroke:#18324a;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#18324a}.t{font:18px Arial,sans-serif;fill:#18324a}.s{font:15px Arial,sans-serif;fill:#4d6174}.arrow{stroke:#18324a;stroke-width:3;fill:none;marker-end:url(#a)}.sc{fill:#fdebed;stroke:#b95068;stroke-width:2}.st{fill:#dbeafe;stroke:#2563eb;stroke-width:2}.model{fill:#fff7df;stroke:#c47a00;stroke-width:2}.out{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}
+    </style>
+    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#18324a"/></marker>
+  </defs>
+  <rect class="bg" width="1200" height="680"/>
+  <rect class="panel" x="45" y="55" width="300" height="560" rx="24"/><rect class="panel" x="450" y="55" width="300" height="560" rx="24"/><rect class="panel" x="855" y="55" width="300" height="560" rx="24"/>
+  <text class="h" x="80" y="105">Reference + tissue</text><text class="h" x="495" y="105">NB mixture model</text><text class="h" x="895" y="105">Cell-type topography</text>
+  <g>
+    <circle class="sc" cx="115" cy="175" r="18"/><circle class="sc" cx="175" cy="150" r="18"/><circle class="sc" cx="235" cy="190" r="18"/><circle class="sc" cx="150" cy="245" r="18"/><circle class="sc" cx="245" cy="270" r="18"/>
+    <text class="t" x="95" y="325">annotated scRNA-seq</text><text class="s" x="95" y="355">cell-type expression rates</text>
+    <rect class="st" x="95" y="430" width="170" height="92" rx="14"/>
+    <g fill="#2563eb"><circle cx="130" cy="465" r="6"/><circle cx="165" cy="490" r="6"/><circle cx="205" cy="460" r="6"/><circle cx="238" cy="500" r="6"/></g>
+    <text class="s" x="95" y="560">spatial count spots</text>
+  </g>
+  <path class="arrow" d="M350 335 L445 335"/>
+  <g>
+    <rect class="model" x="500" y="155" width="200" height="95" rx="16"/><text class="t" x="535" y="193">estimate rates</text><text class="s" x="535" y="222">per cell type, gene</text>
+    <rect class="model" x="500" y="310" width="200" height="95" rx="16"/><text class="t" x="535" y="348">spot likelihood</text><text class="s" x="535" y="377">mixture of counts</text>
+    <rect class="model" x="500" y="465" width="200" height="70" rx="16"/><text class="t" x="535" y="508">MAP weights</text>
+    <path class="arrow" d="M600 253 L600 305"/><path class="arrow" d="M600 408 L600 460"/>
+  </g>
+  <path class="arrow" d="M755 335 L850 335"/>
+  <g>
+    <rect class="out" x="910" y="145" width="200" height="110" rx="16"/>
+    <circle cx="955" cy="185" r="12" fill="#2e7d32"/><circle cx="1005" cy="205" r="22" fill="#81c784"/><circle cx="1060" cy="185" r="16" fill="#a5d6a7"/>
+    <text class="t" x="940" y="235">proportions</text>
+    <rect class="out" x="910" y="330" width="200" height="110" rx="16"/>
+    <path d="M940 405 C980 350 1040 345 1080 395" stroke="#2e7d32" stroke-width="6" fill="none"/>
+    <text class="t" x="940" y="420">spatial map</text>
+    <text class="s" x="910" y="525">interpretable cell-type landscape</text>
+  </g>
+  <text class="s" x="70" y="640">Digest interpretation: stereoscope made deconvolution a count-likelihood problem with explicit reference dependence.</text>
+</svg>

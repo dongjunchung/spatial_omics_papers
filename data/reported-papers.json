@@ -346,5 +346,29 @@
     "url": "https://www.nature.com/articles/s41592-024-02212-x",
     "release_date": "2024-03-20",
     "reported_at": "2026-06-22"
+  },
+  {
+    "title": "Benchmarking alignment methods for spatial transcriptomics data",
+    "url": "https://www.nature.com/articles/s43588-026-00977-z",
+    "release_date": "2026-04-03",
+    "reported_at": "2026-06-23"
+  },
+  {
+    "title": "Single-cell and spatial transcriptomics enables probabilistic inference of cell type topography",
+    "url": "https://www.nature.com/articles/s42003-020-01247-y",
+    "release_date": "2020-10-09",
+    "reported_at": "2026-06-23"
+  },
+  {
+    "title": "Knowledge-graph-based cell-cell communication inference for spatially resolved transcriptomic data with SpaTalk",
+    "url": "https://www.nature.com/articles/s41467-022-32111-8",
+    "release_date": "2022-07-30",
+    "reported_at": "2026-06-23"
+  },
+  {
+    "title": "Completing spatial transcriptomics data for gene expression prediction benchmarking",
+    "url": "https://arxiv.org/abs/2505.02980",
+    "release_date": "2025-12",
+    "reported_at": "2026-06-23"
   }
 ]
