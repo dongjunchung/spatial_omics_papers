@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">SpatialPCA spatial kernel factor model</title>
+  <desc id="desc">Gene expression and spatial coordinates are modeled with latent factors whose covariance is constructed from tissue location, enabling spatial components and imputation.</desc>
+  <defs>
+    <linearGradient id="heat" x1="0" x2="1"><stop offset="0" stop-color="#4361ee"/><stop offset=".55" stop-color="#4cc9f0"/><stop offset="1" stop-color="#80ed99"/></linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#22313f"/></marker>
+    <style>.bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.spot{fill:#4361ee}.spot2{fill:#4cc9f0}.spot3{fill:#80ed99}.chip{fill:#f8fbff;stroke:#4361ee;stroke-width:2}.chip2{fill:#edfaff;stroke:#4cc9f0;stroke-width:2}.chip3{fill:#f4fff6;stroke:#80ed99;stroke-width:2}.edge{stroke:#4361ee;stroke-width:2;opacity:.45}.grid{stroke:#d6dde5;stroke-width:1}</style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/><rect class="panel" x="512" y="55" width="375" height="650" rx="28"/><rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
+  <text class="h" x="80" y="105">Expression + location</text><text class="h" x="545" y="105">Spatial factor model</text><text class="h" x="1015" y="105">Spatial components</text>
+  <g transform="translate(88 150)">
+    <rect x="0" y="0" width="290" height="225" fill="#fff" stroke="#c7d2de" stroke-width="2" rx="14"/>
+    <g class="grid"><path d="M58 0 V225 M116 0 V225 M174 0 V225 M232 0 V225 M0 45 H290 M0 90 H290 M0 135 H290 M0 180 H290"/></g>
+    <circle class="spot" cx="42" cy="44" r="8"/><circle class="spot2" cx="112" cy="78" r="8"/><circle class="spot3" cx="198" cy="53" r="8"/><circle class="spot" cx="248" cy="120" r="8"/><circle class="spot2" cx="72" cy="166" r="8"/><circle class="spot3" cx="185" cy="180" r="8"/><circle class="spot" cx="232" cy="198" r="8"/>
+    <text class="t" x="0" y="285">gene matrix Y</text><text class="s" x="0" y="315">m genes by n tissue locations</text><text class="s" x="0" y="350">coordinates build spatial kernel</text>
+  </g>
+  <path class="arrow" d="M424 380 C462 380 475 380 507 380"/>
+  <g transform="translate(552 140)">
+    <rect class="chip" x="0" y="0" width="285" height="82" rx="18"/><text class="t" x="24" y="35">Factor analysis</text><text class="xs" x="24" y="62">Y explained by latent Z</text>
+    <rect class="chip2" x="0" y="122" width="285" height="82" rx="18"/><text class="t" x="24" y="157">Spatial covariance</text><text class="xs" x="24" y="184">kernel from coordinates L</text>
+    <rect class="chip3" x="0" y="244" width="285" height="82" rx="18"/><text class="t" x="24" y="279">Maximum likelihood</text><text class="xs" x="24" y="306">estimate spatial contribution</text>
+    <path class="arrow" d="M142 85 L142 117"/><path class="arrow" d="M142 207 L142 239"/>
+    <g transform="translate(35 390)">
+      <rect x="0" y="0" width="210" height="100" rx="14" fill="url(#heat)" opacity=".88"/>
+      <path d="M12 78 C50 20 85 88 126 35 S175 16 198 62" stroke="#fff" stroke-width="5" fill="none" opacity=".85"/>
+      <text class="xs" x="26" y="130">latent spatial covariance</text>
+    </g>
+  </g>
+  <path class="arrow" d="M892 380 C930 380 945 380 975 380"/>
+  <g transform="translate(1025 145)">
+    <path d="M50 55 C112 10 230 28 280 92 C225 150 112 150 45 108 Z" fill="url(#heat)" stroke="#4361ee" stroke-width="3"/>
+    <path d="M58 110 C112 70 190 75 260 112" stroke="#fff" stroke-width="6" fill="none" opacity=".75"/>
+    <rect class="chip" x="0" y="245" width="270" height="78" rx="14"/><text class="t" x="24" y="283">smooth latent components</text><text class="xs" x="24" y="308">interpretable spatial programs</text>
+    <rect class="chip2" x="0" y="360" width="270" height="78" rx="14"/><text class="t" x="24" y="398">new-location imputation</text><text class="xs" x="24" y="423">predict low-dimensional structure</text>
+    <rect class="chip3" x="0" y="475" width="270" height="78" rx="14"/><text class="t" x="24" y="513">diagnostic baseline</text><text class="xs" x="24" y="538">transparent spatial prior</text>
+  </g>
+  <text class="s" x="70" y="775">Digest interpretation: SpatialPCA exposes the spatial prior directly through a coordinate-derived latent covariance.</text>
+</svg>

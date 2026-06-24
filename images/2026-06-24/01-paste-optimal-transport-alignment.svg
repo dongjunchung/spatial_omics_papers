@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">PASTE optimal transport alignment of spatial transcriptomics slices</title>
+  <desc id="desc">Multiple spatial transcriptomics slices are aligned by optimal transport using expression similarity and physical spot distances, yielding pairwise alignments, 3D stacks and consensus slices.</desc>
+  <defs>
+    <linearGradient id="sliceA" x1="0" x2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset="1" stop-color="#eef2ff"/></linearGradient>
+    <linearGradient id="sliceB" x1="0" x2="1"><stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#fef3c7"/></linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#22313f"/></marker>
+    <style>.bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.a{fill:#2f80ed}.b{fill:#f2994a}.c{fill:#27ae60}.link{stroke:#7b61ff;stroke-width:2.2;opacity:.55}.link2{stroke:#f2994a;stroke-width:3;opacity:.75}.chip{fill:#f8fbff;stroke:#2f80ed;stroke-width:2}.chip2{fill:#fff8ed;stroke:#f2994a;stroke-width:2}.chip3{fill:#f4fff6;stroke:#27ae60;stroke-width:2}</style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/><rect class="panel" x="512" y="55" width="375" height="650" rx="28"/><rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
+  <text class="h" x="80" y="105">Adjacent ST slices</text><text class="h" x="545" y="105">PASTE objective</text><text class="h" x="1015" y="105">Integrated tissue</text>
+  <g transform="translate(82 155)">
+    <path d="M40 45 C120 5 245 20 298 90 C242 138 115 143 38 105 Z" fill="url(#sliceA)" stroke="#2f80ed" stroke-width="3"/>
+    <path d="M62 70 C118 42 198 48 265 88" stroke="#2f80ed" stroke-width="4" fill="none" opacity=".65"/>
+    <g><circle class="a" cx="75" cy="75" r="7"/><circle class="a" cx="130" cy="55" r="7"/><circle class="a" cx="205" cy="72" r="7"/><circle class="a" cx="255" cy="103" r="7"/><circle class="a" cx="145" cy="116" r="7"/></g>
+    <path d="M30 185 C105 142 250 162 312 225 C250 277 110 279 30 235 Z" fill="url(#sliceB)" stroke="#f2994a" stroke-width="3"/>
+    <path d="M55 218 C118 185 205 188 276 228" stroke="#f2994a" stroke-width="4" fill="none" opacity=".65"/>
+    <g><circle class="b" cx="75" cy="220" r="7"/><circle class="b" cx="135" cy="198" r="7"/><circle class="b" cx="215" cy="216" r="7"/><circle class="b" cx="270" cy="245" r="7"/><circle class="b" cx="150" cy="255" r="7"/></g>
+    <text class="s" x="10" y="385">Input: spatial counts, coordinates, adjacent sections</text>
+    <text class="s" x="10" y="412">Challenge: same tissue architecture, shifted sections</text>
+  </g>
+  <path class="arrow" d="M424 380 C462 380 475 380 507 380"/>
+  <g transform="translate(552 145)">
+    <rect class="chip" x="0" y="0" width="285" height="86" rx="18"/><text class="t" x="24" y="36">Expression cost</text><text class="xs" x="24" y="64">match transcriptionally similar spots</text>
+    <rect class="chip2" x="0" y="128" width="285" height="86" rx="18"/><text class="t" x="24" y="164">Spatial distance cost</text><text class="xs" x="24" y="192">preserve tissue geometry</text>
+    <rect class="chip3" x="0" y="256" width="285" height="86" rx="18"/><text class="t" x="24" y="292">Optimal transport plan</text><text class="xs" x="24" y="320">soft spot-to-spot coupling</text>
+    <path class="arrow" d="M142 89 L142 123"/><path class="arrow" d="M142 217 L142 251"/>
+    <g transform="translate(28 408)">
+      <circle class="a" cx="0" cy="0" r="8"/><circle class="a" cx="62" cy="-20" r="8"/><circle class="a" cx="120" cy="0" r="8"/><circle class="b" cx="30" cy="70" r="8"/><circle class="b" cx="90" cy="52" r="8"/><circle class="b" cx="155" cy="72" r="8"/>
+      <path class="link" d="M0 0 L30 70 M62 -20 L90 52 M120 0 L155 72"/><path class="link2" d="M62 -20 L30 70 M120 0 L90 52"/>
+    </g>
+  </g>
+  <path class="arrow" d="M892 380 C930 380 945 380 975 380"/>
+  <g transform="translate(1030 150)">
+    <path d="M40 65 C118 25 242 45 290 105 C232 150 112 152 38 115 Z" fill="url(#sliceA)" stroke="#2f80ed" stroke-width="3"/>
+    <path d="M55 120 C130 80 250 100 306 160 C250 210 120 210 52 168 Z" fill="url(#sliceB)" stroke="#f2994a" stroke-width="3" opacity=".92"/>
+    <path d="M80 195 C150 150 260 172 316 230 C250 282 125 278 74 238 Z" fill="#e8f6ec" stroke="#27ae60" stroke-width="3"/>
+    <text class="t" x="30" y="350">pairwise alignment</text>
+    <text class="t" x="30" y="392">stacked 3D tissue</text>
+    <text class="t" x="30" y="434">consensus slice</text>
+    <rect class="chip3" x="20" y="480" width="255" height="82" rx="14"/><text class="xs" x="44" y="512">downstream: domains, cell types, DE genes</text>
+  </g>
+  <text class="s" x="70" y="775">Digest interpretation: PASTE makes registration a probabilistic coupling between expression neighborhoods and physical geometry.</text>
+</svg>

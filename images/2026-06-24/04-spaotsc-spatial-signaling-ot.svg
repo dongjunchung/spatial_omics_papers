@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">SpaOTsc structured optimal transport and signaling inference</title>
+  <desc id="desc">Single-cell transcriptomes are mapped to spatial measurements with structured optimal transport, creating a spatial metric for cells that is used for signaling and gene-gene regulatory information flow.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#22313f"/></marker>
+    <style>.bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.sc{fill:#ff006e;opacity:.85}.sp{fill:#3a86ff;opacity:.85}.rec{fill:#06d6a0;opacity:.86}.chip{fill:#fff0f6;stroke:#ff006e;stroke-width:2}.chip2{fill:#eef7ff;stroke:#3a86ff;stroke-width:2}.chip3{fill:#f4fff6;stroke:#06d6a0;stroke-width:2}.link{stroke:#8338ec;stroke-width:2;opacity:.55}.signal{stroke:#ffbe0b;stroke-width:5;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/><rect class="panel" x="512" y="55" width="375" height="650" rx="28"/><rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
+  <text class="h" x="80" y="105">scRNA + spatial genes</text><text class="h" x="545" y="105">Structured OT metric</text><text class="h" x="1015" y="105">Spatial signaling</text>
+  <g transform="translate(90 145)">
+    <text class="t" x="0" y="0">single cells</text>
+    <circle class="sc" cx="40" cy="50" r="16"/><circle class="sc" cx="108" cy="38" r="16"/><circle class="sc" cx="180" cy="70" r="16"/><circle class="sc" cx="78" cy="128" r="16"/><circle class="sc" cx="215" cy="142" r="16"/>
+    <text class="t" x="0" y="230">spatial measurements</text>
+    <path d="M25 275 C95 235 230 250 290 312 C235 365 95 360 25 322 Z" fill="#eef7ff" stroke="#3a86ff" stroke-width="3"/>
+    <circle class="sp" cx="68" cy="300" r="8"/><circle class="sp" cx="128" cy="282" r="8"/><circle class="sp" cx="205" cy="305" r="8"/><circle class="sp" cx="245" cy="335" r="8"/><circle class="sp" cx="132" cy="338" r="8"/>
+    <text class="s" x="0" y="465">shared genes connect dissociated cells to spatial positions</text>
+  </g>
+  <path class="arrow" d="M424 380 C462 380 475 380 507 380"/>
+  <g transform="translate(552 140)">
+    <rect class="chip" x="0" y="0" width="285" height="82" rx="18"/><text class="t" x="24" y="35">Expression cost</text><text class="xs" x="24" y="62">cell-position gene similarity</text>
+    <rect class="chip2" x="0" y="122" width="285" height="82" rx="18"/><text class="t" x="24" y="157">Structured transport</text><text class="xs" x="24" y="184">within-dataset dissimilarities</text>
+    <rect class="chip3" x="0" y="244" width="285" height="82" rx="18"/><text class="t" x="24" y="279">Cell-space metric</text><text class="xs" x="24" y="306">distance from spatial distributions</text>
+    <path class="arrow" d="M142 85 L142 117"/><path class="arrow" d="M142 207 L142 239"/>
+    <g transform="translate(48 402)">
+      <circle class="sc" cx="0" cy="0" r="10"/><circle class="sc" cx="70" cy="-28" r="10"/><circle class="sc" cx="145" cy="10" r="10"/><circle class="sc" cx="42" cy="72" r="10"/><circle class="sc" cx="130" cy="88" r="10"/>
+      <path class="link" d="M0 0 L70 -28 L145 10 L130 88 L42 72 Z M70 -28 L42 72 M145 10 L42 72"/>
+      <text class="xs" x="-8" y="138">spatially annotated scRNA geometry</text>
+    </g>
+  </g>
+  <path class="arrow" d="M892 380 C930 380 945 380 975 380"/>
+  <g transform="translate(1025 145)">
+    <circle class="sc" cx="45" cy="72" r="20"/><text class="xs" x="22" y="115">sender</text>
+    <circle class="rec" cx="220" cy="92" r="20"/><text class="xs" x="193" y="135">receiver</text>
+    <path class="signal" d="M68 75 C115 35 170 45 200 80"/>
+    <rect class="chip2" x="0" y="215" width="275" height="78" rx="14"/><text class="t" x="24" y="253">signaling transport</text><text class="xs" x="24" y="278">ligand sender to receptor target</text>
+    <rect class="chip3" x="0" y="335" width="275" height="78" rx="14"/><text class="t" x="24" y="373">signaling range</text><text class="xs" x="24" y="398">machine-learning estimate</text>
+    <rect class="chip" x="0" y="455" width="275" height="78" rx="14"/><text class="t" x="24" y="493">gene-gene information flow</text><text class="xs" x="24" y="518">partial information decomposition</text>
+  </g>
+  <text class="s" x="70" y="775">Digest interpretation: SpaOTsc uses optimal transport to recover a spatial metric before inferring communication and regulatory flow.</text>
+</svg>

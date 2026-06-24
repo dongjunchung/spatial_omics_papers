@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">PRECAST probabilistic embedding clustering and alignment</title>
+  <desc id="desc">Multiple spatial transcriptomics sections are jointly embedded, aligned and clustered into shared spatial domains while retaining section-specific effects.</desc>
+  <defs>
+    <linearGradient id="latent" x1="0" x2="1"><stop offset="0" stop-color="#8338ec"/><stop offset="1" stop-color="#3a86ff"/></linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#22313f"/></marker>
+    <style>.bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.d1{fill:#3a86ff}.d2{fill:#ffbe0b}.d3{fill:#06d6a0}.d4{fill:#ff006e}.chip{fill:#f8fbff;stroke:#3a86ff;stroke-width:2}.chip2{fill:#fff8ed;stroke:#ffbe0b;stroke-width:2}.chip3{fill:#f4fff6;stroke:#06d6a0;stroke-width:2}.latent{fill:url(#latent);opacity:.9}.edge{stroke:#495057;stroke-width:2;opacity:.55}</style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/><rect class="panel" x="512" y="55" width="375" height="650" rx="28"/><rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
+  <text class="h" x="80" y="105">Multiple sections</text><text class="h" x="545" y="105">PRECAST model</text><text class="h" x="1015" y="105">Shared biology</text>
+  <g transform="translate(90 150)">
+    <g transform="translate(0 0)"><path d="M30 45 C95 10 220 18 265 78 C220 122 105 132 28 95 Z" fill="#eef7ff" stroke="#3a86ff" stroke-width="3"/><circle class="d1" cx="72" cy="70" r="8"/><circle class="d2" cx="128" cy="55" r="8"/><circle class="d3" cx="190" cy="78" r="8"/><circle class="d4" cx="232" cy="100" r="8"/></g>
+    <g transform="translate(25 150)"><path d="M30 45 C95 10 220 18 265 78 C220 122 105 132 28 95 Z" fill="#fff8ed" stroke="#ffbe0b" stroke-width="3"/><circle class="d1" cx="75" cy="78" r="8"/><circle class="d2" cx="135" cy="58" r="8"/><circle class="d3" cx="205" cy="84" r="8"/><circle class="d4" cx="235" cy="103" r="8"/></g>
+    <g transform="translate(-5 300)"><path d="M30 45 C95 10 220 18 265 78 C220 122 105 132 28 95 Z" fill="#f4fff6" stroke="#06d6a0" stroke-width="3"/><circle class="d1" cx="68" cy="72" r="8"/><circle class="d2" cx="142" cy="57" r="8"/><circle class="d3" cx="200" cy="86" r="8"/><circle class="d4" cx="240" cy="105" r="8"/></g>
+    <text class="s" x="0" y="500">Input: many slices with genes, coordinates and batch effects</text>
+  </g>
+  <path class="arrow" d="M424 380 C462 380 475 380 507 380"/>
+  <g transform="translate(552 145)">
+    <rect class="chip" x="0" y="0" width="285" height="86" rx="18"/><text class="t" x="24" y="36">Joint latent embedding</text><text class="xs" x="24" y="64">biological effects across slides</text>
+    <rect class="chip2" x="0" y="128" width="285" height="86" rx="18"/><text class="t" x="24" y="164">Domain labels</text><text class="xs" x="24" y="192">shared clusters over sections</text>
+    <rect class="chip3" x="0" y="256" width="285" height="86" rx="18"/><text class="t" x="24" y="292">Alignment + correction</text><text class="xs" x="24" y="320">integrate while preserving domains</text>
+    <path class="arrow" d="M142 89 L142 123"/><path class="arrow" d="M142 217 L142 251"/>
+    <g transform="translate(55 420)">
+      <ellipse class="latent" cx="0" cy="0" rx="45" ry="20"/><ellipse class="latent" cx="95" cy="-18" rx="45" ry="20"/><ellipse class="latent" cx="160" cy="48" rx="45" ry="20"/>
+      <path class="edge" d="M0 0 C50 -45 110 -45 160 48 M0 0 C60 35 95 32 160 48"/>
+      <text class="xs" x="-18" y="95">aligned low-dimensional geometry</text>
+    </g>
+  </g>
+  <path class="arrow" d="M892 380 C930 380 945 380 975 380"/>
+  <g transform="translate(1020 145)">
+    <rect class="chip" x="0" y="0" width="280" height="86" rx="18"/><text class="t" x="24" y="36">Common spatial domains</text><text class="xs" x="24" y="64">joint labels across sections</text>
+    <rect class="chip2" x="0" y="128" width="280" height="86" rx="18"/><text class="t" x="24" y="164">DE and trajectories</text><text class="xs" x="24" y="192">domain-specific biology</text>
+    <rect class="chip3" x="0" y="256" width="280" height="86" rx="18"/><text class="t" x="24" y="292">Cell-type composition</text><text class="xs" x="24" y="320">deconvolution linked to domains</text>
+    <g transform="translate(12 400)"><circle class="d1" cx="30" cy="45" r="20"/><circle class="d2" cx="90" cy="35" r="20"/><circle class="d3" cx="150" cy="58" r="20"/><circle class="d4" cx="210" cy="42" r="20"/><path d="M30 45 L90 35 L150 58 L210 42" stroke="#22313f" stroke-width="3" fill="none"/></g>
+  </g>
+  <text class="s" x="70" y="775">Digest interpretation: PRECAST couples integration, embedding and domain discovery instead of treating them as isolated steps.</text>
+</svg>
