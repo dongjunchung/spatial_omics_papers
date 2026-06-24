@@ -1,38 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
-  <rect width="1400" height="760" fill="#fbfaf7"/>
-  <style>.h{font:700 28px Arial;fill:#12335b}.t{font:600 17px Arial;fill:#12335b}.s{font:14px Arial;fill:#31445c}.box{fill:#fff;stroke:#2b6f8a;stroke-width:2;rx:16}.arrow{stroke:#2b6f8a;stroke-width:4;fill:none;marker-end:url(#a)}</style>
-  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#2b6f8a"/></marker></defs>
-  <text x="70" y="55" class="h">Reference + spatial counts</text><text x="540" y="55" class="h">SONAR Poisson-Gamma model</text><text x="1050" y="55" class="h">Deconvolution maps</text>
-  <rect x="55" y="95" width="350" height="560" class="box"/>
-  <g transform="translate(90 135)">
-    <text x="0" y="0" class="t">scRNA-seq cell types</text>
-    <g fill="#16a085"><circle cx="35" cy="55" r="12"/><circle cx="65" cy="75" r="12"/></g><text x="110" y="65" class="s">T cells</text>
-    <g fill="#7b5fc9"><circle cx="35" cy="145" r="12"/><circle cx="70" cy="130" r="12"/></g><text x="110" y="145" class="s">B cells</text>
-    <g fill="#ee6c4d"><circle cx="35" cy="225" r="12"/><circle cx="70" cy="245" r="12"/></g><text x="110" y="235" class="s">Myeloid</text>
-    <text x="0" y="330" class="t">Mixed spatial spots</text>
-    <path d="M25 360 C90 320 190 345 225 415 C255 475 205 530 125 525 C55 520 5 470 12 415 C15 390 18 372 25 360Z" fill="#eef4f7" stroke="#789"/>
-    <g fill="#fff" stroke="#789"><circle cx="70" cy="410" r="18"/><circle cx="120" cy="440" r="18"/><circle cx="170" cy="405" r="18"/></g>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">SONAR spatial Poisson-Gamma deconvolution</title>
+  <desc id="desc">Spatially weighted Poisson-Gamma modeling estimates cell-type composition while borrowing local neighborhood information.</desc>
+  <defs>
+    <linearGradient id="tissueGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#3a86ff" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#ffbe0b" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#8338ec" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="latentGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffbe0b" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#8338ec" stop-opacity="0.92"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#22313f"/></marker>
+    <style>
+      .bg{fill:#fbfbf7}.panel{fill:#ffffff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.cell{fill:#ffffff;stroke:#3a86ff;stroke-width:2.4}.spot{fill:#3a86ff;opacity:.86}.spot2{fill:#ffbe0b;opacity:.86}.spot3{fill:#8338ec;opacity:.86}.node{fill:#ffffff;stroke:#ffbe0b;stroke-width:2.3}.edge{stroke:#34495e;stroke-width:2.2;opacity:.65}.edge2{stroke:#8338ec;stroke-width:3.2;opacity:.78}.chip{fill:#f8fbff;stroke:#ffbe0b;stroke-width:2}.chip2{fill:#fff8ed;stroke:#8338ec;stroke-width:2}.chip3{fill:#f4fff6;stroke:#06d6a0;stroke-width:2}.latent{fill:url(#latentGrad);opacity:.86}.dash{stroke-dasharray:8 7}.thick{stroke-width:5}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/>
+  <rect class="panel" x="512" y="55" width="375" height="650" rx="28"/>
+  <rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
+  <text class="h" x="80" y="105">Biological input</text>
+  <text class="h" x="545" y="105">Poisson-Gamma</text>
+  <text class="h" x="1015" y="105">Deconvolved tissue</text>
+
+  <path d="M105 190 C130 120 245 115 310 155 C380 198 350 320 285 355 C205 398 90 335 82 260 C78 225 88 205 105 190 Z" fill="url(#tissueGrad)" stroke="#3a86ff" stroke-width="3"/>
+  <path d="M122 235 C185 185 245 178 326 225" stroke="#ffbe0b" stroke-width="5" fill="none" opacity=".72"/>
+  <path d="M118 305 C172 275 242 292 322 330" stroke="#8338ec" stroke-width="5" fill="none" opacity=".68"/>
+  <circle class="cell" cx="138" cy="208" r="20"/><circle class="cell" cx="206" cy="180" r="17"/><circle class="cell" cx="286" cy="218" r="23"/><circle class="cell" cx="154" cy="304" r="24"/><circle class="cell" cx="245" cy="305" r="19"/><circle class="cell" cx="323" cy="284" r="16"/>
+  <circle class="spot" cx="122" cy="258" r="7"/><circle class="spot2" cx="182" cy="245" r="7"/><circle class="spot3" cx="238" cy="228" r="7"/><circle class="spot" cx="298" cy="263" r="7"/><circle class="spot2" cx="210" cy="334" r="7"/><circle class="spot3" cx="332" cy="333" r="7"/>
+  <g transform="translate(92 392)">
+    <rect class="chip" x="0" y="0" width="92" height="78" rx="12"/><path d="M14 54 C32 22 55 24 76 36" stroke="#ffbe0b" stroke-width="4" fill="none"/><text class="xs" x="14" y="24">image</text>
+    <rect class="chip2" x="116" y="0" width="92" height="78" rx="12"/><path d="M130 56 L145 24 L160 46 L176 18 L194 58" stroke="#8338ec" stroke-width="4" fill="none"/><text class="xs" x="130" y="24">genes</text>
+    <rect class="chip3" x="232" y="0" width="92" height="78" rx="12"/><circle cx="252" cy="45" r="7" fill="#06d6a0"/><circle cx="286" cy="30" r="7" fill="#06d6a0"/><circle cx="304" cy="55" r="7" fill="#06d6a0"/><path d="M252 45 L286 30 L304 55" stroke="#06d6a0" stroke-width="3" fill="none"/><text class="xs" x="246" y="24">space</text>
   </g>
-  <path d="M405 375 L500 375" class="arrow"/>
-  <rect x="505" y="95" width="420" height="560" class="box"/>
-  <g transform="translate(545 135)">
-    <rect x="0" y="0" width="360" height="82" fill="#eef4f7" stroke="#789"/><text x="22" y="48" class="t">Observed counts ~ Poisson(rate)</text>
-    <rect x="0" y="120" width="170" height="90" fill="#f7f1e7" stroke="#789"/><text x="24" y="172" class="t">Gamma latent abundance</text>
-    <rect x="205" y="120" width="155" height="90" fill="#eef7f0" stroke="#789"/><text x="223" y="172" class="t">Spatial weights</text>
-    <path d="M180 210 L180 265" class="arrow"/>
-    <rect x="0" y="270" width="360" height="90" fill="#fff" stroke="#789"/><text x="22" y="323" class="t">Borrow information from nearby spots</text>
-    <g stroke="#607d9b" stroke-width="2"><line x1="70" y1="430" x2="140" y2="395"/><line x1="140" y1="395" x2="220" y2="430"/><line x1="70" y1="430" x2="220" y2="430"/><line x1="220" y1="430" x2="290" y2="390"/></g>
-    <g fill="#16a085"><circle cx="70" cy="430" r="9"/><circle cx="140" cy="395" r="9"/><circle cx="220" cy="430" r="9"/><circle cx="290" cy="390" r="9"/></g>
-    <text x="55" y="505" class="s">spatially weighted posterior proportions</text>
+  <text class="s" x="80" y="500">spatial UMI counts</text>
+<text class="s" x="80" y="522">single-cell reference profiles</text>
+<text class="s" x="80" y="544">distance-weighted neighbors</text>
+
+  <path class="arrow" d="M424 380 C460 380 475 380 507 380"/>
+  <g transform="translate(550 148)">
+    <rect class="chip" x="0" y="0" width="285" height="92" rx="18"/>
+    <text class="t" x="24" y="38">Reference signatures</text>
+    <text class="xs" x="24" y="66">cell type expression</text>
+    <rect class="chip2" x="0" y="137" width="285" height="92" rx="18"/>
+    <text class="t" x="24" y="175">Poisson-Gamma likelihood</text>
+    <text class="xs" x="24" y="203">overdispersed spatial counts</text>
+    <rect class="chip3" x="0" y="274" width="285" height="92" rx="18"/>
+    <text class="t" x="24" y="312">Spatial weighting</text>
+    <text class="xs" x="24" y="340">nearby spots regularize estimates</text>
+    <path class="arrow" d="M142 95 L142 132"/>
+    <path class="arrow" d="M142 232 L142 269"/>
   </g>
-  <path d="M925 375 L1020 375" class="arrow"/>
-  <rect x="1025" y="95" width="325" height="560" class="box"/>
-  <g transform="translate(1060 135)">
-    <text x="0" y="0" class="t">Cell-type proportion maps</text>
-    <g transform="translate(0 35)"><path d="M20 10 C75 -10 160 10 180 70 C200 135 150 180 80 178 C25 175 0 132 5 70Z" fill="#eef4f7" stroke="#789"/><g fill="#16a085"><circle cx="45" cy="60" r="7"/><circle cx="75" cy="80" r="7"/><circle cx="105" cy="95" r="7"/></g></g>
-    <g transform="translate(0 235)"><path d="M20 10 C75 -10 160 10 180 70 C200 135 150 180 80 178 C25 175 0 132 5 70Z" fill="#f7eef4" stroke="#789"/><g fill="#ee6c4d"><circle cx="65" cy="110" r="7"/><circle cx="105" cy="95" r="7"/><circle cx="145" cy="130" r="7"/></g></g>
-    <text x="0" y="460" class="t">Uncertainty + rare-cell signal</text>
-    <rect x="0" y="485" width="230" height="65" fill="#fff" stroke="#789"/>
-    <g fill="#7b5fc9"><rect x="15" y="525" width="18" height="20"/><rect x="45" y="510" width="18" height="35"/><rect x="75" y="530" width="18" height="15"/></g>
+  <g transform="translate(595 560)">
+    <circle class="node" cx="0" cy="0" r="15"/><circle class="node" cx="65" cy="-20" r="15"/><circle class="node" cx="130" cy="0" r="15"/><circle class="node" cx="35" cy="52" r="15"/><circle class="node" cx="105" cy="52" r="15"/>
+    <path class="edge" d="M0 0 L65 -20 L130 0 L105 52 L35 52 Z"/>
+    <path class="edge2" d="M0 0 L105 52 M65 -20 L35 52"/>
   </g>
+  <text class="s" x="495" y="490">count likelihood with overdispersion</text>
+<text class="s" x="495" y="512">spatially weighted sharing</text>
+<text class="s" x="495" y="534">cell-type abundance posterior</text>
+
+  <path class="arrow" d="M892 380 C930 380 945 380 975 380"/>
+  <g transform="translate(1030 135)">
+    <path d="M42 45 C88 8 186 16 226 60 C260 98 236 168 178 188 C112 210 40 178 26 120 C18 88 22 62 42 45 Z" fill="#eef7ff" stroke="#ffbe0b" stroke-width="3"/>
+    <path d="M50 118 C94 85 148 82 224 110" stroke="#8338ec" stroke-width="5" fill="none" opacity=".75"/>
+    <circle class="spot" cx="70" cy="82" r="8"/><circle class="spot2" cx="122" cy="62" r="8"/><circle class="spot3" cx="190" cy="85" r="8"/><circle class="spot" cx="104" cy="146" r="8"/><circle class="spot2" cx="170" cy="155" r="8"/>
+    <rect class="chip" x="0" y="250" width="110" height="82" rx="14"/><text class="xs" x="18" y="282">map</text><path d="M18 314 C40 286 72 292 94 270" stroke="#ffbe0b" stroke-width="4" fill="none"/>
+    <rect class="chip2" x="136" y="250" width="110" height="82" rx="14"/><text class="xs" x="154" y="282">score</text><rect x="158" y="298" width="16" height="20" fill="#3a86ff"/><rect x="184" y="288" width="16" height="30" fill="#ffbe0b"/><rect x="210" y="276" width="16" height="42" fill="#8338ec"/>
+    <rect class="chip3" x="68" y="365" width="142" height="76" rx="14"/><text class="xs" x="91" y="395">uncertainty</text><path d="M92 420 C114 396 136 444 166 413" stroke="#06d6a0" stroke-width="4" fill="none"/>
+  </g>
+  <text class="s" x="905" y="500">cell-type maps</text>
+<text class="s" x="905" y="522">uncertainty-aware proportions</text>
+<text class="s" x="905" y="544">neighborhood-stabilized estimates</text>
+  <text class="s" x="70" y="775">SONAR combines count modeling and spatial weighting for deconvolving spatial transcriptomics spots.</text>
 </svg>

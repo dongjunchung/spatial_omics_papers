@@ -1,38 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
-  <title id="title">STAGATE adaptive graph attention for spatial domains</title>
-  <desc id="desc">A schematic showing expression and coordinates forming a spatial neighbor graph, adaptive attention on edges, latent embeddings and domain outputs.</desc>
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">STAGATE adaptive graph attention</title>
+  <desc id="desc">Expression and coordinates form a spatial neighbor graph whose edges are adaptively weighted by a graph attention autoencoder.</desc>
   <defs>
+    <linearGradient id="tissueGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#3a86ff" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#8338ec" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#ffbe0b" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="latentGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#8338ec" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#ffbe0b" stop-opacity="0.92"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#22313f"/></marker>
     <style>
-      .bg{fill:#fbfaf7}.panel{fill:#fff;stroke:#263238;stroke-width:2}.h{font:700 25px Arial,sans-serif;fill:#263238}.t{font:18px Arial,sans-serif;fill:#263238}.s{font:15px Arial,sans-serif;fill:#52616b}.arrow{stroke:#263238;stroke-width:3;fill:none;marker-end:url(#a)}.spot{fill:#dbeafe;stroke:#2563eb;stroke-width:2}.att{fill:#fff3cd;stroke:#b7791f;stroke-width:2}.lat{fill:#f3e8ff;stroke:#7e22ce;stroke-width:2}.out{fill:#e8f5e9;stroke:#2e7d32;stroke-width:2}
+      .bg{fill:#fbfbf7}.panel{fill:#ffffff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.cell{fill:#ffffff;stroke:#3a86ff;stroke-width:2.4}.spot{fill:#3a86ff;opacity:.86}.spot2{fill:#8338ec;opacity:.86}.spot3{fill:#ffbe0b;opacity:.86}.node{fill:#ffffff;stroke:#8338ec;stroke-width:2.3}.edge{stroke:#34495e;stroke-width:2.2;opacity:.65}.edge2{stroke:#ffbe0b;stroke-width:3.2;opacity:.78}.chip{fill:#f8fbff;stroke:#8338ec;stroke-width:2}.chip2{fill:#fff8ed;stroke:#ffbe0b;stroke-width:2}.chip3{fill:#f4fff6;stroke:#06d6a0;stroke-width:2}.latent{fill:url(#latentGrad);opacity:.86}.dash{stroke-dasharray:8 7}.thick{stroke-width:5}
     </style>
-    <marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#263238"/></marker>
   </defs>
-  <rect class="bg" width="1200" height="680"/>
-  <rect class="panel" x="45" y="55" width="250" height="560" rx="22"/><rect class="panel" x="335" y="55" width="250" height="560" rx="22"/><rect class="panel" x="625" y="55" width="250" height="560" rx="22"/><rect class="panel" x="915" y="55" width="240" height="560" rx="22"/>
-  <text class="h" x="75" y="105">ST input</text><text class="h" x="365" y="105">Spatial graph</text><text class="h" x="655" y="105">Attention AE</text><text class="h" x="945" y="105">Outputs</text>
-  <g>
-    <circle class="spot" cx="110" cy="180" r="20"/><circle class="spot" cx="180" cy="165" r="20"/><circle class="spot" cx="235" cy="225" r="20"/><circle class="spot" cx="130" cy="280" r="20"/><circle class="spot" cx="220" cy="320" r="20"/>
-    <text class="t" x="85" y="395">expression matrix</text><text class="s" x="85" y="425">+ spot coordinates</text><text class="s" x="85" y="485">optional pre-clustering</text>
+  <rect class="bg" width="1400" height="820"/>
+  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/>
+  <rect class="panel" x="512" y="55" width="375" height="650" rx="28"/>
+  <rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
+  <text class="h" x="80" y="105">Biological input</text>
+  <text class="h" x="545" y="105">Graph attention AE</text>
+  <text class="h" x="1015" y="105">Spatial domains</text>
+
+  <path d="M105 190 C130 120 245 115 310 155 C380 198 350 320 285 355 C205 398 90 335 82 260 C78 225 88 205 105 190 Z" fill="url(#tissueGrad)" stroke="#3a86ff" stroke-width="3"/>
+  <path d="M122 235 C185 185 245 178 326 225" stroke="#8338ec" stroke-width="5" fill="none" opacity=".72"/>
+  <path d="M118 305 C172 275 242 292 322 330" stroke="#ffbe0b" stroke-width="5" fill="none" opacity=".68"/>
+  <circle class="cell" cx="138" cy="208" r="20"/><circle class="cell" cx="206" cy="180" r="17"/><circle class="cell" cx="286" cy="218" r="23"/><circle class="cell" cx="154" cy="304" r="24"/><circle class="cell" cx="245" cy="305" r="19"/><circle class="cell" cx="323" cy="284" r="16"/>
+  <circle class="spot" cx="122" cy="258" r="7"/><circle class="spot2" cx="182" cy="245" r="7"/><circle class="spot3" cx="238" cy="228" r="7"/><circle class="spot" cx="298" cy="263" r="7"/><circle class="spot2" cx="210" cy="334" r="7"/><circle class="spot3" cx="332" cy="333" r="7"/>
+  <g transform="translate(92 392)">
+    <rect class="chip" x="0" y="0" width="92" height="78" rx="12"/><path d="M14 54 C32 22 55 24 76 36" stroke="#8338ec" stroke-width="4" fill="none"/><text class="xs" x="14" y="24">image</text>
+    <rect class="chip2" x="116" y="0" width="92" height="78" rx="12"/><path d="M130 56 L145 24 L160 46 L176 18 L194 58" stroke="#ffbe0b" stroke-width="4" fill="none"/><text class="xs" x="130" y="24">genes</text>
+    <rect class="chip3" x="232" y="0" width="92" height="78" rx="12"/><circle cx="252" cy="45" r="7" fill="#06d6a0"/><circle cx="286" cy="30" r="7" fill="#06d6a0"/><circle cx="304" cy="55" r="7" fill="#06d6a0"/><path d="M252 45 L286 30 L304 55" stroke="#06d6a0" stroke-width="3" fill="none"/><text class="xs" x="246" y="24">space</text>
   </g>
-  <path class="arrow" d="M300 335 L330 335"/>
-  <g>
-    <circle class="spot" cx="410" cy="175" r="18"/><circle class="spot" cx="505" cy="165" r="18"/><circle class="spot" cx="480" cy="260" r="18"/><circle class="spot" cx="405" cy="315" r="18"/><circle class="spot" cx="520" cy="350" r="18"/>
-    <path d="M410 175 L505 165 L480 260 L405 315 L520 350 M410 175 L480 260 M505 165 L405 315" stroke="#2563eb" stroke-width="3" fill="none"/>
-    <text class="t" x="375" y="440">neighbor graph</text><text class="s" x="375" y="470">local tissue adjacency</text>
+  <text class="s" x="80" y="500">spot expression matrix</text>
+<text class="s" x="80" y="522">spatial neighbor graph</text>
+<text class="s" x="80" y="544">optional pre-clustering</text>
+
+  <path class="arrow" d="M424 380 C460 380 475 380 507 380"/>
+  <g transform="translate(550 148)">
+    <rect class="chip" x="0" y="0" width="285" height="92" rx="18"/>
+    <text class="t" x="24" y="38">Build graph</text>
+    <text class="xs" x="24" y="66">coordinates define neighbors</text>
+    <rect class="chip2" x="0" y="137" width="285" height="92" rx="18"/>
+    <text class="t" x="24" y="175">Learn edge weights</text>
+    <text class="xs" x="24" y="203">attention adapts boundaries</text>
+    <rect class="chip3" x="0" y="274" width="285" height="92" rx="18"/>
+    <text class="t" x="24" y="312">Decode embedding</text>
+    <text class="xs" x="24" y="340">cluster, denoise, align sections</text>
+    <path class="arrow" d="M142 95 L142 132"/>
+    <path class="arrow" d="M142 232 L142 269"/>
   </g>
-  <path class="arrow" d="M590 335 L620 335"/>
-  <g>
-    <rect class="att" x="675" y="145" width="155" height="80" rx="16"/><text class="t" x="705" y="180">edge weights</text><text class="s" x="705" y="207">learned attention</text>
-    <rect class="lat" x="675" y="290" width="155" height="80" rx="16"/><text class="t" x="705" y="325">latent space</text><text class="s" x="705" y="352">denoised embedding</text>
-    <path class="arrow" d="M752 228 L752 285"/>
-    <text class="s" x="665" y="455">boundary similarity is learned, not fixed</text>
+  <g transform="translate(595 560)">
+    <circle class="node" cx="0" cy="0" r="15"/><circle class="node" cx="65" cy="-20" r="15"/><circle class="node" cx="130" cy="0" r="15"/><circle class="node" cx="35" cy="52" r="15"/><circle class="node" cx="105" cy="52" r="15"/>
+    <path class="edge" d="M0 0 L65 -20 L130 0 L105 52 L35 52 Z"/>
+    <path class="edge2" d="M0 0 L105 52 M65 -20 L35 52"/>
   </g>
-  <path class="arrow" d="M880 335 L910 335"/>
-  <g>
-    <rect class="out" x="960" y="140" width="150" height="70" rx="14"/><text class="t" x="990" y="183">domains</text>
-    <rect class="out" x="960" y="255" width="150" height="70" rx="14"/><text class="t" x="990" y="298">denoising</text>
-    <rect class="out" x="960" y="370" width="150" height="70" rx="14"/><text class="t" x="990" y="413">trajectory</text>
-    <rect class="out" x="960" y="485" width="150" height="70" rx="14"/><text class="t" x="990" y="528">3D sections</text>
+  <text class="s" x="495" y="490">adaptive edge attention</text>
+<text class="s" x="495" y="512">latent denoised embedding</text>
+<text class="s" x="495" y="534">boundary-aware graph pruning</text>
+
+  <path class="arrow" d="M892 380 C930 380 945 380 975 380"/>
+  <g transform="translate(1030 135)">
+    <path d="M42 45 C88 8 186 16 226 60 C260 98 236 168 178 188 C112 210 40 178 26 120 C18 88 22 62 42 45 Z" fill="#eef7ff" stroke="#8338ec" stroke-width="3"/>
+    <path d="M50 118 C94 85 148 82 224 110" stroke="#ffbe0b" stroke-width="5" fill="none" opacity=".75"/>
+    <circle class="spot" cx="70" cy="82" r="8"/><circle class="spot2" cx="122" cy="62" r="8"/><circle class="spot3" cx="190" cy="85" r="8"/><circle class="spot" cx="104" cy="146" r="8"/><circle class="spot2" cx="170" cy="155" r="8"/>
+    <rect class="chip" x="0" y="250" width="110" height="82" rx="14"/><text class="xs" x="18" y="282">map</text><path d="M18 314 C40 286 72 292 94 270" stroke="#8338ec" stroke-width="4" fill="none"/>
+    <rect class="chip2" x="136" y="250" width="110" height="82" rx="14"/><text class="xs" x="154" y="282">score</text><rect x="158" y="298" width="16" height="20" fill="#3a86ff"/><rect x="184" y="288" width="16" height="30" fill="#8338ec"/><rect x="210" y="276" width="16" height="42" fill="#ffbe0b"/>
+    <rect class="chip3" x="68" y="365" width="142" height="76" rx="14"/><text class="xs" x="91" y="395">uncertainty</text><path d="M92 420 C114 396 136 444 166 413" stroke="#06d6a0" stroke-width="4" fill="none"/>
   </g>
-  <text class="s" x="70" y="640">Digest interpretation: STAGATE remains a reference point for adaptive local graph construction in spatial-domain models.</text>
+  <text class="s" x="905" y="500">domain segmentation</text>
+<text class="s" x="905" y="522">denoised expression</text>
+<text class="s" x="905" y="544">multi-section 3D structure</text>
+  <text class="s" x="70" y="775">STAGATE made spatial neighbor influence learnable rather than fixed.</text>
 </svg>
