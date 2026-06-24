@@ -1,38 +1,63 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
-  <title id="title">PRECAST probabilistic embedding clustering and alignment</title>
-  <desc id="desc">Multiple spatial transcriptomics sections are jointly embedded, aligned and clustered into shared spatial domains while retaining section-specific effects.</desc>
+  <title id="title">PRECAST probabilistic integration</title>
+  <desc id="desc">PRECAST jointly estimates latent embeddings, spatial-domain labels and alignment across multiple spatial transcriptomics sections.</desc>
   <defs>
-    <linearGradient id="latent" x1="0" x2="1"><stop offset="0" stop-color="#8338ec"/><stop offset="1" stop-color="#3a86ff"/></linearGradient>
+    <linearGradient id="tissue" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#dbeafe"/><stop offset=".5" stop-color="#fff7ed"/><stop offset="1" stop-color="#dcfce7"/></linearGradient>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#22313f"/></marker>
-    <style>.bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.d1{fill:#3a86ff}.d2{fill:#ffbe0b}.d3{fill:#06d6a0}.d4{fill:#ff006e}.chip{fill:#f8fbff;stroke:#3a86ff;stroke-width:2}.chip2{fill:#fff8ed;stroke:#ffbe0b;stroke-width:2}.chip3{fill:#f4fff6;stroke:#06d6a0;stroke-width:2}.latent{fill:url(#latent);opacity:.9}.edge{stroke:#495057;stroke-width:2;opacity:.55}</style>
+    <style>
+      .bg{fill:#fbfbf7}.panel{fill:#fff;stroke:#22313f;stroke-width:2.2}.h{font:700 27px Arial,sans-serif;fill:#17232c}.t{font:19px Arial,sans-serif;fill:#24323d}.s{font:15px Arial,sans-serif;fill:#50616e}.xs{font:13px Arial,sans-serif;fill:#5f6f7a}.formula{font:700 16px "Courier New",monospace;fill:#17232c}.arrow{stroke:#22313f;stroke-width:3.4;fill:none;marker-end:url(#arrow)}.arrow2{stroke:#22313f;stroke-width:3;fill:none;marker-end:url(#arrow)}.chip{fill:#f8fbff;stroke:#2f80ed;stroke-width:2}.chip2{fill:#fff8ed;stroke:#f2994a;stroke-width:2}.chip3{fill:#f4fff6;stroke:#27ae60;stroke-width:2}.spot{opacity:.9}.a{fill:#2f80ed}.b{fill:#f2994a}.c{fill:#27ae60}.node{fill:#fff;stroke-width:2.4}.blue{stroke:#2f80ed}.orange{stroke:#f2994a}.green{stroke:#27ae60}.soft{stroke:#7b61ff;stroke-width:2.2;opacity:.58;fill:none}.edge{stroke:#34495e;stroke-width:2.1;opacity:.62;fill:none}.strong{stroke:#f2994a;stroke-width:4;opacity:.85}
+    </style>
   </defs>
   <rect class="bg" width="1400" height="820"/>
-  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/><rect class="panel" x="512" y="55" width="375" height="650" rx="28"/><rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
-  <text class="h" x="80" y="105">Multiple sections</text><text class="h" x="545" y="105">PRECAST model</text><text class="h" x="1015" y="105">Shared biology</text>
-  <g transform="translate(90 150)">
-    <g transform="translate(0 0)"><path d="M30 45 C95 10 220 18 265 78 C220 122 105 132 28 95 Z" fill="#eef7ff" stroke="#3a86ff" stroke-width="3"/><circle class="d1" cx="72" cy="70" r="8"/><circle class="d2" cx="128" cy="55" r="8"/><circle class="d3" cx="190" cy="78" r="8"/><circle class="d4" cx="232" cy="100" r="8"/></g>
-    <g transform="translate(25 150)"><path d="M30 45 C95 10 220 18 265 78 C220 122 105 132 28 95 Z" fill="#fff8ed" stroke="#ffbe0b" stroke-width="3"/><circle class="d1" cx="75" cy="78" r="8"/><circle class="d2" cx="135" cy="58" r="8"/><circle class="d3" cx="205" cy="84" r="8"/><circle class="d4" cx="235" cy="103" r="8"/></g>
-    <g transform="translate(-5 300)"><path d="M30 45 C95 10 220 18 265 78 C220 122 105 132 28 95 Z" fill="#f4fff6" stroke="#06d6a0" stroke-width="3"/><circle class="d1" cx="68" cy="72" r="8"/><circle class="d2" cx="142" cy="57" r="8"/><circle class="d3" cx="200" cy="86" r="8"/><circle class="d4" cx="240" cy="105" r="8"/></g>
-    <text class="s" x="0" y="500">Input: many slices with genes, coordinates and batch effects</text>
+  <rect class="panel" x="45" y="55" width="375" height="650" rx="28"/>
+  <rect class="panel" x="512" y="55" width="375" height="650" rx="28"/>
+  <rect class="panel" x="980" y="55" width="375" height="650" rx="28"/>
+  <text class="h" x="80" y="105">Many sections</text>
+  <text class="h" x="545" y="105">Probabilistic embedding</text>
+  <text class="h" x="1015" y="105">Shared domains</text>
+  <g transform="translate(82 150)">
+    <path d="M38 70 C96 5 225 12 290 65 C365 126 300 235 202 252 C106 268 20 208 22 130 C23 101 27 82 38 70 Z" fill="url(#tissue)" stroke="#2f80ed" stroke-width="3"/>
+    <path d="M58 145 C112 88 205 92 300 145" stroke="#f2994a" stroke-width="6" fill="none" opacity=".78"/>
+    <path d="M72 198 C128 165 205 175 280 218" stroke="#27ae60" stroke-width="5" fill="none" opacity=".7"/>
+    <circle class="spot a" cx="72" cy="112" r="8"/><circle class="spot b" cx="136" cy="82" r="8"/><circle class="spot c" cx="218" cy="104" r="8"/>
+    <circle class="spot a" cx="285" cy="154" r="8"/><circle class="spot b" cx="122" cy="190" r="8"/><circle class="spot c" cx="220" cy="210" r="8"/>
   </g>
+  <g><rect x="92" y="435" width="16" height="16" fill="#dbeafe" stroke="#fff"/><rect x="110" y="435" width="16" height="16" fill="#bfdbfe" stroke="#fff"/><rect x="128" y="435" width="16" height="16" fill="#93c5fd" stroke="#fff"/><rect x="146" y="435" width="16" height="16" fill="#fef3c7" stroke="#fff"/><rect x="164" y="435" width="16" height="16" fill="#bbf7d0" stroke="#fff"/><rect x="182" y="435" width="16" height="16" fill="#dbeafe" stroke="#fff"/><rect x="92" y="453" width="16" height="16" fill="#bfdbfe" stroke="#fff"/><rect x="110" y="453" width="16" height="16" fill="#93c5fd" stroke="#fff"/><rect x="128" y="453" width="16" height="16" fill="#fef3c7" stroke="#fff"/><rect x="146" y="453" width="16" height="16" fill="#bbf7d0" stroke="#fff"/><rect x="164" y="453" width="16" height="16" fill="#dbeafe" stroke="#fff"/><rect x="182" y="453" width="16" height="16" fill="#bfdbfe" stroke="#fff"/><rect x="92" y="471" width="16" height="16" fill="#93c5fd" stroke="#fff"/><rect x="110" y="471" width="16" height="16" fill="#fef3c7" stroke="#fff"/><rect x="128" y="471" width="16" height="16" fill="#bbf7d0" stroke="#fff"/><rect x="146" y="471" width="16" height="16" fill="#dbeafe" stroke="#fff"/><rect x="164" y="471" width="16" height="16" fill="#bfdbfe" stroke="#fff"/><rect x="182" y="471" width="16" height="16" fill="#93c5fd" stroke="#fff"/><rect x="92" y="489" width="16" height="16" fill="#fef3c7" stroke="#fff"/><rect x="110" y="489" width="16" height="16" fill="#bbf7d0" stroke="#fff"/><rect x="128" y="489" width="16" height="16" fill="#dbeafe" stroke="#fff"/><rect x="146" y="489" width="16" height="16" fill="#bfdbfe" stroke="#fff"/><rect x="164" y="489" width="16" height="16" fill="#93c5fd" stroke="#fff"/><rect x="182" y="489" width="16" height="16" fill="#fef3c7" stroke="#fff"/><rect x="92" y="507" width="16" height="16" fill="#bbf7d0" stroke="#fff"/><rect x="110" y="507" width="16" height="16" fill="#dbeafe" stroke="#fff"/><rect x="128" y="507" width="16" height="16" fill="#bfdbfe" stroke="#fff"/><rect x="146" y="507" width="16" height="16" fill="#93c5fd" stroke="#fff"/><rect x="164" y="507" width="16" height="16" fill="#fef3c7" stroke="#fff"/><rect x="182" y="507" width="16" height="16" fill="#bbf7d0" stroke="#fff"/><text class="xs" x="92" y="543">spots x latent factors</text></g>
+  <text class="s" x="210" y="465">multi-section ST data</text>
+<text class="s" x="210" y="489">batch and biological effects</text>
+<text class="s" x="210" y="513">spot coordinates</text>
   <path class="arrow" d="M424 380 C462 380 475 380 507 380"/>
-  <g transform="translate(552 145)">
-    <rect class="chip" x="0" y="0" width="285" height="86" rx="18"/><text class="t" x="24" y="36">Joint latent embedding</text><text class="xs" x="24" y="64">biological effects across slides</text>
-    <rect class="chip2" x="0" y="128" width="285" height="86" rx="18"/><text class="t" x="24" y="164">Domain labels</text><text class="xs" x="24" y="192">shared clusters over sections</text>
-    <rect class="chip3" x="0" y="256" width="285" height="86" rx="18"/><text class="t" x="24" y="292">Alignment + correction</text><text class="xs" x="24" y="320">integrate while preserving domains</text>
-    <path class="arrow" d="M142 89 L142 123"/><path class="arrow" d="M142 217 L142 251"/>
-    <g transform="translate(55 420)">
-      <ellipse class="latent" cx="0" cy="0" rx="45" ry="20"/><ellipse class="latent" cx="95" cy="-18" rx="45" ry="20"/><ellipse class="latent" cx="160" cy="48" rx="45" ry="20"/>
-      <path class="edge" d="M0 0 C50 -45 110 -45 160 48 M0 0 C60 35 95 32 160 48"/>
-      <text class="xs" x="-18" y="95">aligned low-dimensional geometry</text>
+  <g transform="translate(555 150)">
+      <text class="t" x="0" y="0">learned graph structure</text>
+      <circle class="node blue" cx="28" cy="62" r="15"/><circle class="node blue" cx="118" cy="30" r="15"/><circle class="node blue" cx="205" cy="74" r="15"/><circle class="node blue" cx="72" cy="150" r="15"/><circle class="node blue" cx="180" cy="165" r="15"/>
+      <path class="edge" d="M28 62 L118 30 L205 74 L180 165 L72 150 L28 62 M118 30 L72 150 M205 74 L72 150"/>
+      <path class="edge strong" d="M28 62 L180 165 M118 30 L205 74"/>
+      <text class="formula" x="0" y="225">joint latent z + domain label c across slides</text>
     </g>
-  </g>
+  <rect class="chip2" x="545" y="520" width="290" height="58" rx="16"/>
+  <text class="t" x="565" y="553">joint embedding</text>
+  <text class="xs" x="565" y="579">biological effects aligned</text>
+  <rect class="chip3" x="545" y="600" width="290" height="58" rx="16"/>
+  <text class="t" x="565" y="633">domain labels</text>
+  <text class="xs" x="565" y="659">clusters shared across sections</text>
   <path class="arrow" d="M892 380 C930 380 945 380 975 380"/>
-  <g transform="translate(1020 145)">
-    <rect class="chip" x="0" y="0" width="280" height="86" rx="18"/><text class="t" x="24" y="36">Common spatial domains</text><text class="xs" x="24" y="64">joint labels across sections</text>
-    <rect class="chip2" x="0" y="128" width="280" height="86" rx="18"/><text class="t" x="24" y="164">DE and trajectories</text><text class="xs" x="24" y="192">domain-specific biology</text>
-    <rect class="chip3" x="0" y="256" width="280" height="86" rx="18"/><text class="t" x="24" y="292">Cell-type composition</text><text class="xs" x="24" y="320">deconvolution linked to domains</text>
-    <g transform="translate(12 400)"><circle class="d1" cx="30" cy="45" r="20"/><circle class="d2" cx="90" cy="35" r="20"/><circle class="d3" cx="150" cy="58" r="20"/><circle class="d4" cx="210" cy="42" r="20"/><path d="M30 45 L90 35 L150 58 L210 42" stroke="#22313f" stroke-width="3" fill="none"/></g>
+  <g transform="translate(1015 155)">
+    <g transform="translate(0 0)">
+    <path d="M38 70 C96 5 225 12 290 65 C365 126 300 235 202 252 C106 268 20 208 22 130 C23 101 27 82 38 70 Z" fill="url(#tissue)" stroke="#27ae60" stroke-width="3"/>
+    <path d="M58 145 C112 88 205 92 300 145" stroke="#f2994a" stroke-width="6" fill="none" opacity=".78"/>
+    <path d="M72 198 C128 165 205 175 280 218" stroke="#27ae60" stroke-width="5" fill="none" opacity=".7"/>
+    <circle class="spot a" cx="72" cy="112" r="8"/><circle class="spot b" cx="136" cy="82" r="8"/><circle class="spot c" cx="218" cy="104" r="8"/>
+    <circle class="spot a" cx="285" cy="154" r="8"/><circle class="spot b" cx="122" cy="190" r="8"/><circle class="spot c" cx="220" cy="210" r="8"/>
   </g>
-  <text class="s" x="70" y="775">Digest interpretation: PRECAST couples integration, embedding and domain discovery instead of treating them as isolated steps.</text>
+    <rect class="chip3" x="5" y="315" width="300" height="72" rx="16"/>
+  <text class="t" x="25" y="348">common domains</text>
+  <text class="xs" x="25" y="374">aligned low-dimensional space</text>
+    <rect class="chip" x="5" y="410" width="300" height="72" rx="16"/>
+  <text class="t" x="25" y="443">DE and trajectories</text>
+  <text class="xs" x="25" y="469">domain-specific programs</text>
+    <rect class="chip2" x="5" y="505" width="300" height="72" rx="16"/>
+  <text class="t" x="25" y="538">deconvolution context</text>
+  <text class="xs" x="25" y="564">cell composition per domain</text>
+  </g>
+  <text class="s" x="70" y="775">PRECAST is a joint model for embedding, clustering and alignment, not a simple registration step.</text>
 </svg>
