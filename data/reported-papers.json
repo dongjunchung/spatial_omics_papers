@@ -1,398 +1,422 @@
 [
-  {
-    "title": "Accurate, scalable and cross-platform cell identification for high-resolution spatial transcriptomics",
-    "url": "https://www.nature.com/articles/s41588-026-02610-1",
-    "release_date": "2026-05-20",
-    "reported_at": "2026-06-05"
-  },
-  {
-    "title": "BaySC: Uncovering Tissue Architecture in Spatial Multi-Omics via Probabilistic Spatial Clustering",
-    "url": "https://arxiv.org/abs/2605.15291",
-    "release_date": "2026-05-14",
-    "reported_at": "2026-06-05"
-  },
-  {
-    "title": "A Multimodal Foundation Model of Spatial Transcriptomics and Histology for Biological Discovery and Clinical Prediction",
-    "url": "https://arxiv.org/abs/2604.03630",
-    "release_date": "2026-04-04",
-    "reported_at": "2026-06-05"
-  },
-  {
-    "title": "N-Orbit: towards a universal model and metric for comparing tissue microenvironments",
-    "url": "https://www.nature.com/articles/s41467-026-73561-8",
-    "release_date": "2026-05-22",
-    "reported_at": "2026-06-06"
-  },
-  {
-    "title": "Decoding spatial transcriptomics across multicellular and subcellular resolutions",
-    "url": "https://www.nature.com/articles/s41467-026-72872-0",
-    "release_date": "2026-05-18",
-    "reported_at": "2026-06-06"
-  },
-  {
-    "title": "Mosaic integration of spatial multi-omics with SpaMosaic",
-    "url": "https://www.nature.com/articles/s41588-026-02573-3",
-    "release_date": "2026-04-24",
-    "reported_at": "2026-06-06"
-  },
-  {
-    "title": "ISON: Integrated Spatial Omics Network for reconstructing gene-regulatory landscapes",
-    "url": "https://www.nature.com/articles/s41467-026-74298-0",
-    "release_date": "2026-06-04",
-    "reported_at": "2026-06-07"
-  },
-  {
-    "title": "Cell2location maps fine-grained cell types in spatial transcriptomics",
-    "url": "https://www.nature.com/articles/s41587-021-01139-4",
-    "release_date": "2022-01-13",
-    "reported_at": "2026-06-07"
-  },
-  {
-    "title": "Deep learning and alignment of spatially resolved single-cell transcriptomes with Tangram",
-    "url": "https://www.nature.com/articles/s41592-021-01264-7",
-    "release_date": "2021-10-28",
-    "reported_at": "2026-06-07"
-  },
-  {
-    "title": "Squidpy: a scalable framework for spatial omics analysis",
-    "url": "https://www.nature.com/articles/s41592-021-01358-2",
-    "release_date": "2022-01-31",
-    "reported_at": "2026-06-07"
-  },
-  {
-    "title": "Decoding cell state transitions driven by dynamic cell-cell communication in spatial transcriptomics",
-    "url": "https://www.nature.com/articles/s43588-025-00934-2",
-    "release_date": "2026-01-05",
-    "reported_at": "2026-06-08"
-  },
-  {
-    "title": "Integrating gene expression, spatial location and histology to identify spatial domains and spatially variable genes by graph convolutional network",
-    "url": "https://www.nature.com/articles/s41592-021-01255-8",
-    "release_date": "2021-10-28",
-    "reported_at": "2026-06-08"
-  },
-  {
-    "title": "DestVI identifies continuums of cell types in spatial transcriptomics data",
-    "url": "https://www.nature.com/articles/s41587-022-01272-8",
-    "release_date": "2022-04-21",
-    "reported_at": "2026-06-08"
-  },
-  {
-    "title": "Inference of cell-cell communications in spatially resolved transcriptomics datasets",
-    "url": "https://www.nature.com/articles/s41592-025-02721-3",
-    "release_date": "2025-06-06",
-    "reported_at": "2026-06-08"
-  },
-  {
-    "title": "SpCAST: Decoding spatial transcriptomics at single-cell resolution with fast and interpretable analysis",
-    "url": "https://arxiv.org/abs/2605.26904",
-    "release_date": "2026-05-26",
-    "reported_at": "2026-06-09"
-  },
-  {
-    "title": "Spatial Transcriptomics as Images for Large-Scale Pretraining",
-    "url": "https://arxiv.org/abs/2603.13432",
-    "release_date": "2026-03-13",
-    "reported_at": "2026-06-09"
-  },
-  {
-    "title": "Reconstructing single-cell resolution from spatial transcriptomics with CellRefiner",
-    "url": "https://www.nature.com/articles/s41467-026-70090-2",
-    "release_date": "2026-02-27",
-    "reported_at": "2026-06-09"
-  },
-  {
-    "title": "Interpretable, flexible and spatially aware integration of multiple spatial transcriptomics datasets from diverse sources",
-    "url": "https://www.nature.com/articles/s41588-026-02579-x",
-    "release_date": "2026-04-27",
-    "reported_at": "2026-06-09"
-  },
-  {
-    "title": "Cross-Modal Knowledge Distillation from Spatial Transcriptomics to Histology",
-    "url": "https://arxiv.org/abs/2604.09076",
-    "release_date": "2026-04-10",
-    "reported_at": "2026-06-10"
-  },
-  {
-    "title": "HEIST: A Graph Foundation Model for Spatial Transcriptomics and Proteomics Data",
-    "url": "https://arxiv.org/abs/2506.11152",
-    "release_date": "2025-06-11",
-    "reported_at": "2026-06-10"
-  },
-  {
-    "title": "A joint model of unpaired data from scRNA-seq and spatial transcriptomics for imputing missing gene expression measurements",
-    "url": "https://arxiv.org/abs/1905.02269",
-    "release_date": "2019-05-06",
-    "reported_at": "2026-06-10"
-  },
-  {
-    "title": "SemanticST: A Scalable Framework for Spatial Transcriptomics Analysis via Multi-Semantic Representation Learning",
-    "url": "https://arxiv.org/abs/2506.11491",
-    "release_date": "2025-06-13",
-    "reported_at": "2026-06-10"
-  },
-  {
-    "title": "SAGE-FM: A lightweight and interpretable foundation model for spatial transcriptomics",
-    "url": "https://arxiv.org/abs/2601.15652",
-    "release_date": "2026-01-21",
-    "reported_at": "2026-06-11"
-  },
-  {
-    "title": "SToFM: A Multi-scale Foundation Model for Spatial Transcriptomics",
-    "url": "https://arxiv.org/abs/2507.10737",
-    "release_date": "2025-07-15",
-    "reported_at": "2026-06-11"
-  },
-  {
-    "title": "ST-Align: a multimodal foundation model for image-gene alignment in spatial transcriptomics",
-    "url": "https://arxiv.org/abs/2411.16800",
-    "release_date": "2024-11-25",
-    "reported_at": "2026-06-11"
-  },
-  {
-    "title": "Integrated Bayesian non-parametric spatial modeling for cross-sample identification of spatially variable genes",
-    "url": "https://arxiv.org/abs/2504.09654",
-    "release_date": "2025-04-13",
-    "reported_at": "2026-06-12"
-  },
-  {
-    "title": "PersiST: Robust Identification of Spatially Variable Features in Spatial Omics Datasets via Topological Data Analysis",
-    "url": "https://arxiv.org/abs/2505.04360",
-    "release_date": "2025-05-07",
-    "reported_at": "2026-06-12"
-  },
-  {
-    "title": "Spatial Transcriptomics Iterative Hierarchical Clustering (stIHC): A Novel Method for Identifying Spatial Gene Co-Expression Modules",
-    "url": "https://arxiv.org/abs/2502.09574",
-    "release_date": "2025-02-13",
-    "reported_at": "2026-06-12"
-  },
-  {
-    "title": "SPARK-X: non-parametric modeling enables scalable and robust detection of spatial expression patterns for large spatial transcriptomic studies",
-    "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02404-0",
-    "release_date": "2021-06-21",
-    "reported_at": "2026-06-13"
-  },
-  {
-    "title": "Spatial transcriptomics at subspot resolution with BayesSpace",
-    "url": "https://www.nature.com/articles/s41587-021-00935-2",
-    "release_date": "2021-06-03",
-    "reported_at": "2026-06-13"
-  },
-  {
-    "title": "Screening cell-cell communication in spatial transcriptomics via collective optimal transport",
-    "url": "https://www.nature.com/articles/s41592-022-01728-4",
-    "release_date": "2023-01-23",
-    "reported_at": "2026-06-13"
-  },
-  {
-    "title": "Robust decomposition of cell type mixtures in spatial transcriptomics",
-    "url": "https://www.nature.com/articles/s41587-021-00830-w",
-    "release_date": "2021-02-18",
-    "reported_at": "2026-06-14"
-  },
-  {
-    "title": "Explainable multiview framework for dissecting spatial relationships from highly multiplexed data",
-    "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02663-5",
-    "release_date": "2022-04-14",
-    "reported_at": "2026-06-14"
-  },
-  {
-    "title": "Spatially informed clustering, integration, and deconvolution of spatial transcriptomics with GraphST",
-    "url": "https://www.nature.com/articles/s41467-023-36796-3",
-    "release_date": "2023-03-01",
-    "reported_at": "2026-06-14"
-  },
-  {
-    "title": "SpatialDE: identification of spatially variable genes",
-    "url": "https://www.nature.com/articles/nmeth.4636",
-    "release_date": "2018-03-19",
-    "reported_at": "2026-06-15"
-  },
-  {
-    "title": "Identifying temporal and spatial patterns of variation from multimodal data using MEFISTO",
-    "url": "https://www.nature.com/articles/s41592-021-01343-9",
-    "release_date": "2022-01-13",
-    "reported_at": "2026-06-15"
-  },
-  {
-    "title": "Nonnegative spatial factorization applied to spatial genomics",
-    "url": "https://www.nature.com/articles/s41592-022-01687-w",
-    "release_date": "2022-12-31",
-    "reported_at": "2026-06-15"
-  },
-  {
-    "title": "Gene expression cartography",
-    "url": "https://www.nature.com/articles/s41586-019-1773-3",
-    "release_date": "2019-11-20",
-    "reported_at": "2026-06-16"
-  },
-  {
-    "title": "Spatially informed cell-type deconvolution for spatial transcriptomics",
-    "url": "https://www.nature.com/articles/s41587-022-01273-7",
-    "release_date": "2022-05-02",
-    "reported_at": "2026-06-16"
-  },
-  {
-    "title": "Identification of spatial expression trends in single-cell gene expression data",
-    "url": "https://www.nature.com/articles/nmeth.4634",
-    "release_date": "2018-03-19",
-    "reported_at": "2026-06-16"
-  },
-  {
-    "title": "Giotto: a toolbox for integrative analysis and visualization of spatial expression data",
-    "url": "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2",
-    "release_date": "2021-03-08",
-    "reported_at": "2026-06-17"
-  },
-  {
-    "title": "SPOTlight: seeded NMF regression to deconvolute spatial transcriptomics spots with single-cell transcriptomes",
-    "url": "https://doi.org/10.1093/nar/gkab043",
-    "release_date": "2021-02-05",
-    "reported_at": "2026-06-17"
-  },
-  {
-    "title": "Benchmarking spatial and single-cell transcriptomics integration methods for transcript distribution prediction and cell type deconvolution",
-    "url": "https://www.nature.com/articles/s41592-022-01480-9",
-    "release_date": "2022-05-16",
-    "reported_at": "2026-06-17"
-  },
-  {
-    "title": "Combining spatial transcriptomics with tissue morphology",
-    "url": "https://www.nature.com/articles/s41467-025-58989-8",
-    "release_date": "2025-05-13",
-    "reported_at": "2026-06-19"
-  },
-  {
-    "title": "SONAR enables cell type deconvolution with spatially weighted Poisson-Gamma model for spatial transcriptomics",
-    "url": "https://www.nature.com/articles/s41467-023-40458-9",
-    "release_date": "2023-08-07",
-    "reported_at": "2026-06-19"
-  },
-  {
-    "title": "Spatial-aware detection of copy number alterations from spatial transcriptomics using SpaCNA",
-    "url": "https://www.nature.com/articles/s41467-026-72284-0",
-    "release_date": "2026-04-29",
-    "reported_at": "2026-06-19"
-  },
-  {
-    "title": "Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays",
-    "url": "https://doi.org/10.1016/j.cell.2022.04.003",
-    "release_date": "2022-05",
-    "reported_at": "2026-06-19-resource"
-  },
-  {
-    "title": "A spatially resolved atlas of the human lung characterizes a gland-associated immune niche",
-    "url": "https://www.nature.com/articles/s41588-022-01243-4",
-    "release_date": "2022-12-21",
-    "reported_at": "2026-06-19-resource"
-  },
-  {
-    "title": "Spatially resolved mapping of cells associated with human complex traits",
-    "url": "https://www.nature.com/articles/s41586-025-08757-x",
-    "release_date": "2025-03-19",
-    "reported_at": "2026-06-19-resource"
-  },
-  {
-    "title": "Spatial Transcriptomics-Guided Alignment Enhances Molecular Profiling in Pathology Foundation Model",
-    "url": "https://arxiv.org/abs/2606.03644",
-    "release_date": "2026-05-29",
-    "reported_at": "2026-06-20"
-  },
-  {
-    "title": "Towards Universal Spatial Transcriptomics Super-Resolution: A Generalist Physically Consistent Flow Matching Framework",
-    "url": "https://arxiv.org/abs/2602.10644",
-    "release_date": "2026-02-11",
-    "reported_at": "2026-06-20"
-  },
-  {
-    "title": "Uncovering spatial tissue domains and cell types in spatial omics through cross-scale profiling of cellular and genomic interactions",
-    "url": "https://arxiv.org/abs/2602.12651",
-    "release_date": "2026-02-13",
-    "reported_at": "2026-06-20"
-  },
-  {
-    "title": "HuBMAP Data Portal: A Resource for Multi-Modal Spatial and Single-Cell Data of Healthy Human Tissues",
-    "url": "https://arxiv.org/abs/2511.05708",
-    "release_date": "2025-11-07",
-    "reported_at": "2026-06-20"
-  },
-  {
-    "title": "The Challenge of Cell Segmentation in Spatially Resolved Transcriptomics",
-    "url": "https://arxiv.org/abs/2606.09675",
-    "release_date": "2026-06-08",
-    "reported_at": "2026-06-22"
-  },
-  {
-    "title": "Towards Spatial Transcriptomics-driven Pathology Foundation Models",
-    "url": "https://arxiv.org/abs/2602.14177",
-    "release_date": "2026-02-15",
-    "reported_at": "2026-06-22"
-  },
-  {
-    "title": "Deciphering spatial domains from spatially resolved transcriptomics with an adaptive graph attention auto-encoder",
-    "url": "https://www.nature.com/articles/s41467-022-29439-6",
-    "release_date": "2022-04-01",
-    "reported_at": "2026-06-22"
-  },
-  {
-    "title": "FEAST: Fully Connected Expressive Attention for Spatial Transcriptomics",
-    "url": "https://arxiv.org/abs/2603.25247",
-    "release_date": "2026-03-26",
-    "reported_at": "2026-06-22"
-  },
-  {
-    "title": "SpatialData: an open and universal data framework for spatial omics",
-    "url": "https://www.nature.com/articles/s41592-024-02212-x",
-    "release_date": "2024-03-20",
-    "reported_at": "2026-06-22"
-  },
-  {
-    "title": "Benchmarking alignment methods for spatial transcriptomics data",
-    "url": "https://www.nature.com/articles/s43588-026-00977-z",
-    "release_date": "2026-04-03",
-    "reported_at": "2026-06-23"
-  },
-  {
-    "title": "Single-cell and spatial transcriptomics enables probabilistic inference of cell type topography",
-    "url": "https://www.nature.com/articles/s42003-020-01247-y",
-    "release_date": "2020-10-09",
-    "reported_at": "2026-06-23"
-  },
-  {
-    "title": "Knowledge-graph-based cell-cell communication inference for spatially resolved transcriptomic data with SpaTalk",
-    "url": "https://www.nature.com/articles/s41467-022-32111-8",
-    "release_date": "2022-07-30",
-    "reported_at": "2026-06-23"
-  },
-  {
-    "title": "Completing spatial transcriptomics data for gene expression prediction benchmarking",
-    "url": "https://arxiv.org/abs/2505.02980",
-    "release_date": "2025-12",
-    "reported_at": "2026-06-23"
-  },
-  {
-    "title": "Alignment and integration of spatial transcriptomics data",
-    "url": "https://www.nature.com/articles/s41592-022-01459-6",
-    "release_date": "2022-05-16",
-    "reported_at": "2026-06-24"
-  },
-  {
-    "title": "Probabilistic embedding, clustering, and alignment for integrating spatial transcriptomics data with PRECAST",
-    "url": "https://www.nature.com/articles/s41467-023-35947-w",
-    "release_date": "2023-01-18",
-    "reported_at": "2026-06-24"
-  },
-  {
-    "title": "Spatially aware dimension reduction for spatial transcriptomics",
-    "url": "https://www.nature.com/articles/s41467-022-34879-1",
-    "release_date": "2022-11-23",
-    "reported_at": "2026-06-24"
-  },
-  {
-    "title": "Inferring spatial and signaling relationships between cells from single-cell transcriptomic data",
-    "url": "https://www.nature.com/articles/s41467-020-15968-5",
-    "release_date": "2020-04-29",
-    "reported_at": "2026-06-24"
-  }
+    {
+        "title":  "Accurate, scalable and cross-platform cell identification for high-resolution spatial transcriptomics",
+        "url":  "https://www.nature.com/articles/s41588-026-02610-1",
+        "release_date":  "2026-05-20",
+        "reported_at":  "2026-06-05"
+    },
+    {
+        "title":  "BaySC: Uncovering Tissue Architecture in Spatial Multi-Omics via Probabilistic Spatial Clustering",
+        "url":  "https://arxiv.org/abs/2605.15291",
+        "release_date":  "2026-05-14",
+        "reported_at":  "2026-06-05"
+    },
+    {
+        "title":  "A Multimodal Foundation Model of Spatial Transcriptomics and Histology for Biological Discovery and Clinical Prediction",
+        "url":  "https://arxiv.org/abs/2604.03630",
+        "release_date":  "2026-04-04",
+        "reported_at":  "2026-06-05"
+    },
+    {
+        "title":  "N-Orbit: towards a universal model and metric for comparing tissue microenvironments",
+        "url":  "https://www.nature.com/articles/s41467-026-73561-8",
+        "release_date":  "2026-05-22",
+        "reported_at":  "2026-06-06"
+    },
+    {
+        "title":  "Decoding spatial transcriptomics across multicellular and subcellular resolutions",
+        "url":  "https://www.nature.com/articles/s41467-026-72872-0",
+        "release_date":  "2026-05-18",
+        "reported_at":  "2026-06-06"
+    },
+    {
+        "title":  "Mosaic integration of spatial multi-omics with SpaMosaic",
+        "url":  "https://www.nature.com/articles/s41588-026-02573-3",
+        "release_date":  "2026-04-24",
+        "reported_at":  "2026-06-06"
+    },
+    {
+        "title":  "ISON: Integrated Spatial Omics Network for reconstructing gene-regulatory landscapes",
+        "url":  "https://www.nature.com/articles/s41467-026-74298-0",
+        "release_date":  "2026-06-04",
+        "reported_at":  "2026-06-07"
+    },
+    {
+        "title":  "Cell2location maps fine-grained cell types in spatial transcriptomics",
+        "url":  "https://www.nature.com/articles/s41587-021-01139-4",
+        "release_date":  "2022-01-13",
+        "reported_at":  "2026-06-07"
+    },
+    {
+        "title":  "Deep learning and alignment of spatially resolved single-cell transcriptomes with Tangram",
+        "url":  "https://www.nature.com/articles/s41592-021-01264-7",
+        "release_date":  "2021-10-28",
+        "reported_at":  "2026-06-07"
+    },
+    {
+        "title":  "Squidpy: a scalable framework for spatial omics analysis",
+        "url":  "https://www.nature.com/articles/s41592-021-01358-2",
+        "release_date":  "2022-01-31",
+        "reported_at":  "2026-06-07"
+    },
+    {
+        "title":  "Decoding cell state transitions driven by dynamic cell-cell communication in spatial transcriptomics",
+        "url":  "https://www.nature.com/articles/s43588-025-00934-2",
+        "release_date":  "2026-01-05",
+        "reported_at":  "2026-06-08"
+    },
+    {
+        "title":  "Integrating gene expression, spatial location and histology to identify spatial domains and spatially variable genes by graph convolutional network",
+        "url":  "https://www.nature.com/articles/s41592-021-01255-8",
+        "release_date":  "2021-10-28",
+        "reported_at":  "2026-06-08"
+    },
+    {
+        "title":  "DestVI identifies continuums of cell types in spatial transcriptomics data",
+        "url":  "https://www.nature.com/articles/s41587-022-01272-8",
+        "release_date":  "2022-04-21",
+        "reported_at":  "2026-06-08"
+    },
+    {
+        "title":  "Inference of cell-cell communications in spatially resolved transcriptomics datasets",
+        "url":  "https://www.nature.com/articles/s41592-025-02721-3",
+        "release_date":  "2025-06-06",
+        "reported_at":  "2026-06-08"
+    },
+    {
+        "title":  "SpCAST: Decoding spatial transcriptomics at single-cell resolution with fast and interpretable analysis",
+        "url":  "https://arxiv.org/abs/2605.26904",
+        "release_date":  "2026-05-26",
+        "reported_at":  "2026-06-09"
+    },
+    {
+        "title":  "Spatial Transcriptomics as Images for Large-Scale Pretraining",
+        "url":  "https://arxiv.org/abs/2603.13432",
+        "release_date":  "2026-03-13",
+        "reported_at":  "2026-06-09"
+    },
+    {
+        "title":  "Reconstructing single-cell resolution from spatial transcriptomics with CellRefiner",
+        "url":  "https://www.nature.com/articles/s41467-026-70090-2",
+        "release_date":  "2026-02-27",
+        "reported_at":  "2026-06-09"
+    },
+    {
+        "title":  "Interpretable, flexible and spatially aware integration of multiple spatial transcriptomics datasets from diverse sources",
+        "url":  "https://www.nature.com/articles/s41588-026-02579-x",
+        "release_date":  "2026-04-27",
+        "reported_at":  "2026-06-09"
+    },
+    {
+        "title":  "Cross-Modal Knowledge Distillation from Spatial Transcriptomics to Histology",
+        "url":  "https://arxiv.org/abs/2604.09076",
+        "release_date":  "2026-04-10",
+        "reported_at":  "2026-06-10"
+    },
+    {
+        "title":  "HEIST: A Graph Foundation Model for Spatial Transcriptomics and Proteomics Data",
+        "url":  "https://arxiv.org/abs/2506.11152",
+        "release_date":  "2025-06-11",
+        "reported_at":  "2026-06-10"
+    },
+    {
+        "title":  "A joint model of unpaired data from scRNA-seq and spatial transcriptomics for imputing missing gene expression measurements",
+        "url":  "https://arxiv.org/abs/1905.02269",
+        "release_date":  "2019-05-06",
+        "reported_at":  "2026-06-10"
+    },
+    {
+        "title":  "SemanticST: A Scalable Framework for Spatial Transcriptomics Analysis via Multi-Semantic Representation Learning",
+        "url":  "https://arxiv.org/abs/2506.11491",
+        "release_date":  "2025-06-13",
+        "reported_at":  "2026-06-10"
+    },
+    {
+        "title":  "SAGE-FM: A lightweight and interpretable foundation model for spatial transcriptomics",
+        "url":  "https://arxiv.org/abs/2601.15652",
+        "release_date":  "2026-01-21",
+        "reported_at":  "2026-06-11"
+    },
+    {
+        "title":  "SToFM: A Multi-scale Foundation Model for Spatial Transcriptomics",
+        "url":  "https://arxiv.org/abs/2507.10737",
+        "release_date":  "2025-07-15",
+        "reported_at":  "2026-06-11"
+    },
+    {
+        "title":  "ST-Align: a multimodal foundation model for image-gene alignment in spatial transcriptomics",
+        "url":  "https://arxiv.org/abs/2411.16800",
+        "release_date":  "2024-11-25",
+        "reported_at":  "2026-06-11"
+    },
+    {
+        "title":  "Integrated Bayesian non-parametric spatial modeling for cross-sample identification of spatially variable genes",
+        "url":  "https://arxiv.org/abs/2504.09654",
+        "release_date":  "2025-04-13",
+        "reported_at":  "2026-06-12"
+    },
+    {
+        "title":  "PersiST: Robust Identification of Spatially Variable Features in Spatial Omics Datasets via Topological Data Analysis",
+        "url":  "https://arxiv.org/abs/2505.04360",
+        "release_date":  "2025-05-07",
+        "reported_at":  "2026-06-12"
+    },
+    {
+        "title":  "Spatial Transcriptomics Iterative Hierarchical Clustering (stIHC): A Novel Method for Identifying Spatial Gene Co-Expression Modules",
+        "url":  "https://arxiv.org/abs/2502.09574",
+        "release_date":  "2025-02-13",
+        "reported_at":  "2026-06-12"
+    },
+    {
+        "title":  "SPARK-X: non-parametric modeling enables scalable and robust detection of spatial expression patterns for large spatial transcriptomic studies",
+        "url":  "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02404-0",
+        "release_date":  "2021-06-21",
+        "reported_at":  "2026-06-13"
+    },
+    {
+        "title":  "Spatial transcriptomics at subspot resolution with BayesSpace",
+        "url":  "https://www.nature.com/articles/s41587-021-00935-2",
+        "release_date":  "2021-06-03",
+        "reported_at":  "2026-06-13"
+    },
+    {
+        "title":  "Screening cell-cell communication in spatial transcriptomics via collective optimal transport",
+        "url":  "https://www.nature.com/articles/s41592-022-01728-4",
+        "release_date":  "2023-01-23",
+        "reported_at":  "2026-06-13"
+    },
+    {
+        "title":  "Robust decomposition of cell type mixtures in spatial transcriptomics",
+        "url":  "https://www.nature.com/articles/s41587-021-00830-w",
+        "release_date":  "2021-02-18",
+        "reported_at":  "2026-06-14"
+    },
+    {
+        "title":  "Explainable multiview framework for dissecting spatial relationships from highly multiplexed data",
+        "url":  "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02663-5",
+        "release_date":  "2022-04-14",
+        "reported_at":  "2026-06-14"
+    },
+    {
+        "title":  "Spatially informed clustering, integration, and deconvolution of spatial transcriptomics with GraphST",
+        "url":  "https://www.nature.com/articles/s41467-023-36796-3",
+        "release_date":  "2023-03-01",
+        "reported_at":  "2026-06-14"
+    },
+    {
+        "title":  "SpatialDE: identification of spatially variable genes",
+        "url":  "https://www.nature.com/articles/nmeth.4636",
+        "release_date":  "2018-03-19",
+        "reported_at":  "2026-06-15"
+    },
+    {
+        "title":  "Identifying temporal and spatial patterns of variation from multimodal data using MEFISTO",
+        "url":  "https://www.nature.com/articles/s41592-021-01343-9",
+        "release_date":  "2022-01-13",
+        "reported_at":  "2026-06-15"
+    },
+    {
+        "title":  "Nonnegative spatial factorization applied to spatial genomics",
+        "url":  "https://www.nature.com/articles/s41592-022-01687-w",
+        "release_date":  "2022-12-31",
+        "reported_at":  "2026-06-15"
+    },
+    {
+        "title":  "Gene expression cartography",
+        "url":  "https://www.nature.com/articles/s41586-019-1773-3",
+        "release_date":  "2019-11-20",
+        "reported_at":  "2026-06-16"
+    },
+    {
+        "title":  "Spatially informed cell-type deconvolution for spatial transcriptomics",
+        "url":  "https://www.nature.com/articles/s41587-022-01273-7",
+        "release_date":  "2022-05-02",
+        "reported_at":  "2026-06-16"
+    },
+    {
+        "title":  "Identification of spatial expression trends in single-cell gene expression data",
+        "url":  "https://www.nature.com/articles/nmeth.4634",
+        "release_date":  "2018-03-19",
+        "reported_at":  "2026-06-16"
+    },
+    {
+        "title":  "Giotto: a toolbox for integrative analysis and visualization of spatial expression data",
+        "url":  "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02286-2",
+        "release_date":  "2021-03-08",
+        "reported_at":  "2026-06-17"
+    },
+    {
+        "title":  "SPOTlight: seeded NMF regression to deconvolute spatial transcriptomics spots with single-cell transcriptomes",
+        "url":  "https://doi.org/10.1093/nar/gkab043",
+        "release_date":  "2021-02-05",
+        "reported_at":  "2026-06-17"
+    },
+    {
+        "title":  "Benchmarking spatial and single-cell transcriptomics integration methods for transcript distribution prediction and cell type deconvolution",
+        "url":  "https://www.nature.com/articles/s41592-022-01480-9",
+        "release_date":  "2022-05-16",
+        "reported_at":  "2026-06-17"
+    },
+    {
+        "title":  "Combining spatial transcriptomics with tissue morphology",
+        "url":  "https://www.nature.com/articles/s41467-025-58989-8",
+        "release_date":  "2025-05-13",
+        "reported_at":  "2026-06-19"
+    },
+    {
+        "title":  "SONAR enables cell type deconvolution with spatially weighted Poisson-Gamma model for spatial transcriptomics",
+        "url":  "https://www.nature.com/articles/s41467-023-40458-9",
+        "release_date":  "2023-08-07",
+        "reported_at":  "2026-06-19"
+    },
+    {
+        "title":  "Spatial-aware detection of copy number alterations from spatial transcriptomics using SpaCNA",
+        "url":  "https://www.nature.com/articles/s41467-026-72284-0",
+        "release_date":  "2026-04-29",
+        "reported_at":  "2026-06-19"
+    },
+    {
+        "title":  "Spatiotemporal transcriptomic atlas of mouse organogenesis using DNA nanoball-patterned arrays",
+        "url":  "https://doi.org/10.1016/j.cell.2022.04.003",
+        "release_date":  "2022-05",
+        "reported_at":  "2026-06-19-resource"
+    },
+    {
+        "title":  "A spatially resolved atlas of the human lung characterizes a gland-associated immune niche",
+        "url":  "https://www.nature.com/articles/s41588-022-01243-4",
+        "release_date":  "2022-12-21",
+        "reported_at":  "2026-06-19-resource"
+    },
+    {
+        "title":  "Spatially resolved mapping of cells associated with human complex traits",
+        "url":  "https://www.nature.com/articles/s41586-025-08757-x",
+        "release_date":  "2025-03-19",
+        "reported_at":  "2026-06-19-resource"
+    },
+    {
+        "title":  "Spatial Transcriptomics-Guided Alignment Enhances Molecular Profiling in Pathology Foundation Model",
+        "url":  "https://arxiv.org/abs/2606.03644",
+        "release_date":  "2026-05-29",
+        "reported_at":  "2026-06-20"
+    },
+    {
+        "title":  "Towards Universal Spatial Transcriptomics Super-Resolution: A Generalist Physically Consistent Flow Matching Framework",
+        "url":  "https://arxiv.org/abs/2602.10644",
+        "release_date":  "2026-02-11",
+        "reported_at":  "2026-06-20"
+    },
+    {
+        "title":  "Uncovering spatial tissue domains and cell types in spatial omics through cross-scale profiling of cellular and genomic interactions",
+        "url":  "https://arxiv.org/abs/2602.12651",
+        "release_date":  "2026-02-13",
+        "reported_at":  "2026-06-20"
+    },
+    {
+        "title":  "HuBMAP Data Portal: A Resource for Multi-Modal Spatial and Single-Cell Data of Healthy Human Tissues",
+        "url":  "https://arxiv.org/abs/2511.05708",
+        "release_date":  "2025-11-07",
+        "reported_at":  "2026-06-20"
+    },
+    {
+        "title":  "The Challenge of Cell Segmentation in Spatially Resolved Transcriptomics",
+        "url":  "https://arxiv.org/abs/2606.09675",
+        "release_date":  "2026-06-08",
+        "reported_at":  "2026-06-22"
+    },
+    {
+        "title":  "Towards Spatial Transcriptomics-driven Pathology Foundation Models",
+        "url":  "https://arxiv.org/abs/2602.14177",
+        "release_date":  "2026-02-15",
+        "reported_at":  "2026-06-22"
+    },
+    {
+        "title":  "Deciphering spatial domains from spatially resolved transcriptomics with an adaptive graph attention auto-encoder",
+        "url":  "https://www.nature.com/articles/s41467-022-29439-6",
+        "release_date":  "2022-04-01",
+        "reported_at":  "2026-06-22"
+    },
+    {
+        "title":  "FEAST: Fully Connected Expressive Attention for Spatial Transcriptomics",
+        "url":  "https://arxiv.org/abs/2603.25247",
+        "release_date":  "2026-03-26",
+        "reported_at":  "2026-06-22"
+    },
+    {
+        "title":  "SpatialData: an open and universal data framework for spatial omics",
+        "url":  "https://www.nature.com/articles/s41592-024-02212-x",
+        "release_date":  "2024-03-20",
+        "reported_at":  "2026-06-22"
+    },
+    {
+        "title":  "Benchmarking alignment methods for spatial transcriptomics data",
+        "url":  "https://www.nature.com/articles/s43588-026-00977-z",
+        "release_date":  "2026-04-03",
+        "reported_at":  "2026-06-23"
+    },
+    {
+        "title":  "Single-cell and spatial transcriptomics enables probabilistic inference of cell type topography",
+        "url":  "https://www.nature.com/articles/s42003-020-01247-y",
+        "release_date":  "2020-10-09",
+        "reported_at":  "2026-06-23"
+    },
+    {
+        "title":  "Knowledge-graph-based cell-cell communication inference for spatially resolved transcriptomic data with SpaTalk",
+        "url":  "https://www.nature.com/articles/s41467-022-32111-8",
+        "release_date":  "2022-07-30",
+        "reported_at":  "2026-06-23"
+    },
+    {
+        "title":  "Completing spatial transcriptomics data for gene expression prediction benchmarking",
+        "url":  "https://arxiv.org/abs/2505.02980",
+        "release_date":  "2025-12",
+        "reported_at":  "2026-06-23"
+    },
+    {
+        "title":  "Alignment and integration of spatial transcriptomics data",
+        "url":  "https://www.nature.com/articles/s41592-022-01459-6",
+        "release_date":  "2022-05-16",
+        "reported_at":  "2026-06-24"
+    },
+    {
+        "title":  "Probabilistic embedding, clustering, and alignment for integrating spatial transcriptomics data with PRECAST",
+        "url":  "https://www.nature.com/articles/s41467-023-35947-w",
+        "release_date":  "2023-01-18",
+        "reported_at":  "2026-06-24"
+    },
+    {
+        "title":  "Spatially aware dimension reduction for spatial transcriptomics",
+        "url":  "https://www.nature.com/articles/s41467-022-34879-1",
+        "release_date":  "2022-11-23",
+        "reported_at":  "2026-06-24"
+    },
+    {
+        "title":  "Inferring spatial and signaling relationships between cells from single-cell transcriptomic data",
+        "url":  "https://www.nature.com/articles/s41467-020-15968-5",
+        "release_date":  "2020-04-29",
+        "reported_at":  "2026-06-24"
+    },
+    {
+        "title":  "BASS: multi-scale and multi-sample analysis enables accurate cell type clustering and spatial domain detection in spatial transcriptomic studies",
+        "url":  "https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02734-7",
+        "date":  "2022-08-04",
+        "lane":  "Important to revisit",
+        "digest":  "2026-06-25",
+        "reason":  "Bayesian hierarchical model jointly infers cell-type clusters and spatial domains across multiple spatial transcriptomics samples."
+    },
+    {
+        "title":  "Identification of spatially variable genes with graph cuts",
+        "url":  "https://www.nature.com/articles/s41467-022-33182-3",
+        "date":  "2022-09-19",
+        "lane":  "Important to revisit",
+        "digest":  "2026-06-25",
+        "reason":  "HMRF and graph-cut formulation provides a discrete graph-optimized alternative for spatially variable gene detection."
+    },
+    {
+        "title":  "SOMDE: a scalable method for identifying spatially variable genes with self-organizing map",
+        "url":  "https://doi.org/10.1093/bioinformatics/btab471",
+        "date":  "2021-06-24",
+        "lane":  "Important to revisit",
+        "digest":  "2026-06-25",
+        "reason":  "Self-organizing-map compression anticipates modern spatial tokenization and graph coarsening ideas for scalable SVG testing."
+    }
 ]

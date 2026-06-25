@@ -1,33 +1,28 @@
 # Spatial Omics Research Digest
 
-An automated daily archive of cutting-edge spatial-omics data-modeling research.
+Daily notes on spatial omics data modeling papers, with compact visual summaries for method papers and resource tables for atlas or portal papers.
 
 ## Latest digest
 
-[Read the June 24, 2026 digest](digests/2026-06-24.md)
+[Read the June 25, 2026 digest](digests/2026-06-25.md)
 
-- [PASTE optimal-transport alignment](https://www.nature.com/articles/s41592-022-01459-6) - peer reviewed, 2022-05-16
-- [PRECAST probabilistic embedding and alignment](https://www.nature.com/articles/s41467-023-35947-w) - peer reviewed, 2023-01-18
-- [SpatialPCA spatially aware dimension reduction](https://www.nature.com/articles/s41467-022-34879-1) - peer reviewed, 2022-11-23
-- [SpaOTsc spatial and signaling relationships](https://www.nature.com/articles/s41467-020-15968-5) - peer reviewed, 2020-04-29
+Today's update is a focused revisit digest because the scan did not surface a strong new post-June-24 modeling paper. It highlights three statistical methods that remain useful baselines for current spatial AI and multimodal modeling work:
 
-Also see the [June 23, 2026 digest](digests/2026-06-23.md).
+- [BASS](digests/2026-06-25.md#1-bass-multi-scale-and-multi-sample-analysis-enables-accurate-cell-type-clustering-and-spatial-domain-detection-in-spatial-transcriptomic-studies): Bayesian multi-scale, multi-sample inference of cell types and spatial domains.
+- [scGCO](digests/2026-06-25.md#2-identification-of-spatially-variable-genes-with-graph-cuts): graph-cut optimization of an HMRF objective for spatially variable gene detection.
+- [SOMDE](digests/2026-06-25.md#3-somde-a-scalable-method-for-identifying-spatially-variable-genes-with-self-organizing-map): self-organizing-map compression followed by scalable spatial variance testing.
 
 ## Emerging themes
 
-- Multi-section atlas methods should separate geometry, batch correction, and domain sharing.
-- Optimal transport links alignment, reconstruction, communication, and super-resolution.
-- Spatial kernel factor models remain interpretable baselines for graph/foundation models.
-- Communication inference needs spatial metrics plus biological validation.
+- Statistical hierarchy, graph optimization, and spatial compression remain important complements to neural representation learning.
+- Spatially variable gene detection should be matched to the biology: boundaries, gradients, regions, and sparse niches favor different model assumptions.
+- For method papers, diagrams should expose the statistical object being inferred rather than only listing workflow steps.
+- For data-resource or atlas papers, compact tables are more useful than schematic diagrams.
 
 ## Archive
 
-Browse the [dated digests](digests/), including technical visual summaries for method papers and resource tables for atlas/data-resource posts.
+See the [digests](digests/) directory for previous updates.
 
-## Automation
+## Automation notes
 
-GitHub Actions runs the workflow each morning at approximately 8:00 AM
-America/New_York, commits the report, and opens an issue so repository watchers
-can receive a GitHub or email notification.
-
-See [SETUP.md](SETUP.md) for configuration.
+The recurring digest tracks both newly released work and older papers that are worth revisiting because they are foundational, technically distinctive, newly relevant, underappreciated, or previously missed. Method papers receive original SVG visual abstracts; data resources receive compact resource tables.
