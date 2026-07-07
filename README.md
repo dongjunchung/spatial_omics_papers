@@ -4,20 +4,21 @@ Daily notes on spatial omics data modeling papers, with compact visual summaries
 
 ## Latest digest
 
-[Read the June 25, 2026 digest](digests/2026-06-25.md)
+[Read the June 27, 2026 digest](digests/2026-06-27.md)
 
-Today's update is a focused revisit digest because the scan did not surface a strong new post-June-24 modeling paper. It highlights three statistical methods that remain useful baselines for current spatial AI and multimodal modeling work:
+Today's update found no strong post-June-25 primary-source release, so it highlights recent June preprints that were missed and are important to check:
 
-- [BASS](digests/2026-06-25.md#1-bass-multi-scale-and-multi-sample-analysis-enables-accurate-cell-type-clustering-and-spatial-domain-detection-in-spatial-transcriptomic-studies): Bayesian multi-scale, multi-sample inference of cell types and spatial domains.
-- [scGCO](digests/2026-06-25.md#2-identification-of-spatially-variable-genes-with-graph-cuts): graph-cut optimization of an HMRF objective for spatially variable gene detection.
-- [SOMDE](digests/2026-06-25.md#3-somde-a-scalable-method-for-identifying-spatially-variable-genes-with-self-organizing-map): self-organizing-map compression followed by scalable spatial variance testing.
+- [CAMMST](digests/2026-06-27.md#1-contrastive-and-adaptive-multi-modal-masked-autoencoder-for-spatial-transcriptomics): anchor-guided multimodal masked autoencoding for whole-slide ST imputation.
+- [HiST](digests/2026-06-27.md#2-hist-a-hierarchical-sparse-transformer-for-cross-modal-spatial-transcriptomics-modeling): sparse hierarchical transformer for cross-modal histology-to-ST modeling.
+- [Foundation-model attention evaluation](digests/2026-06-27.md#3-do-foundation-models-see-biology-evaluating-attention-coherence-with-spatial-transcriptomics-in-glioblastoma): ST-based biological coherence testing of pathology-model attention maps.
+- [GC-MoE](digests/2026-06-27.md#4-gc-moe-genomics-guided-cell-type-specific-mixture-of-experts-for-histology-based-single-cell-spatial-transcriptomics): cell-type-routed mixture of experts for single-cell spatial expression prediction from histology.
 
 ## Emerging themes
 
-- Statistical hierarchy, graph optimization, and spatial compression remain important complements to neural representation learning.
-- Spatially variable gene detection should be matched to the biology: boundaries, gradients, regions, and sparse niches favor different model assumptions.
-- For method papers, diagrams should expose the statistical object being inferred rather than only listing workflow steps.
-- For data-resource or atlas papers, compact tables are more useful than schematic diagrams.
+- Histology-to-ST models are increasingly constrained by sparse molecular anchors, measured-location geometry, cell-type routing, or orthogonal ST validation.
+- Sparse representations are becoming necessary for whole-slide spatial modeling.
+- Attention and saliency claims need transcriptomic validation, not only visual inspection.
+- Data-resource or atlas papers should be summarized with compact resource tables rather than diagrams.
 
 ## Archive
 

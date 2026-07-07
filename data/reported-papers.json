@@ -418,5 +418,38 @@
         "lane":  "Important to revisit",
         "digest":  "2026-06-25",
         "reason":  "Self-organizing-map compression anticipates modern spatial tokenization and graph coarsening ideas for scalable SVG testing."
+    },
+    {
+        "title":  "Contrastive and Adaptive Multi-modal Masked Autoencoder for Spatial Transcriptomics",
+        "url":  "https://arxiv.org/abs/2606.21156",
+        "date":  "2026-06-19",
+        "lane":  "Important to revisit",
+        "digest":  "2026-06-27",
+        "reason":  "Anchor-guided multimodal masked autoencoder for whole-slide spatial transcriptomics imputation using partial gene-expression measurements."
+    },
+    {
+        "title":  "HiST: A Hierarchical Sparse Transformer for Cross-Modal Spatial Transcriptomics Modeling",
+        "url":  "https://arxiv.org/abs/2606.14251",
+        "date":  "2026-06-12",
+        "lane":  "Important to revisit",
+        "digest":  "2026-06-27",
+        "reason":  "Sparse hierarchical transformer for histology-to-ST prediction that scales with active measured locations rather than dense slide area."
+    },
+    {
+        "title":  "Do Foundation Models See Biology? Evaluating Attention Coherence with Spatial Transcriptomics in Glioblastoma",
+        "url":  "https://arxiv.org/abs/2606.04764",
+        "date":  "2026-06-03",
+        "updated":  "2026-06-23",
+        "lane":  "Important to revisit",
+        "digest":  "2026-06-27",
+        "reason":  "Uses co-registered spatial transcriptomics to quantitatively evaluate biological coherence of pathology foundation-model attention maps."
+    },
+    {
+        "title":  "GC-MoE: Genomics-Guided Cell-Type-Specific Mixture of Experts for Histology-Based Single-Cell Spatial Transcriptomics",
+        "url":  "https://arxiv.org/abs/2606.02424",
+        "date":  "2026-06-01",
+        "lane":  "Important to revisit",
+        "digest":  "2026-06-27",
+        "reason":  "Cell-type-routed mixture of experts with co-expression prediction and neighborhood attention for single-cell spatial expression inference from histology."
     }
 ]
