@@ -1,24 +1,25 @@
 # Spatial Omics Research Digest
 
-Daily notes on spatial omics data modeling papers, with compact visual summaries for method papers and resource tables for atlas or portal papers.
+Daily notes on spatial omics data modeling papers, with compact visual summaries for method papers and resource tables for atlas, portal, or workflow/resource papers.
 
 ## Latest digest
 
-[Read the June 27, 2026 digest](digests/2026-06-27.md)
+[Read the July 7, 2026 digest](digests/2026-07-07.md)
 
-Today's update found no strong post-June-25 primary-source release, so it highlights recent June preprints that were missed and are important to check:
+Today's update includes one newly posted method, one reproducible-workflow resource, and three missed but technically relevant modeling papers:
 
-- [CAMMST](digests/2026-06-27.md#1-contrastive-and-adaptive-multi-modal-masked-autoencoder-for-spatial-transcriptomics): anchor-guided multimodal masked autoencoding for whole-slide ST imputation.
-- [HiST](digests/2026-06-27.md#2-hist-a-hierarchical-sparse-transformer-for-cross-modal-spatial-transcriptomics-modeling): sparse hierarchical transformer for cross-modal histology-to-ST modeling.
-- [Foundation-model attention evaluation](digests/2026-06-27.md#3-do-foundation-models-see-biology-evaluating-attention-coherence-with-spatial-transcriptomics-in-glioblastoma): ST-based biological coherence testing of pathology-model attention maps.
-- [GC-MoE](digests/2026-06-27.md#4-gc-moe-genomics-guided-cell-type-specific-mixture-of-experts-for-histology-based-single-cell-spatial-transcriptomics): cell-type-routed mixture of experts for single-cell spatial expression prediction from histology.
+- [DriftST](digests/2026-07-07.md#1-driftst-one-step-generative-inference-of-spatial-transcriptomics-from-he-histology): one-step generative histology-to-ST inference with gene-structure attention.
+- [DiSTILL](digests/2026-07-07.md#2-distill-a-hybrid-cloud-hpc-workflow-system-for-reproducible-spatial-transcriptomics-analysis): hybrid cloud-HPC workflow system for reproducible spatial transcriptomics analysis.
+- [JASPR](digests/2026-07-07.md#3-jaspr-joint-spatial-representation-learning-of-histology-and-spatial-genomics-for-improved-virtual-genomic-screening-and-clinical-prognostication): self-supervised joint spatial representation learning of histology and spatial genomics.
+- [Bayesian local feature selection](digests/2026-07-07.md#4-consistent-bayesian-local-spatial-feature-selection-with-application-to-spatial-multimodal-omics): local feature and basis selection over spatially contiguous multimodal-omics domains.
+- [mSGR](digests/2026-07-07.md#5-multi-resolution-spatial-graphical-regression-models-for-hierarchical-spatial-transcriptomics-data): multi-resolution Bayesian graphical regression for spatially varying gene networks.
 
 ## Emerging themes
 
-- Histology-to-ST models are increasingly constrained by sparse molecular anchors, measured-location geometry, cell-type routing, or orthogonal ST validation.
-- Sparse representations are becoming necessary for whole-slide spatial modeling.
-- Attention and saliency claims need transcriptomic validation, not only visual inspection.
-- Data-resource or atlas papers should be summarized with compact resource tables rather than diagrams.
+- Generative histology-to-ST methods are targeting faster inference without giving up distributional modeling.
+- Spatial structure is increasingly embedded in objectives for representation learning, feature selection, and network inference.
+- Reproducible workflow infrastructure matters for credible spatial-model benchmarking.
+- Data-resource, atlas, portal, and workflow items are summarized with compact tables rather than diagrams.
 
 ## Archive
 

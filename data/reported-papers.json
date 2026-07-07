@@ -451,5 +451,45 @@
         "lane":  "Important to revisit",
         "digest":  "2026-06-27",
         "reason":  "Cell-type-routed mixture of experts with co-expression prediction and neighborhood attention for single-cell spatial expression inference from histology."
+    },
+    {
+        "title":  "DriftST: One-Step Generative Inference of Spatial Transcriptomics from H\u0026E Histology",
+        "url":  "https://arxiv.org/abs/2607.04740",
+        "date":  "2026-07-06",
+        "lane":  "New or updated",
+        "digest":  "2026-07-07",
+        "reason":  "One-step generative histology-to-ST inference using Cellular Drifting, gene co-expression attention, and gene residual gates."
+    },
+    {
+        "title":  "DiSTILL: A Hybrid Cloud-HPC Workflow System for Reproducible Spatial Transcriptomics Analysis",
+        "url":  "https://arxiv.org/abs/2606.30693",
+        "date":  "2026-06-28",
+        "lane":  "New or updated",
+        "digest":  "2026-07-07",
+        "reason":  "Workflow infrastructure for reproducible spatial transcriptomics analyses across cloud and HPC execution environments."
+    },
+    {
+        "title":  "JASPR: Joint Spatial Representation learning of histology and spatial genomics for improved virtual genomic screening and clinical prognostication",
+        "url":  "https://arxiv.org/abs/2606.28395",
+        "date":  "2026-06-24",
+        "lane":  "Important to revisit",
+        "digest":  "2026-07-07",
+        "reason":  "Self-supervised joint spatial representation learning of histology and spatial genomics using cross-modal reconstruction."
+    },
+    {
+        "title":  "Consistent Bayesian Local Spatial Feature Selection with Application to Spatial Multimodal Omics",
+        "url":  "https://arxiv.org/abs/2605.30658",
+        "date":  "2026-05-28",
+        "lane":  "Important to revisit",
+        "digest":  "2026-07-07",
+        "reason":  "Bayesian local feature and basis selection over contiguous spatial partitions for interpretable spatial multimodal omics."
+    },
+    {
+        "title":  "Multi-resolution Spatial Graphical Regression Models for Hierarchical Spatial Transcriptomics Data",
+        "url":  "https://arxiv.org/abs/2605.16804",
+        "date":  "2026-05-16",
+        "lane":  "Important to revisit",
+        "digest":  "2026-07-07",
+        "reason":  "Bayesian multi-resolution spatial graphical regression for spatially varying gene regulatory networks."
     }
 ]
