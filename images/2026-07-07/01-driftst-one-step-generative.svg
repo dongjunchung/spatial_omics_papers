@@ -1,10 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
-<defs><style>.bg{fill:#fbfcff}.p{fill:#fff;stroke:#dbe5f4;stroke-width:2}.h{font:700 25px Arial;fill:#14233d}.s{font:600 16px Arial;fill:#3f536e}.t{font:14px Arial;fill:#2b3a50}.m{font:16px Consolas;fill:#20304a}.a{stroke:#4b74bd;stroke-width:3;fill:none;marker-end:url(#ar)}.img{fill:#d7eadf;stroke:#8bb7a6;stroke-width:2}.src{fill:#e9edf5;stroke:#9aa9bd;stroke-width:2}.expr{fill:#4f7bd9}.gate{fill:#f28e2b}.hot{fill:#d94f70}.gene{stroke:#4f7bd9;stroke-width:3;fill:none}.cell{fill:#fff;stroke:#6f91c8;stroke-width:2}</style><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#4b74bd"/></marker></defs>
-<rect width="1400" height="820" class="bg"/><text x="60" y="55" class="h">DriftST: one-step generative inference from H&amp;E to spatial expression</text><text x="60" y="85" class="s">A histology-conditioned drift maps source noise directly into gene-expression space</text>
-<rect x="55" y="125" width="365" height="610" rx="24" class="p"/><rect x="517" y="125" width="365" height="610" rx="24" class="p"/><rect x="980" y="125" width="365" height="610" rx="24" class="p"/>
-<text x="90" y="165" class="h">Inputs</text><text x="90" y="195" class="s">H&amp;E morphology + gene panel</text><path d="M105 285C160 230 275 238 315 310C355 382 292 468 195 462C105 456 62 372 82 315C88 300 95 290 105 285Z" class="img"/><circle cx="138" cy="330" r="20" class="cell"/><circle cx="205" cy="305" r="20" class="cell"/><circle cx="265" cy="355" r="20" class="cell"/><circle cx="170" cy="405" r="20" class="cell"/><circle cx="238" cy="420" r="20" class="cell"/><rect x="105" y="540" width="230" height="60" rx="14" class="src"/><text x="128" y="577" class="m">histology-conditioned source</text>
-<path d="M430 425C465 425 480 425 515 425" class="a"/>
-<text x="552" y="165" class="h">Generative mechanism</text><text x="552" y="195" class="s">Cellular drift + gene-structure transformer</text><g transform="translate(555 245)"><circle cx="55" cy="110" r="38" class="src"/><text x="31" y="116" class="m">source</text><path d="M105 110C158 30 228 35 285 105" stroke="#4b74bd" stroke-width="8" fill="none" opacity=".75"/><path d="M105 115C165 190 225 185 285 112" stroke="#d94f70" stroke-width="5" fill="none" opacity=".7"/><circle cx="325" cy="110" r="42" class="expr"/><text x="302" y="116" class="m" fill="#fff">expr</text><text x="65" y="205" class="m">one-step drift</text><rect x="20" y="280" width="150" height="70" rx="14" fill="#eef4ff" stroke="#9db6e4"/><text x="42" y="322" class="m">co-expression</text><rect x="205" y="280" width="150" height="70" rx="14" class="gate"/><text x="235" y="322" class="m">gene gate</text><path d="M95 350L165 415L280 350" class="a"/><text x="80" y="455" class="m">STransformer</text></g>
-<path d="M890 425C925 425 940 425 975 425" class="a"/>
-<text x="1015" y="165" class="h">Outputs</text><text x="1015" y="195" class="s">Spot- or cell-level spatial expression</text><path d="M1035 285C1090 230 1205 238 1245 310C1285 382 1222 468 1125 462C1035 456 992 372 1012 315C1018 300 1025 290 1035 285Z" fill="#f2f6ff" stroke="#c4d3ea" stroke-width="2"/><path d="M1055 415C1090 352 1140 380 1170 312C1197 252 1228 302 1240 360" class="gene"/><path d="M1060 335C1118 312 1160 352 1198 424" stroke="#d94f70" stroke-width="5" fill="none" opacity=".75"/><text x="1035" y="545" class="m">generic gene-panel representation</text><text x="1035" y="575" class="t">same framework targets both spot and cell resolutions</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">DriftST technical visual abstract</title>
+  <desc id="desc">Detailed schematic of DriftST showing histology input, cellular drifting, one-step generative inference, STransformer co-expression attention, gene residual gate, and spot or cell expression outputs.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f9fd}.panel{fill:#ffffff;stroke:#cad6e8;stroke-width:2}.subpanel{fill:#f8fbff;stroke:#d5dfef;stroke-width:1.6}.title{font:700 30px Arial,sans-serif;fill:#12223d}.subtitle{font:600 17px Arial,sans-serif;fill:#41536d}.head{font:700 20px Arial,sans-serif;fill:#16263f}.label{font:14px Arial,sans-serif;fill:#2b3b50}.small{font:12px Arial,sans-serif;fill:#52637a}.mono{font:15px Consolas,monospace;fill:#24344f}.arrow{stroke:#476fba;stroke-width:3;fill:none;marker-end:url(#arrow)}.thin{stroke:#8ea8cf;stroke-width:2;fill:none}.dash{stroke:#8ea8cf;stroke-width:2;stroke-dasharray:6 5;fill:none}.he{fill:#e8c9cf;stroke:#a56a77;stroke-width:2}.nuc{fill:#7b4261}.cell{fill:#ffffff;stroke:#6f91c8;stroke-width:1.8}.src{fill:#e9edf5;stroke:#9aa9bd;stroke-width:2}.expr{fill:#4f7bd9}.gate{fill:#f28e2b}.attn{fill:#d94f70}.ok{fill:#59a14f}.muted{fill:#edf2f8}.chip{fill:#eef4ff;stroke:#aebfe0;stroke-width:1.5}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#476fba"/></marker>
+    <linearGradient id="exprGrad" x1="0" x2="1"><stop offset="0" stop-color="#d7e6ff"/><stop offset=".55" stop-color="#6e98df"/><stop offset="1" stop-color="#1f4f9e"/></linearGradient>
+  </defs>
+  <rect class="bg" width="1600" height="980"/>
+  <text x="60" y="56" class="title">DriftST: one-step generative inference of spatial transcriptomics from H&amp;E</text>
+  <text x="60" y="86" class="subtitle">Paper-specific mechanism: Cellular Drifting + STransformer co-expression attention + gene residual gate</text>
+
+  <rect x="55" y="125" width="360" height="760" rx="24" class="panel"/>
+  <rect x="450" y="125" width="690" height="760" rx="24" class="panel"/>
+  <rect x="1175" y="125" width="370" height="760" rx="24" class="panel"/>
+
+  <text x="88" y="165" class="head">1. Biological inputs</text>
+  <text x="88" y="193" class="subtitle">H&amp;E morphology and target gene panel</text>
+  <path d="M105 295 C165 225 294 235 335 315 C379 400 304 500 195 492 C95 485 53 388 80 320 C86 306 94 296 105 295 Z" class="he"/>
+  <g opacity=".95">
+    <circle cx="132" cy="342" r="18" class="cell"/><circle cx="132" cy="342" r="6" class="nuc"/>
+    <circle cx="205" cy="309" r="20" class="cell"/><circle cx="205" cy="309" r="7" class="nuc"/>
+    <circle cx="285" cy="365" r="22" class="cell"/><circle cx="285" cy="365" r="7" class="nuc"/>
+    <circle cx="170" cy="425" r="21" class="cell"/><circle cx="170" cy="425" r="6" class="nuc"/>
+    <circle cx="250" cy="446" r="19" class="cell"/><circle cx="250" cy="446" r="6" class="nuc"/>
+  </g>
+  <rect x="92" y="555" width="285" height="95" rx="16" class="subpanel"/>
+  <text x="114" y="590" class="mono">gene panel G = {g1...gp}</text>
+  <rect x="115" y="612" width="48" height="15" rx="7" fill="#4f7bd9"/><rect x="170" y="612" width="36" height="15" rx="7" fill="#7aa6e8"/><rect x="213" y="612" width="62" height="15" rx="7" fill="#f28e2b"/><rect x="282" y="612" width="42" height="15" rx="7" fill="#d94f70"/>
+  <text x="114" y="676" class="small">Generic panel representation supports spot-level or cell-level targets.</text>
+  <rect x="92" y="720" width="285" height="92" rx="16" class="src"/>
+  <text x="116" y="754" class="mono">histology-conditioned source z0</text>
+  <text x="116" y="782" class="label">not independent gene regression</text>
+
+  <path d="M420 505 C432 505 438 505 450 505" class="arrow"/>
+
+  <text x="485" y="165" class="head">2. One-step generative model</text>
+  <text x="485" y="193" class="subtitle">Direct drift from source distribution to spatial expression</text>
+  <rect x="485" y="230" width="285" height="235" rx="20" class="subpanel"/>
+  <text x="510" y="262" class="head">Cellular Drifting</text>
+  <circle cx="545" cy="350" r="38" class="src"/><text x="524" y="356" class="mono">z0</text>
+  <circle cx="705" cy="350" r="42" class="expr"/><text x="683" y="356" class="mono" fill="#fff">xG</text>
+  <path d="M585 335 C622 280 673 287 699 326" stroke="#476fba" stroke-width="8" fill="none" opacity=".72"/>
+  <path d="M587 366 C630 422 675 410 703 373" stroke="#d94f70" stroke-width="5" fill="none" opacity=".75"/>
+  <text x="513" y="422" class="mono">x_hat = z0 + v_theta(z0, H&amp;E)</text>
+  <text x="513" y="446" class="small">one inference step; avoids iterative diffusion sampling</text>
+
+  <rect x="810" y="230" width="285" height="235" rx="20" class="subpanel"/>
+  <text x="835" y="262" class="head">Resolution handling</text>
+  <g transform="translate(835 298)">
+    <rect x="0" y="0" width="84" height="58" rx="12" class="chip"/><text x="14" y="35" class="mono">spot</text>
+    <rect x="145" y="0" width="84" height="58" rx="12" class="chip"/><text x="160" y="35" class="mono">cell</text>
+    <path d="M84 29 C108 29 122 29 145 29" class="arrow"/>
+    <rect x="25" y="104" width="180" height="58" rx="12" fill="#fff3e2" stroke="#e0a45e"/><text x="43" y="139" class="mono">gene-panel space</text>
+  </g>
+
+  <rect x="485" y="515" width="610" height="290" rx="20" class="subpanel"/>
+  <text x="510" y="550" class="head">STransformer: gene-structured expression decoder</text>
+  <g transform="translate(520 585)">
+    <rect x="0" y="0" width="250" height="88" rx="14" fill="#eef4ff" stroke="#9db6e4"/>
+    <text x="20" y="33" class="mono">co-expression attention</text>
+    <text x="20" y="60" class="small">models inter-gene dependencies</text>
+    <line x1="38" y1="118" x2="210" y2="118" stroke="#9db6e4" stroke-width="2"/>
+    <circle cx="38" cy="118" r="18" fill="#4f7bd9"/><circle cx="96" cy="118" r="18" fill="#7aa6e8"/><circle cx="154" cy="118" r="18" fill="#d94f70"/><circle cx="210" cy="118" r="18" fill="#f28e2b"/>
+    <path d="M38 118 C85 70 150 70 210 118" class="thin"/>
+    <path d="M96 118 C120 150 150 150 154 118" class="thin"/>
+  </g>
+  <g transform="translate(822 585)">
+    <rect x="0" y="0" width="235" height="88" rx="14" fill="#fff3e2" stroke="#e0a45e"/>
+    <text x="20" y="33" class="mono">gene residual gate</text>
+    <text x="20" y="60" class="small">learns heterogeneous gene informativeness</text>
+    <rect x="20" y="116" width="160" height="16" rx="8" fill="url(#exprGrad)"/>
+    <rect x="20" y="150" width="62" height="16" rx="8" class="gate"/><rect x="90" y="150" width="118" height="16" rx="8" class="gate" opacity=".65"/>
+    <text x="20" y="196" class="mono">x_g + r_g * f_g</text>
+  </g>
+
+  <path d="M1140 505 C1152 505 1160 505 1175 505" class="arrow"/>
+
+  <text x="1210" y="165" class="head">3. Output and claim</text>
+  <text x="1210" y="193" class="subtitle">Spatial expression distribution, not only mean regression</text>
+  <path d="M1218 295 C1278 225 1407 235 1448 315 C1492 400 1417 500 1308 492 C1208 485 1166 388 1193 320 C1199 306 1207 296 1218 295 Z" fill="#f2f6ff" stroke="#c4d3ea" stroke-width="2"/>
+  <path d="M1240 435 C1288 350 1350 390 1390 305" stroke="#4f7bd9" stroke-width="4" fill="none"/>
+  <path d="M1245 355 C1310 315 1370 365 1418 450" stroke="#d94f70" stroke-width="5" fill="none" opacity=".75"/>
+  <g transform="translate(1225 545)">
+    <rect x="0" y="0" width="280" height="92" rx="16" class="subpanel"/>
+    <text x="18" y="34" class="mono">spot-level or cell-level x_hat</text>
+    <text x="18" y="62" class="small">direct generation conditioned on local histology</text>
+  </g>
+  <g transform="translate(1225 678)">
+    <rect x="0" y="0" width="280" height="112" rx="16" fill="#fff8ed" stroke="#e0a45e"/>
+    <text x="18" y="34" class="mono">Technical distinction</text>
+    <text x="18" y="62" class="small">Regression: conditional mean can smooth signal.</text>
+    <text x="18" y="86" class="small">DriftST: one-step generative map retains distributional structure.</text>
+  </g>
 </svg>
