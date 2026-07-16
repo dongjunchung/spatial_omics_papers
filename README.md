@@ -4,22 +4,21 @@ Daily notes on spatial omics data modeling papers, with compact visual summaries
 
 ## Latest digest
 
-[Read the July 7, 2026 digest](digests/2026-07-07.md)
+[Read the July 16, 2026 digest](digests/2026-07-16.md)
 
-Today's update includes one newly posted method, one reproducible-workflow resource, and three missed but technically relevant modeling papers:
+Today's update includes four selected items spanning reference-free deconvolution, ST-informed pathology foundation modeling, spatial multiomics alignment, and agentic spatiotemporal analysis:
 
-- [DriftST](digests/2026-07-07.md#1-driftst-one-step-generative-inference-of-spatial-transcriptomics-from-he-histology): one-step generative histology-to-ST inference with gene-structure attention.
-- [DiSTILL](digests/2026-07-07.md#2-distill-a-hybrid-cloud-hpc-workflow-system-for-reproducible-spatial-transcriptomics-analysis): hybrid cloud-HPC workflow system for reproducible spatial transcriptomics analysis.
-- [JASPR](digests/2026-07-07.md#3-jaspr-joint-spatial-representation-learning-of-histology-and-spatial-genomics-for-improved-virtual-genomic-screening-and-clinical-prognostication): self-supervised joint spatial representation learning of histology and spatial genomics.
-- [Bayesian local feature selection](digests/2026-07-07.md#4-consistent-bayesian-local-spatial-feature-selection-with-application-to-spatial-multimodal-omics): local feature and basis selection over spatially contiguous multimodal-omics domains.
-- [mSGR](digests/2026-07-07.md#5-multi-resolution-spatial-graphical-regression-models-for-hierarchical-spatial-transcriptomics-data): multi-resolution Bayesian graphical regression for spatially varying gene networks.
+- [SpatialCD](digests/2026-07-16.md#1-spatially-informed-reference-free-cell-type-deconvolution-for-spatial-transcriptomics-with-spatialcd): reference-free LDA-style deconvolution with spatial graph regularization.
+- [SPADE](digests/2026-07-16.md#2-spade-spatial-transcriptomics-and-pathology-alignment-using-a-mixture-of-data-experts-for-an-expressive-latent-space): ST-informed pathology alignment using a mixture of data experts and contrastive learning.
+- [MGW](digests/2026-07-16.md#3-riemannian-metric-learning-for-alignment-of-spatial-multiomics): Riemannian metric learning and Gromov-Wasserstein alignment for heterogeneous spatial multiomics.
+- [SpaCellAgent](digests/2026-07-16.md#4-spacellagent-a-self-evolving-llm-based-multi-agent-framework-for-trajectory-analysis): LLM multi-agent workflow automation for trajectory and spatiotemporal analysis.
 
 ## Emerging themes
 
-- Generative histology-to-ST methods are targeting faster inference without giving up distributional modeling.
-- Spatial structure is increasingly embedded in objectives for representation learning, feature selection, and network inference.
-- Reproducible workflow infrastructure matters for credible spatial-model benchmarking.
-- Data-resource, atlas, portal, and workflow items are summarized with compact tables rather than diagrams.
+- Reference-free deconvolution is becoming more explicitly spatial.
+- Spatial transcriptomics is increasingly used to supervise pathology foundation-model latent spaces.
+- Multimodal alignment is moving toward learned geometry rather than fixed spatial-feature weighting.
+- Agentic workflow systems may help scale spatial omics analysis, but provenance and validation remain central.
 
 ## Archive
 

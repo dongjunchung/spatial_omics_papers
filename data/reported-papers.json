@@ -491,5 +491,37 @@
         "lane":  "Important to revisit",
         "digest":  "2026-07-07",
         "reason":  "Bayesian multi-resolution spatial graphical regression for spatially varying gene regulatory networks."
+    },
+    {
+        "title":  "Spatially informed reference-free cell-type deconvolution for spatial transcriptomics with SpatialCD",
+        "url":  "https://genome.cshlp.org/content/36/7/1455",
+        "date":  "2026-06-22",
+        "lane":  "Important to revisit",
+        "digest":  "2026-07-16",
+        "reason":  "Reference-free LDA-style deconvolution with spatial graph regularization, ADMM inference, and data-driven cell-type-number selection."
+    },
+    {
+        "title":  "SPADE: Spatial transcriptomics and pathology alignment using a mixture of data experts for an expressive latent space",
+        "url":  "https://www.sciencedirect.com/science/article/abs/pii/S1361841526002665",
+        "date":  "2026-07-09",
+        "lane":  "New or updated",
+        "digest":  "2026-07-16",
+        "reason":  "ST-informed pathology foundation model with mixture-of-data-experts contrastive alignment between H\u0026E patches and gene-expression embeddings."
+    },
+    {
+        "title":  "Riemannian metric learning for alignment of spatial multiomics",
+        "url":  "https://academic.oup.com/bioinformatics/article/42/Supplement_1/btag220/8726335",
+        "date":  "2026-07-07",
+        "lane":  "New or updated",
+        "digest":  "2026-07-16",
+        "reason":  "Manifold Gromov-Wasserstein learns modality-specific Riemannian pullback metrics with neural fields for spatial multiomics alignment."
+    },
+    {
+        "title":  "SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis",
+        "url":  "https://arxiv.org/abs/2607.07467",
+        "date":  "2026-07-08",
+        "lane":  "New or updated",
+        "digest":  "2026-07-16",
+        "reason":  "LLM multi-agent system for automated trajectory inference and spatiotemporal analysis in single-cell and spatial transcriptomics."
     }
 ]
