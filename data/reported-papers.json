@@ -523,5 +523,13 @@
         "lane":  "New or updated",
         "digest":  "2026-07-16",
         "reason":  "LLM multi-agent system for automated trajectory inference and spatiotemporal analysis in single-cell and spatial transcriptomics."
+    },
+    {
+        "title":  "SpatioTemporal Omics Consortium: a global effort for biological discovery across species, space and time",
+        "url":  "https://www.nature.com/articles/s41592-026-03150-6",
+        "date":  "2026-07-09",
+        "lane":  "New or updated",
+        "digest":  "2026-07-17",
+        "reason":  "Nature Methods Comment introducing STOC as a global open network for spatial and temporal omics integration across species, development, disease, and evolution."
     }
 ]
