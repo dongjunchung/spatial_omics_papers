@@ -531,5 +531,29 @@
         "lane":  "New or updated",
         "digest":  "2026-07-17",
         "reason":  "Nature Methods Comment introducing STOC as a global open network for spatial and temporal omics integration across species, development, disease, and evolution."
+    },
+    {
+        "title":  "NicheTrans: spatial-aware cross-omics translation",
+        "url":  "https://www.nature.com/articles/s41592-026-03153-3",
+        "date":  "2026-07-09",
+        "lane":  "Important to revisit",
+        "digest":  "2026-07-20",
+        "reason":  "Transformer-based spatially aware cross-omics translation that incorporates cellular microenvironment information and multimodal data."
+    },
+    {
+        "title":  "AI-predicted spatial transcriptomics unlocks breast cancer biomarkers from pathology",
+        "url":  "https://www.sciencedirect.com/science/article/abs/pii/S0092867426004587",
+        "date":  "2026-07-09",
+        "lane":  "Important to revisit",
+        "digest":  "2026-07-20",
+        "reason":  "Path2Space predicts spatial gene expression from H\u0026E whole-slide images and derives breast cancer spatial biomarkers and therapy-response associations."
+    },
+    {
+        "title":  "Spatial transcriptomic analyses highlight distinct erythroid niches in mice and humans",
+        "url":  "https://www.nature.com/articles/s41588-026-02671-2",
+        "date":  "2026-07-02",
+        "lane":  "Important to revisit",
+        "digest":  "2026-07-20",
+        "reason":  "Cross-species spatial transcriptomic resource for niche architecture, species-specific erythroblastic islands, and benchmarkable spatial-cell interaction patterns."
     }
 ]
